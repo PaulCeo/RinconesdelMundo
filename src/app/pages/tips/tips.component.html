@@ -1,0 +1,34 @@
+<div class="container content-area">
+    <!-- SECCIÓN PRINCIPAL PARA CONSEJOS -->
+    <section class="tips-list">
+        <h2>Consejos Prácticos para Viajeros Inteligentes</h2>
+        <p class="tips-intro">Haz clic en cada tarjeta para descubrir consejos detallados que harán tus viajes más fáciles, seguros y enriquecedores.</p>
+
+        <div class="tips-grid">
+            <app-tip-card
+                *ngFor="let tip of tipSummaries"
+                [tipSummary]="tip"
+                (cardClick)="openModal($event)">
+            </app-tip-card>
+        </div>
+         <p class="back-to-top-link"><a href="#page-top" (click)="$event.preventDefault(); scrollToTop()">↑ Volver arriba</a></p>
+    </section>
+    <!-- FIN SECCIÓN PRINCIPAL -->
+
+    <!-- SIDEBAR -->
+    <app-sidebar></app-sidebar>
+
+</div>
+
+<!-- MODAL ESTRUCTURA -->
+<div class="modal-overlay" [class.is-active]="isModalActive" (click)="closeModal()"></div>
+<div id="tip-modal" class="modal" [class.is-active]="isModalActive">
+  <div class="modal-content" *ngIf="selectedTipDetail">
+    <button class="modal-close" aria-label="Cerrar consejo" (click)="closeModal()">&times;</button>
+    <h3 id="modal-tip-title">{{ selectedTipDetail.title }}</h3>
+    <div id="modal-tip-body" [innerHTML]="selectedTipDetail.body">
+      <!-- El contenido HTML del consejo se renderizará aquí -->
+    </div>
+  </div>
+</div>
+<!-- FIN MODAL -->

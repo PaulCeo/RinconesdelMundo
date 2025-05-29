@@ -1,0 +1,100 @@
+<!-- HERO SECTION CON SWIPER CAROUSEL -->
+<section class="hero">
+    <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide hero-slide" style="background-image: url('/images/post-marruecos0.jpg');"> <!-- Ejemplo con ruta local -->
+                <div class="hero-content">
+                    <h2>Aventura en el Corazón del Desierto</h2>
+                    <p>Descubre la inmensidad y la magia del Sahara.</p>
+                    <a routerLink="/posts/marruecos-viaje-sensorial-zocos-desiertos-tradicion o explorando-marruecos" class="btn btn-primary">Explorar Marruecos</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide hero-slide" style="background-image: url('/images/post-alpes0.jpg');">
+                 <div class="hero-content">
+                    <h2>Cumbres Majestuosas te Esperan</h2>
+                    <p>Senderismo y vistas panorámicas en los Alpes Suizos.</p>
+                    <a routerLink="/posts/alpes-suizos-majestad-alpina-cumbres-lagos o aventura-alpes-suizos" class="btn btn-primary">Descubrir los Alpes</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide hero-slide" style="background-image: url('/images/post-japon0.jpg');">
+                <div class="hero-content">
+                    <h2>Tradición y Modernidad en Japón</h2>
+                    <p>Sumérgete en una cultura fascinante y única.</p>
+                    <a routerLink="/posts/japon-tradicion-milenaria-modernidad-vibrante o descubriendo-japon" class="btn btn-primary">Viajar a Japón</a>
+                </div>
+            </div>
+             <!-- Slide 4 -->
+             <div class="swiper-slide hero-slide" style="background-image: url('/images/post-caribe0.jpg');">
+                <div class="hero-content">
+                    <h2>Paraísos Tropicales del Caribe</h2>
+                    <p>Arena blanca, aguas turquesas y relax total.</p>
+                    <a routerLink="/posts/caribe-sol-playas-ensueno-ritmo-tropical o playas-paraisiacas-caribe" class="btn btn-primary">Relájate en el Caribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+<!-- FIN HERO SECTION -->
+
+<div class="container index-content-sections">
+
+    <!-- SECCIÓN: SIGNIFICADO DE VIAJAR -->
+    <section class="travel-philosophy">
+        <h2>El Impulso Ancestral de Explorar: ¿Por Qué Viajamos?</h2>
+        <p>¿Qué nos mueve a dejar la comodidad de nuestro hogar y aventurarnos hacia lo desconocido? Viajar es mucho más que simplemente visitar lugares nuevos o tachar destinos de una lista. Es un anhelo profundamente humano, una pulsión casi instintiva que resuena con nuestra historia más remota. Desde los albores de la humanidad, cuando nuestros ancestros nómadas recorrían vastos territorios en busca de sustento y seguridad, la exploración ha sido intrínseca a nuestra supervivencia y evolución.</p>
+        <p>Antropológicamente, el desplazamiento ha sido el catalizador del progreso. Los viajes facilitaron el intercambio de conocimientos, la difusión de tecnologías, la mezcla de culturas y la adaptación a entornos diversos. Ese espíritu pionero, esa curiosidad innata por saber qué hay más allá de la colina, del río o del océano, sigue latiendo en nosotros. En un mundo moderno hiperconectado pero a menudo paradójicamente aislante, viajar nos ofrece una vía de escape, una forma de romper la rutina y reconectar con esa esencia exploradora.</p>
+        <p>Pero el valor del viaje va más allá de la simple satisfacción de la curiosidad. Al exponernos a realidades diferentes, desafiamos nuestras propias percepciones y prejuicios. Interactuar con personas de culturas distintas, probar sabores nuevos, escuchar idiomas desconocidos y navegar por entornos ajenos nos obliga a salir de nuestra burbuja, a ser más flexibles, observadores y tolerantes. Enfrentar pequeños (o grandes) desafíos en el camino –desde descifrar un mapa hasta superar la barrera del idioma– fomenta nuestra resiliencia, creatividad y capacidad de resolución de problemas.</p>
+        <p>Viajar es también una experiencia sensorial intensificada. Los colores parecen más vibrantes, los olores más penetrantes, los sonidos más envolventes. Es una oportunidad para despertar sentidos adormecidos por la cotidianidad y para maravillarnos ante la diversidad natural y cultural del planeta: la majestuosidad de una montaña, la inmensidad del océano, la complejidad de una ciudad antigua, la calidez de una sonrisa desconocida. En última instancia, viajar es una inversión en nosotros mismos. Cada experiencia, cada encuentro, cada paisaje contemplado, se convierte en un recuerdo imborrable que amplía nuestra perspectiva, enriquece nuestra comprensión del mundo y nos ayuda a definir nuestro propio lugar en él. Es un camino hacia el autoconocimiento tanto como hacia el conocimiento del otro. Por eso viajamos: para crecer, para aprender, para conectar y, sobre todo, para sentirnos plenamente vivos.</p>
+    </section>
+
+    <!-- SECCIÓN CONSEJOS ESENCIALES -->
+    <section class="featured-tips">
+        <h2>Consejos Esenciales para el Viajero</h2>
+        <div class="tips-grid">
+            <app-tip-card
+                *ngFor="let tip of featuredTipSummaries"
+                [tipSummary]="tip"
+                (cardClick)="openModal($event)">
+            </app-tip-card>
+        </div>
+         <p class="view-all-link"><a routerLink="/consejos">Ver todos los consejos →</a></p>
+    </section>
+
+    <!-- SECCIÓN ÚLTIMO POST -->
+    <section class="latest-post-index">
+        <h2>Última Aventura Publicada</h2>
+        <article class="latest-post-summary">
+             <img src="/images/post-japon.jpg" alt="Pagoda tradicional japonesa rodeada de naturaleza">
+             <div class="latest-post-content">
+                <h3><a routerLink="/posts/post-japon">Japón: Fusión Fascinante de Tradición Milenaria y Modernidad Vibrante</a></h3>
+                <p class="article-categories"> <!-- Asumimos que el último post tiene estas categorías como ejemplo -->
+    <a [routerLink]="['/categorias', 'atractivo', 'cultura']">Cultura</a>, <!-- Ajustar slug y tipo -->
+    <a [routerLink]="['/categorias', 'region', 'asia']">Asia</a>
+</p>
+                <p>Un viaje inolvidable al país del Sol Naciente, donde templos serenos conviven con neones deslumbrantes y la cortesía es un arte...</p>
+                <a routerLink="/posts/japon-tradicion-milenaria-modernidad-vibrante o descubriendo-japon" class="read-more">Leer Artículo Completo →</a>
+             </div>
+        </article>
+    </section>
+
+    <!-- Enlace Volver Arriba (Opcional en Home) -->
+    <!-- <p class="back-to-top-link"><a href="#page-top">↑ Volver arriba</a></p> -->
+
+</div>
+
+<!-- MODAL PARA LOS CONSEJOS DESTACADOS -->
+<div class="modal-overlay" [class.is-active]="isModalActive" (click)="closeModal()"></div>
+<div id="tip-modal" class="modal" [class.is-active]="isModalActive">
+  <div class="modal-content" *ngIf="selectedTipDetail">
+    <button class="modal-close" aria-label="Cerrar consejo" (click)="closeModal()">×</button>
+    <h3 id="modal-tip-title">{{ selectedTipDetail.title }}</h3>
+    <div id="modal-tip-body" [innerHTML]="selectedTipDetail.body"></div>
+  </div>
+</div>
+<!-- FIN MODAL -->

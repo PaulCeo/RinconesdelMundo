@@ -1,0 +1,18 @@
+/* Estilos para asegurar el layout general (footer abajo) */
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ocupa al menos toda la altura de la ventana */
+}
+
+main {
+  flex-grow: 1; /* Hace que el contenido principal ocupe el espacio vertical disponible */
+}
+
+app-header {
+  flex-shrink: 0; /* Evita que el header se encoja */
+}
+
+app-footer {
+  flex-shrink: 0; /* Evita que el footer se encoja */
+}

@@ -1,0 +1,38 @@
+<!-- Contenido de src/app/pages/category-page/category-page.component.html -->
+<div class="container content-area">
+
+  <section class="category-posts-list"> <!-- Similar a .destinations-list -->
+    <div *ngIf="isLoading" class="loading-indicator">Cargando posts...</div>
+
+    <div *ngIf="categoryNotFound && !isLoading" class="not-found-message">
+      <h2>Categoría no encontrada o sin posts</h2>
+      <p>Lo sentimos, no pudimos encontrar artículos para la categoría solicitada.</p>
+      <a routerLink="/destinos" class="btn btn-primary">Ver Regiones</a>
+      <a routerLink="/categorias" class="btn">Ver Todas las Categorías</a> <!-- Enlace a una futura pág. de categorías -->
+    </div>
+
+    <div *ngIf="categoryNameDisplay && postsInCategory.length > 0 && !isLoading">
+      <h2>
+        <span *ngIf="categoryTypeDisplay">{{ categoryTypeDisplay }}:</span> {{ categoryNameDisplay }}
+      </h2>
+      <p class="destinations-intro" *ngIf="postsInCategory.length > 1">
+        Explora nuestros artículos sobre {{ categoryNameDisplay.toLowerCase() }}.
+      </p>
+      <p class="destinations-intro" *ngIf="postsInCategory.length === 1">
+        Descubre nuestro artículo sobre {{ categoryNameDisplay.toLowerCase() }}.
+      </p>
+
+      <!-- Reutilizamos destination-grid y app-destination-card para mostrar los posts -->
+      <div class="destination-grid">
+        <app-destination-card *ngFor="let post of postsInCategory" [destinationData]="post">
+        </app-destination-card>
+      </div>
+    </div>
+     <p class="back-to-top-link" *ngIf="categoryNameDisplay && postsInCategory.length > 0 && !isLoading">
+      <a href="#page-top" (click)="$event.preventDefault(); scrollToTop()">↑ Volver arriba</a>
+    </p>
+  </section>
+
+ <app-sidebar></app-sidebar>
+
+</div>

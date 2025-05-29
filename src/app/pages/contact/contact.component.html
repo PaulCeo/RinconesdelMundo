@@ -1,0 +1,40 @@
+<div class="container">
+    <section class="contact-section">
+        <h2>Ponte en Contacto</h2>
+        <p class="contact-intro">
+            ¿Tienes alguna pregunta, sugerencia, o simplemente quieres saludar?
+            Utiliza el siguiente formulario para enviarme un mensaje. ¡Me encantaría saber de ti!
+        </p>
+
+        <div class="contact-form-container">
+            <form id="contact-form-static" ngNoForm action="https://formspree.io/f/xkgrybdo" method="POST">
+                <div class="form-group">
+                    <label for="contact-name">Tu Nombre:</label>
+                    <input type="text" id="contact-name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Tu Correo Electrónico (para responderte):</label>
+                    <input type="email" id="contact-email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-subject">Asunto:</label>
+                    <input type="text" id="contact-subject" name="_subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Mensaje:</label>
+                    <textarea id="contact-message" name="message" rows="7" required></textarea>
+                </div>
+
+                <input type="hidden" name="_language" value="es">
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+         
+    </section>
+</div>

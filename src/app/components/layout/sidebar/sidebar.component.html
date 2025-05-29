@@ -1,0 +1,29 @@
+
+<div class="widget">
+    <h4>Categorías por Atractivo</h4>
+     <ul *ngIf="categoriesAtrac.length > 0">
+         <li *ngFor="let cat of categoriesAtrac">
+             <a [routerLink]="['/categorias', cat.type, cat.slug]">{{ cat.name }}</a>
+         </li>
+     </ul>
+     <p *ngIf="categoriesAtrac.length === 0">No hay categorías de atractivo.</p>
+</div>
+
+<div class="widget">
+    <h4>Categorías por Región</h4>
+     <ul *ngIf="categoriesRegion.length > 0">
+         <li *ngFor="let cat of categoriesRegion">
+            <a [routerLink]="['/categorias', cat.type, cat.slug]">{{ cat.name }}</a>
+         </li>
+     </ul>
+     <p *ngIf="categoriesRegion.length === 0">No hay categorías de región.</p>
+</div>
+
+<div class="widget">
+    <h4>Posts Recientes</h4>
+     <ul>
+         <li *ngFor="let post of recentPosts">
+             <a [routerLink]="post.link">{{ post.title }}</a>
+         </li>
+     </ul>
+</div>

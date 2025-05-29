@@ -1,0 +1,9 @@
+<article class="destination-card" *ngIf="destinationData">
+       <img [src]="destinationData.imageUrl" [alt]="destinationData.altText">
+
+    <div class="card-content">
+        <h3>{{ destinationData.name }}</h3> <!-- Sin enlace -->
+        <p>{{ destinationData.description }}</p>
+        <a [routerLink]="destinationData.postLink" class="btn-explore">Ver Artículo →</a>
+    </div>
+</article>

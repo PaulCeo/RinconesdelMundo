@@ -1,0 +1,42 @@
+<!-- Contenido de src/app/pages/search-page/search-page.component.html -->
+<div class="container content-area">
+  <section class="search-results-list">
+    <div *ngIf="isLoading" class="loading-indicator">Buscando...</div>
+
+    <div *ngIf="!isLoading && searchQuery">
+      <h2>Resultados para: "<mark>{{ searchQuery }}</mark>"</h2> <!-- Resaltar query -->
+
+      <div *ngIf="noResults" class="no-results-message">
+        <p>No se encontraron resultados para tu búsqueda. Intenta con otros términos.</p>
+      </div>
+
+      <div class="search-results-grid" *ngIf="!noResults && searchResults.length > 0">
+        <!-- Conectar el evento (openTip) -->
+        <app-search-result-card
+            *ngFor="let result of searchResults"
+            [result]="result"
+            (openTip)="openTipModalFromSearch($event)">
+        </app-search-result-card>
+      </div>
+    </div>
+
+    <div *ngIf="!isLoading && !searchQuery && !noResults" class="no-query-message">
+      <p>Por favor, ingresa un término en la barra de búsqueda.</p>
+    </div>
+    <p class="back-to-top-link"><a href="#page-top" (click)="$event.preventDefault(); scrollToTop()">↑ Volver arriba</a></p>
+  </section>
+
+  <app-sidebar *ngIf="!isLoading"></app-sidebar>
+</div>
+
+<!-- MODAL ESTRUCTURA (para los consejos) -->
+<div class="modal-overlay" [class.is-active]="isModalActive" (click)="closeTipModal()"></div>
+<div id="tip-modal-search" class="modal" [class.is-active]="isModalActive"> <!-- ID diferente si es necesario -->
+  <div class="modal-content" *ngIf="selectedTipDetail">
+    <button class="modal-close" aria-label="Cerrar consejo" (click)="closeTipModal()">×</button>
+    <h3 id="modal-tip-title">{{ selectedTipDetail.title }}</h3>
+    <div id="modal-tip-body" [innerHTML]="selectedTipDetail.body">
+    </div>
+  </div>
+</div>
+<!-- FIN MODAL -->

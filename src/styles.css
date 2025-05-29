@@ -1,0 +1,2735 @@
+/* You can add global styles to this file, and also import other style files */
+/* --- Reseteo Básico y Estilos Generales (Tema Azul/Índigo) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.7;
+    color: #37474F;
+    background-color: #E3F2FD;
+    transition: background-color 0.3s ease;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather', serif;
+    color: #0D47A1;
+    margin-bottom: 0.8em;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+a {
+    color: #1976D2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0D47A1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #5C6BC0;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #3949AB;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* --- Header --- */
+app-header {
+    display: block;
+    background: linear-gradient(to right, #90CAF9, #5C6BC0);
+    color: #fff;
+    padding: 1rem 0;
+    /* Padding original */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+app-header .container {
+    display: flex;
+    justify-content: space-between;
+    /* Para logo/título a la izq, nav/controles a la der */
+    align-items: center;
+    position: relative;
+    /* Para menú desplegable y barra de búsqueda */
+    min-height: auto;
+    /* Ya no necesitamos altura mínima forzada aquí */
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 108;
+    /* Para estar sobre la barra de búsqueda si es necesario */
+    margin-left: 20px;
+    /* Espacio entre nav y controles, si no están agrupados */
+}
+
+/* Botón de búsqueda (icono de lupa) */
+.search-toggle-btn {
+    background: none;
+    border: none;
+    color: #f0f0f0;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-toggle-btn svg {
+    width: 22px;
+    height: 22px;
+}
+
+.search-toggle-btn:hover {
+    color: #fff;
+}
+
+.search-toggle-btn.hidden-by-search {
+    display: none !important;
+}
+
+/* Contenedor de la barra de búsqueda */
+.search-bar-container {
+    display: none;
+    /* Oculto por defecto, se activa con JS añadiendo clase .active */
+    position: absolute;
+    /* Se superpone al contenido normal del header */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Ocupa toda la altura del header */
+    z-index: 107;
+    /* Encima del título y nav, debajo de los botones de toggle si fuera necesario */
+    padding: 0 15px;
+    /* Padding lateral para el contenido interno */
+    box-sizing: border-box;
+    align-items: center;
+    /* Centrar el form verticalmente */
+    justify-content: center;
+    /* Centrar el form horizontalmente */
+    opacity: 0;
+    transform: scaleY(0.9) translateY(-5%);
+    /* Efecto de aparición sutil */
+    transform-origin: top center;
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.search-bar-container.active {
+    display: flex;
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+}
+
+/* ... (resto de estilos de .search-form, input, botones de búsqueda como estaban) ... */
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.search-bar-container input[type="search"] {
+    flex-grow: 1;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.05em;
+    background-color: #fff;
+    color: #263238;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: -250px;
+    top: 0;
+}
+
+.search-bar-container input[type="search"]::placeholder {
+    color: #78909C;
+}
+
+.search-bar-container input[type="search"]:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5), 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar-container .search-submit-btn,
+.search-bar-container .search-close-btn {
+    position: absolute;
+    top: 0;
+    background: none;
+    border: none;
+    color: #BBDEFB;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+}
+
+.search-bar-container .search-submit-btn:hover,
+.search-bar-container .search-close-btn:hover {
+    color: #fff;
+}
+
+.search-bar-container .search-submit-btn svg {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 15px
+}
+
+.search-bar-container .search-close-btn {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    right: -50px;
+}
+
+.search-form {
+    /* El formulario dentro de la barra */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    /* Limitar ancho del input + botones dentro del contenedor */
+    gap: 10px;
+}
+
+
+@media (max-width: 850px) {
+    .search-bar-container .search-close-btn {
+        margin-left: 0;
+    }
+
+    .search-bar-container .search-submit-btn,
+    .search-bar-container .search-close-btn {
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 824px) {
+    .search-bar-container .search-close-btn {
+        position: absolute;
+        right: 100px;
+    }
+
+    .search-bar-container .search-submit-btn {
+        position: absolute;
+        right: 150px;
+    }
+}
+
+
+
+
+.search-bar-container .search-submit-btn:hover,
+.search-bar-container .search-close-btn:hover {
+    color: #fff;
+    /* Iconos blancos al pasar el ratón */
+}
+
+.search-bar-container .search-submit-btn svg {
+    width: 22px;
+    /* Tamaño icono de búsqueda */
+    height: 22px;
+}
+
+.search-bar-container .search-close-btn {
+    font-size: 2.4rem;
+    /* Tamaño de la X */
+    font-weight: 300;
+    /* X más fina */
+    line-height: 1;
+}
+
+@media (max-width: 824px) {
+    .search-bar-container input[type="search"] {
+        position: relative;
+        /* Cambia a relativo para que ocupe el espacio correcto */
+        left: -450px;
+        /* Sin desplazamiento lateral */
+        top: -50px;
+    }
+}
+
+app-header svg.hidden-by-search {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    /* Para que no sea clickeable cuando está oculto */
+}
+
+app-header h1 {
+    margin: 0;
+    /* Quitar margen por defecto del h1 */
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+app-header h1.hidden-by-search {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+app-header h1 a {
+    color: #fff;
+    font-size: 2rem;
+    /* O el tamaño que tenías originalmente */
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    /* Si quieres alinear un logo inline */
+    align-items: center;
+}
+
+/* Nuevo layout para el contenido del header */
+app-header .header-layout {
+    display: flex;
+    flex-direction: column;
+    /* Título arriba, nav/controles abajo */
+    align-items: center;
+    /* Centrar horizontalmente por defecto */
+    gap: 10px;
+    /* Espacio entre título y la barra de navegación */
+}
+
+/* Contenedor del Título Principal del Blog */
+.blog-main-title-container {
+    width: 100%;
+    /* Ocupar ancho para poder centrar el texto */
+    text-align: center;
+    /* Centrar el título */
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    margin-bottom: 50px;
+}
+
+.blog-main-title-container.hidden-by-search {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+
+.blog-main-title-link {
+    text-decoration: none;
+    color: #fff;
+    /* display: flex; align-items: center; Si se usa logo + texto */
+}
+
+/* Estilos para el texto del título "Rincones del Mundo" */
+.blog-main-title-text {
+    font-family: 'Pacifico', cursive;
+    /* TIPOGRAFÍA LLAMATIVA */
+    font-size: 2.8rem;
+    /* Tamaño grande */
+    font-weight: normal;
+    /* Pacifico ya es "bold" visualmente */
+    line-height: 1.2;
+    padding: 5px 0;
+    /* Pequeño padding vertical */
+    position: absolute;
+    /* Para que se superponga correctamente */
+    right: 120px;
+    bottom: 50px;
+    /* Ajusta según el diseño */
+}
+
+/* .header-logo { ... } Si decides añadir un logo junto al texto */
+
+
+app-header nav {
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    /* En escritorio, la nav es visible por defecto */
+}
+
+app-header nav.hidden-by-search {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: none !important;
+}
+
+app-header nav ul#main-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+app-header nav ul#main-menu li {
+    margin-left: 25px;
+    /* O margin-right si prefieres */
+}
+
+app-header nav ul#main-menu li a {
+    color: #f0f0f0;
+    font-weight: bold;
+    padding: 8px 12px;
+    /* Padding original */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    /* Mantener si te gusta */
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+app-header nav ul#main-menu li a:hover,
+app-header nav ul#main-menu li a.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    text-decoration: none;
+}
+
+app-header nav ul#main-menu li:first-child {
+    margin-left: 0;
+}
+
+/* Si usas margin-left */
+.navigation-and-controls {
+    display: flex;
+    justify-content: space-between;
+    /* Nav a la izq, Controles a la der */
+    align-items: center;
+    width: 100%;
+    /* Ocupar todo el ancho disponible en el .container */
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.navigation-and-controls.hidden-by-search {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: none !important;
+}
+
+/* --- Botón Hamburguesa y Animación X --- */
+#hamburger-button {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 110;
+    margin: 0;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+}
+
+#hamburger-button span {
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 1px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    left: 50%;
+    margin-left: -14px;
+}
+
+#hamburger-button span:nth-child(1) {
+    top: 12px;
+}
+
+#hamburger-button span:nth-child(2) {
+    top: 20px;
+}
+
+#hamburger-button span:nth-child(3) {
+    top: 28px;
+}
+
+#hamburger-button.is-active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger-button.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+#hamburger-button.is-active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Para ocultar la hamburguesa si la barra de búsqueda está activa */
+#hamburger-button.hidden-by-search {
+    display: none !important;
+}
+
+/* --- INDEX.HTML - HERO SECTION CON SWIPER --- */
+.hero {
+    min-height: 60vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #37474F;
+}
+
+.hero-swiper {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-slide {
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.hero-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 3.2rem;
+    color: #fff;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-swiper .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+.hero-swiper .swiper-button-prev,
+.hero-swiper .swiper-button-next {
+    color: #fff;
+    transition: opacity 0.3s ease;
+    opacity: 0.7;
+}
+
+.hero-swiper .swiper-button-prev:hover,
+.hero-swiper .swiper-button-next:hover {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+
+    .hero-swiper .swiper-button-prev,
+    .hero-swiper .swiper-button-next {
+        display: none;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+}
+
+/* --- INDEX.HTML - RESTO DE SECCIONES --- */
+.index-content {
+    padding: 60px 20px;
+}
+
+.index-content section {
+    margin-bottom: 70px;
+}
+
+.index-content section:last-of-type {
+    margin-bottom: 40px;
+}
+
+.travel-philosophy {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    border: 1px solid #d3eafd;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.travel-philosophy h2 {
+    margin-bottom: 1em;
+    color: #1976D2;
+    text-align: center;
+}
+
+.travel-philosophy p {
+    font-size: 1.1em;
+    line-height: 1.9;
+    color: #37474F;
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+.travel-philosophy p:last-child {
+    margin-bottom: 0;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.tip-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    border: 1px solid #BBDEFB;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    /* === AÑADIDO PARA IGUALAR ALTURAS === */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Asegura que la tarjeta intente llenar la celda del grid */
+    /* ==================================== */
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.tip-card i {
+    color: #5C6BC0;
+    margin-bottom: 15px;
+}
+
+.tip-card h4 {
+    font-size: 1.3rem;
+    color: #0D47A1;
+    margin-bottom: 10px;
+}
+
+.tip-card p {
+    font-size: 0.95em;
+    color: #37474F;
+    margin-bottom: 0;
+}
+
+.view-all-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-all-link a {
+    font-weight: bold;
+    color: #1976D2;
+    text-decoration: underline;
+}
+
+.view-all-link a:hover {
+    color: #0D47A1;
+}
+
+.latest-post-summary {
+    display: flex;
+    gap: 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    border: 1px solid #d3eafd;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.latest-post-summary img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.latest-post-content {
+    flex: 1;
+    min-width: 250px;
+}
+
+.latest-post-content h3 {
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 0.6em;
+}
+
+.latest-post-content h3 a {
+    color: #0D47A1;
+}
+
+.latest-post-content h3 a:hover {
+    color: #1976D2;
+}
+
+.post-categories {
+    margin-bottom: 15px;
+    font-size: 0.85em;
+    color: #777;
+}
+
+.post-categories a {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    background: #E1F5FE;
+    padding: 4px 10px;
+    border-radius: 12px;
+    color: #1976D2;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post-categories a:hover {
+    background: #90CAF9;
+    color: #0D47A1;
+}
+
+.latest-post-content p {
+    font-size: 1em;
+    color: #37474F;
+    margin-bottom: 1.5em;
+}
+
+/* --- GENERAL CONTENT + SIDEBAR --- */
+.content-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 15px;
+}
+
+.blog-posts,
+.destinations-list,
+.single-post,
+.tips-list,
+.region-selection-list {
+    flex: 3;
+    min-width: 300px;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 250px;
+    background-color: #E1F5FE;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.category-posts-list {
+    flex: 3;
+    min-width: 300px;
+}
+
+/* Estilos Posts en Index (Antiguo) */
+.blog-posts h2 {
+    border-bottom: 3px solid #90CAF9;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    color: #0D47A1;
+    text-align: left;
+}
+
+.post {
+    background-color: #fff;
+    margin-bottom: 35px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    border: 1px solid #BBDEFB;
+}
+
+.post img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.post>div {
+    flex-grow: 1;
+}
+
+.post h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+}
+
+.post h3 a {
+    color: #0D47A1;
+}
+
+.post h3 a:hover {
+    color: #1976D2;
+}
+
+.post p {
+    margin-bottom: 1.2em;
+    color: #37474F;
+    font-size: 1em;
+    line-height: 1.7;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #5C6BC0;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.read-more:hover {
+    background-color: #3949AB;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.read-more-tip {
+    display: inline-block;
+    background-color: #FFB74D;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.read-more-tip:hover {
+    background-color: #e2a344;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* Estilos Página Consejos (Título e Intro) */
+.tips-list h2 {
+    border-bottom: 3px solid #90CAF9;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #0D47A1;
+}
+
+.tips-intro {
+    font-size: 1.1em;
+    color: #546E7A;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos Página Destinos */
+.destinations-list h2 {
+    border-bottom: 3px solid #90CAF9;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #0D47A1;
+}
+
+.destinations-intro {
+    font-size: 1.1em;
+    color: #546E7A;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.destination-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .destination-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.destination-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.destination-card .card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #0D47A1;
+}
+
+.destination-card p {
+    font-size: 0.95em;
+    color: #37474F;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.btn-explore {
+    display: inline-block;
+    background-color: #1976D2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.btn-explore:hover {
+    background-color: #0D47A1;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* Estilos Artículo Único */
+.single-post h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+    color: #0D47A1;
+}
+
+.article-categories {
+    font-size: 0.9em;
+    color: #546E7A;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #BBDEFB;
+    padding-bottom: 1em;
+}
+
+.article-categories a {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    background: #E1F5FE;
+    padding: 4px 10px;
+    border-radius: 12px;
+    color: #1976D2;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.article-categories a:hover {
+    background: #90CAF9;
+    color: #0D47A1;
+}
+
+.single-post .featured-image {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    margin: 0 auto 2.5em auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.single-post h2 {
+    font-size: 1.8rem;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #90CAF9;
+    color: #1976D2;
+    text-align: left;
+}
+
+.single-post h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    color: #5C6BC0;
+}
+
+.single-post p {
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+    color: #37474F;
+}
+
+.single-post p strong {
+    color: #0D47A1;
+}
+
+.single-post ul {
+    list-style: disc;
+    margin-left: 25px;
+    margin-bottom: 1.5em;
+}
+
+.single-post ul li {
+    margin-bottom: 0.8em;
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: #37474F;
+}
+
+.single-post ul ul {
+    list-style: circle;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 20px;
+}
+
+.single-post ul ul li {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.single-post .inline-image {
+    height: auto;
+    margin: 1.5em auto 2em auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Enlace Volver Arriba */
+.back-to-top-link {
+    text-align: right;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #CFD8DC;
+    font-size: 0.95em;
+}
+
+.back-to-top-link a {
+    color: #546E7A;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.back-to-top-link a:hover {
+    color: #1976D2;
+}
+
+/* Estilos Sidebar (Widgets) */
+.widget {
+    margin-bottom: 30px;
+}
+
+.widget:last-child {
+    margin-bottom: 0;
+}
+
+.widget h4 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #BBDEFB;
+    padding-bottom: 8px;
+    color: #1976D2;
+    font-size: 1.2rem;
+}
+
+.sidebar-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto 15px auto;
+    object-fit: cover;
+    border: 3px solid #90CAF9;
+}
+
+.widget form {
+    display: flex;
+}
+
+.widget input[type="search"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #90CAF9;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    transition: border-color 0.3s ease;
+    font-size: 0.9em;
+    min-width: 50px;
+}
+
+.widget input[type="search"]:focus {
+    outline: none;
+    border-color: #5C6BC0;
+    box-shadow: 0 0 0 2px rgba(92, 107, 192, 0.3);
+}
+
+.widget button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #5C6BC0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease;
+    font-family: 'Lato', sans-serif;
+    flex-shrink: 0;
+}
+
+.widget button[type="submit"]:hover {
+    background-color: #3949AB;
+}
+
+.widget ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.widget ul li {
+    margin-bottom: 10px;
+}
+
+.widget ul li a {
+    color: #37474F;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    display: block;
+    padding: 2px 0;
+}
+
+.widget ul li a:hover {
+    color: #1976D2;
+    padding-left: 4px;
+    background-color: rgba(25, 118, 210, 0.08);
+}
+
+/* --- Footer --- */
+/* --- Footer (Apuntando a app-footer) --- */
+/* --- Footer (Apuntando a app-footer) --- */
+app-footer {
+    display: block;
+    background-color: #346b7c;
+    /* Azul oscuro */
+    color: #B0BEC5;
+    /* Gris azulado claro para texto base */
+    padding: 40px 40px;
+    /* Menos padding vertical, mantenemos lateral */
+    margin-top: 50px;
+    font-size: 0.85em;
+    /* Texto general un poco más pequeño */
+    line-height: 1.5;
+}
+
+app-footer .container {
+    display: flex;
+    flex-direction: column;
+    /* Apilado en móvil por defecto */
+    justify-content: space-between;
+    /* Para escritorio */
+    align-items: center;
+    /* Centrado en móvil */
+    gap: 10px;
+    /* Espacio entre líneas si se apilan en móvil */
+}
+
+/* Estilos para los párrafos de información */
+app-footer p {
+    margin-bottom: 0;
+    /* Quitamos margen inferior por defecto de los p */
+}
+
+app-footer .copyright {
+    color: #E3F2FD;
+    /* Texto más claro para el copyright */
+    /* No necesita text-align si el flex container lo maneja */
+}
+
+.footer-credits-info {
+    /* Nuevo contenedor para los dos créditos de la derecha */
+    /* No necesita text-align si el flex container lo maneja */
+}
+
+.footer-credits-info .developed-by,
+.footer-credits-info .image-credits {
+    color: #90CAF9;
+    /* Azul más claro para estos créditos */
+    font-size: 0.95em;
+    /* Relativo al font-size del footer */
+    margin: 0;
+    /* Quitamos margen entre ellos si van en la misma línea o muy juntos */
+}
+
+.footer-credits-info .developed-by {
+    margin-right: 5px;
+    /* Pequeño espacio si van en la misma línea */
+}
+
+.footer-credits-info .developed-by strong {
+    color: #E3F2FD;
+    /* Resaltar el nombre del desarrollador */
+    font-weight: bold;
+}
+
+
+/* --- Media Queries para el Footer --- */
+@media (min-width: 768px) {
+
+    /* A partir de tablets/escritorio */
+    app-footer .container {
+        flex-direction: row;
+        /* Elementos lado a lado */
+        align-items: center;
+        /* Centrar verticalmente */
+    }
+
+    app-footer .copyright {
+        text-align: left;
+        /* Copyright a la izquierda */
+        margin-right: auto;
+        /* Empuja los créditos a la derecha */
+    }
+
+    .footer-credits-info {
+        text-align: right;
+        /* Créditos a la derecha */
+        display: flex;
+        /* Para ponerlos en línea si quieres o apilados */
+        flex-wrap: wrap;
+        /* Si son muy largos, que se apilen */
+        justify-content: flex-end;
+        /* Alinearlos a la derecha si son flex */
+    }
+
+    /* Si quieres que "Desarrollado por" e "Imágenes" estén en la misma línea visual
+        pero separados por un punto o algo, puedes añadir un span o ajustar el HTML.
+        Por ahora, se mostrarán uno debajo del otro a la derecha, o en la misma línea
+        si caben y se ajusta el CSS de .footer-credits-info .developed-by y .image-credits
+        para que sean inline-block o flex items.
+     */
+    .footer-credits-info .developed-by,
+    .footer-credits-info .image-credits {
+        /* display: inline; Si quieres que intenten estar en la misma línea */
+        /* margin-left: 5px; */
+    }
+}
+
+/* Eliminamos los estilos de .social-links y .back-to-top-link si ya no están en el HTML del footer */
+/*
+app-footer p.social-links { ... }
+app-footer .back-to-top-link { ... }
+*/
+
+
+/* ======================================================== */
+/* --- ESTILOS PARA EL MODAL DE CONSEJOS --- */
+/* ======================================================== */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 40px 15px;
+    /* Más padding vertical */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal.is-active,
+.modal-overlay.is-active {
+    display: block;
+    opacity: 1;
+}
+
+/* Centrado vertical usando margen auto y display block (alternativa a flex) */
+.modal-content {
+    background-color: #fff;
+    padding: 30px 35px;
+    border-radius: 8px;
+    max-width: 1300px;
+    width: 90%;
+    position: relative;
+    /* Clave para posicionar el botón close */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    margin: 5vh auto;
+    /* Margen superior/inferior para centrar verticalmente (ajustar vh si es necesario) */
+    transform: translateY(-20px);
+    /* Empezar un poco arriba */
+    transition: transform 0.3s ease-out;
+}
+
+.modal.is-active .modal-content {
+    transform: translateY(0);
+    /* Mover a posición final */
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    /* Ajustado para mejor visualización */
+    right: 15px;
+    /* Ajustado para mejor visualización */
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #aaa;
+    /* Ligeramente más visible */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Sin padding extra */
+    width: 30px;
+    /* Área de click definida */
+    height: 30px;
+    text-align: center;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+    color: #333;
+}
+
+#modal-tip-title {
+    font-size: 1.8rem;
+    color: #0D47A1;
+    margin-top: 0;
+    margin-bottom: 25px;
+    /* Más espacio */
+    padding-right: 40px;
+    /* Espacio para que no se solape con el botón X */
+    padding-bottom: 15px;
+    /* Más espacio */
+    border-bottom: 1px solid #eee;
+}
+
+#modal-tip-body p,
+#modal-tip-body ul li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 1em;
+}
+
+#modal-tip-body ul {
+    list-style: disc;
+    margin-left: 25px;
+    margin-bottom: 1.5em;
+    padding-left: 5px;
+}
+
+#modal-tip-body strong {
+    color: #0D47A1;
+}
+
+
+/* ======================================================== */
+/* --- Media Queries --- */
+/* ======================================================== */
+
+
+@media (max-width: 768px) {
+    .content-area {
+        flex-direction: column;
+    }
+
+    .blog-posts,
+    .destinations-list,
+    .single-post,
+    .tips-list,
+    .region-selection-list {
+        flex: 1;
+        min-width: 100%;
+    }
+
+    .sidebar {
+        flex: 1;
+        min-width: 100%;
+    }
+
+    .category-posts-list {
+        flex: 1;
+        min-width: 100%;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .travel-philosophy {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 a {
+        font-size: 1.0rem;
+    }
+
+    header nav ul#main-menu {
+        min-width: 200px;
+    }
+
+    header nav ul#main-menu li a {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero,
+    .hero-swiper {
+        min-height: 50vh;
+        height: 50vh;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .post {
+        padding: 15px;
+    }
+
+    .post h3 {
+        font-size: 1.3rem;
+    }
+
+    .tip-card {
+        padding: 20px;
+    }
+
+    .tip-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .destination-card img {
+        height: 180px;
+    }
+
+    .btn-explore {
+        align-self: center;
+    }
+
+    .single-post h1 {
+        font-size: 1.8rem;
+    }
+
+    .single-post h2 {
+        font-size: 1.5rem;
+    }
+
+    .single-post h3 {
+        font-size: 1.2rem;
+    }
+
+    .latest-post-content h3 {
+        font-size: 1.3rem;
+    }
+
+    #modal-tip-title {
+        font-size: 1.4rem;
+    }
+
+    #modal-tip-body p,
+    #modal-tip-body ul li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Añadir en src/styles.css o post-detail.component.css */
+.loading-indicator,
+.not-found-message {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1.2em;
+    color: #546E7A;
+}
+
+.not-found-message h2 {
+    color: #0D47A1;
+    margin-bottom: 15px;
+}
+
+/* ============================================= */
+/* --- ESTILOS PÁGINA DE CONTACTO --- */
+/* ============================================= */
+
+/* Removed empty ruleset for .contact-section */
+
+.contact-section h2 {
+    border-bottom: 3px solid #90CAF9;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #0D47A1;
+    text-align: center;
+    /* O left si prefieres */
+}
+
+.contact-intro {
+    font-size: 1.1em;
+    color: #546E7A;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    border: 1px solid #d3eafd;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #37474F;
+    font-size: 0.95em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #B0BEC5;
+    /* Gris azulado claro */
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1976D2;
+    /* Azul medio */
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    /* Permitir redimensionar verticalmente */
+    min-height: 120px;
+}
+
+/* Removed empty ruleset for .form-group button[type="submit"] */
+
+.contact-info {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #CFD8DC;
+}
+
+.contact-info h3 {
+    color: #1976D2;
+    /* Azul medio */
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    color: #546E7A;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+.contact-info ul li strong {
+    color: #0D47A1;
+    /* Azul oscuro */
+}
+
+.contact-info ul li a {
+    color: #1976D2;
+    text-decoration: underline;
+}
+
+.contact-info ul li a:hover {
+    color: #0D47A1;
+}
+
+/* Ajustes responsivos para el formulario */
+@media (max-width: 824px) {
+    .single-post h1 {
+        margin-top: 20px;
+        ;
+    }
+
+    .region-image {
+        width: 100%;
+        /* Imagen ocupa todo el ancho */
+        height: 150px;
+        /* Ajustar altura en móvil */
+        margin-right: 0;
+        margin-bottom: 15px;
+        /* Espacio bajo la imagen */
+    }
+
+    .navigation-and-controls {
+        display: flex;
+        justify-content: space-between;
+        /* Nav a la izq, Controles a la der */
+        align-items: center;
+        width: 100%;
+        /* Ocupar todo el ancho disponible en el .container */
+        transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    app-header .container {
+        position: relative;
+        /* O app-header nav si es el padre directo posicionado */
+        margin: 0;
+    }
+
+    #hamburger-button {
+        display: block;
+    }
+
+    app-header nav ul#main-menu {
+        list-style: none;
+        display: none;
+        /* Menú horizontal */
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        /* Alinear verticalmente los items */
+    }
+
+    app-header nav:not(.search-bar-container.active ~ nav) {
+        /* Ocultar nav si la búsqueda NO está activa */
+        /* Esta regla puede ser compleja, es más simple la que ocultaba .navigation-and-controls */
+    }
+
+
+    app-header nav ul#main-menu.mobile-menu-active {
+        display: flex;
+        flex-direction: column;
+        /* Para apilar los elementos verticalmente */
+        position: absolute;
+        /* Para posicionarlo sobre el contenido */
+        top: 100%;
+        /* Generalmente, justo debajo del header. Ajusta si la altura del header es variable. */
+        /* O top: [altura-del-header]; */
+        right: -12px;
+        width: 150%;
+        /* Ocupa todo el ancho */
+        background-color: #5C6BC0;
+        /* Un color de fondo para el menú */
+        z-index: 105;
+        /* Debe estar por encima del contenido pero debajo del botón hamburguesa (que tiene z-index: 110) */
+        padding: 10px 0;
+        /* Padding vertical */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        /* Sombra opcional */
+        border-radius: 5px;
+    }
+
+    app-header nav ul#main-menu.mobile-menu-active li:last-child a {
+        border-bottom: none;
+        /* Sin borde en el último ítem */
+    }
+
+    app-header nav ul#main-menu.mobile-menu-active li a {
+        display: block;
+        /* Asegura que todo el área sea clickeable */
+        padding: 12px 20px;
+        /* Ajusta el padding para ítems verticales */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        /* Separador opcional */
+    }
+
+    app-header nav ul#main-menu.mobile-menu-active li {
+        margin-right: 0;
+        /* Quitar margen horizontal de la versión de escritorio */
+        width: 100%;
+        /* Los ítems ocupan todo el ancho */
+        margin-left: 0;
+        /* Quitar margen izquierdo */
+    }
+
+    app-header nav ul#main-menu li {
+        margin-right: 20px;
+        /* Espacio entre items del menú */
+    }
+
+    app-header nav ul#main-menu li a {
+        color: #f0f0f0;
+        /* Un blanco un poco menos intenso para los links */
+        font-weight: bold;
+        padding: 8px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        font-family: 'Montserrat', sans-serif;
+        /* Fuente para el menú */
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        /* Opcional */
+        letter-spacing: 0.5px;
+        /* Opcional */
+    }
+
+    app-header nav ul#main-menu li:last-child a {
+        border-bottom: none;
+    }
+
+    app-header nav ul#main-menu li:last-child {
+        margin-right: 0;
+    }
+
+    app-header nav ul#main-menu li a:hover,
+    app-header nav ul#main-menu li a.active {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        /* Blanco más brillante para activo/hover */
+        text-decoration: none;
+    }
+
+    .content-area,
+    .index-content-sections {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .sidebar {
+        min-width: unset;
+        width: 100%;
+        order: 1;
+    }
+
+    .blog-posts,
+    .destinations-list,
+    .single-post,
+    .tips-list,
+    .region-selection-list,
+    .category-posts-list,
+    .contact-section,
+    .gallery-section {
+        order: 0;
+    }
+
+    .hero,
+    .hero-swiper {
+        min-height: 55vh;
+        height: 55vh;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .travel-philosophy {
+        padding: 30px 20px;
+    }
+
+    .travel-philosophy p {
+        font-size: 1em;
+    }
+
+    .tips-grid {
+        gap: 20px;
+    }
+
+    .latest-post-summary {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .latest-post-summary img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .latest-post-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .destinations-list h2,
+    .region-selection-list h2,
+    .category-posts-list h2 {
+        text-align: center;
+    }
+
+    .destinations-intro {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .destination-grid,
+    .region-grid {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .region-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .region-text-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .destination-card .card-content {
+        padding: 15px;
+    }
+
+    .destination-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .single-post h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .single-post h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .single-post h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .single-post p,
+    .single-post ul li {
+        font-size: 1em;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .single-post .featured-image {
+        margin-bottom: 2em;
+    }
+
+    .back-to-top-link {
+        text-align: center;
+    }
+
+    .modal {
+        padding: 20px 10px;
+    }
+
+    .modal-content {
+        padding: 25px 20px;
+        width: 95%;
+        max-width: 600px;
+    }
+
+    #modal-tip-title {
+        font-size: 1.5rem;
+        padding-right: 35px;
+    }
+
+    #modal-tip-body p,
+    #modal-tip-body ul li {
+        font-size: 0.95rem;
+    }
+
+    .modal-close {
+        top: 8px;
+        right: 8px;
+    }
+
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+
+    .contact-section {
+        padding: 0;
+    }
+
+    @media (min-width: 601px) and (max-width: 767px) {
+        .region-item {
+            flex-direction: row;
+            align-items: center;
+            text-align: left;
+        }
+
+        .region-image {
+            width: 140px;
+            height: 110px;
+            margin-right: 18px;
+            margin-bottom: 0;
+
+        }
+
+        .region-text-content h3 {
+            font-size: 1.3rem;
+        }
+    }
+
+    .blog-main-title-text {
+        font-family: 'Pacifico', cursive;
+        /* TIPOGRAFÍA LLAMATIVA */
+        font-size: 2.4rem;
+        /* Tamaño grande */
+        font-weight: normal;
+        /* Pacifico ya es "bold" visualmente */
+        line-height: 1.2;
+        padding: 5px 0;
+        /* Pequeño padding vertical */
+        width: 350px;
+        /* text-shadow: 1px 1px 3px rgba(0,0,0,0.3); Opcional */
+        right: 175px;
+        top: 5px;
+    }
+
+    .blog-subtitle {
+        font-family: 'Caveat', 'Dancing Script', 'Lato', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+        font-family: 'Caveat', 'Comic Neue', 'Dancing Script', 'Lato', Arial, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        text-shadow: 2px 3px 5px #2ff7e5, -2px -3px 8px #fff;
+    }
+
+}
+
+/* --- ESTILOS ADICIONALES PARA PÁGINA DE SELECCIÓN DE REGIONES --- */
+/* (Añadir a src/styles.css) */
+
+/* --- ESTILOS ACTUALIZADOS PARA PÁGINA DE SELECCIÓN DE REGIONES --- */
+/* (Añadir/Modificar en src/styles.css) */
+
+.region-selection-list h2 {
+    border-bottom: 3px solid #90CAF9;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #0D47A1;
+    text-align: center;
+    /* Asegurar centrado */
+}
+
+/* .destinations-intro ya está estilizado */
+
+.region-list-detailed {
+    display: flex;
+    flex-direction: column;
+    /* Una región por línea */
+    gap: 30px;
+    /* Espacio entre cada bloque de región */
+    margin-top: 30px;
+}
+
+.region-item {
+    display: flex;
+    /* Para imagen a la izquierda y texto a la derecha */
+    align-items: center;
+    /* Centrar verticalmente imagen y texto */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #E0F7FA;
+    overflow: hidden;
+    /* Por si la imagen es más grande */
+}
+
+.region-item:hover {
+    transform: translateX(10px);
+    /* Desplazamiento a la derecha */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    border-color: #90CAF9;
+}
+
+.region-image {
+    width: 180px;
+    /* Ancho fijo para la imagen de la región */
+    height: 150px;
+    /* Altura fija, ajustar según proporción deseada */
+    object-fit: cover;
+    /* Recortar imagen para ajustarse */
+    border-radius: 6px;
+    margin-right: 25px;
+    /* Espacio entre imagen y texto */
+    flex-shrink: 0;
+    /* Evitar que la imagen se encoja */
+}
+
+.region-text-content {
+    flex-grow: 1;
+    /* El texto ocupa el espacio restante */
+}
+
+.region-text-content h3 {
+    font-size: 1.6rem;
+    /* Tamaño título de región */
+    color: #0D47A1;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+    /* Alineamos a la izquierda */
+}
+
+.region-text-content p {
+    font-size: 0.95em;
+    color: #37474F;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    /* Espacio antes del "Explorar" */
+    text-align: left;
+    /* Alineamos a la izquierda */
+}
+
+.explore-region-link {
+    /* Estilo para el texto "Explorar..." */
+    display: inline-block;
+    /* O block si quieres que ocupe toda la línea */
+    font-weight: bold;
+    color: #1976D2;
+    /* Azul medio */
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.region-item:hover .explore-region-link {
+    color: #0D47A1;
+    /* Azul más oscuro al pasar por la tarjeta */
+    /* Podríamos añadir un efecto de subrayado también si se desea */
+    /* text-decoration: underline; */
+}
+
+/* Media Query para ajustar en móvil si es necesario */
+@media (max-width: 600px) {
+    .region-item {
+        flex-direction: column;
+        /* Apilar imagen y texto en móvil */
+        align-items: flex-start;
+        /* Alinear al inicio */
+        text-align: left;
+        /* Alinear todo el texto a la izquierda */
+    }
+
+    .region-image {
+        width: 100%;
+        /* Imagen ocupa todo el ancho */
+        height: 150px;
+        /* Ajustar altura en móvil */
+        margin-right: 0;
+        margin-bottom: 15px;
+        /* Espacio bajo la imagen */
+    }
+
+    .region-text-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .explore-region-link {
+        /* background-color: #1976D2; */
+        /* Si quieres que parezca más botón */
+        /* color: #fff; */
+        /* padding: 8px 15px; */
+        /* border-radius: 15px; */
+        /* margin-top: 10px; */
+    }
+}
+
+/* --- ESTILOS PARA PÁGINA DE RESULTADOS DE BÚSQUEDA --- */
+.search-results-list h2 {
+    border-bottom: 3px solid #90CAF9;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    color: #0D47A1;
+    text-align: center;
+}
+
+.search-results-list h2 span {
+    /* Para el término de búsqueda */
+    font-style: italic;
+    color: #1976D2;
+}
+
+.loading-indicator,
+.no-results-message,
+.no-query-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #546E7A;
+    padding: 40px 20px;
+}
+
+.search-results-grid {
+    display: flex;
+    flex-direction: column;
+    /* Una tarjeta por línea */
+    gap: 25px;
+    /* Espacio entre tarjetas de resultado */
+}
+
+/* --- ESTILOS PARA TARJETA DE RESULTADO DE BÚSQUEDA --- */
+.search-result-card {
+    background-color: #fff;
+    border: 1px solid #E0F7FA;
+    border-radius: 8px;
+    padding: 20px 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+    position: relative;
+    /* Para el badge */
+    transition: box-shadow 0.3s ease;
+}
+
+.search-result-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-result-card .read-more-tip-indicator {
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #1976D2;
+    /* text-decoration: underline; si quieres que parezca enlace */
+    display: block;
+    /* o inline-block */
+    margin-top: 10px;
+
+}
+
+.search-result-card.clickable-tip {
+    cursor: pointer;
+}
+
+.result-type-badge {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.result-type-badge.post-badge {
+    background-color: #5C6BC0;
+    /* Indigo */
+}
+
+.result-type-badge.tip-badge {
+    background-color: #FFB74D;
+    /* Naranja */
+}
+
+.search-result-card h4 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    /* Quitar margen si el badge está arriba */
+    margin-bottom: 10px;
+    color: #0D47A1;
+}
+
+.search-result-card h4 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.search-result-card h4 a:hover {
+    text-decoration: underline;
+    color: #1976D2;
+}
+
+.context-snippet {
+    font-size: 0.95em;
+    color: #455A64;
+    /* Azul grisáceo más oscuro */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.context-snippet mark {
+    /* Para resaltar el término buscado */
+    background-color: #FFF9C4;
+    /* Amarillo pálido */
+    color: #37474F;
+    padding: 0 2px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.search-result-card .read-more {
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.search-result-card .read-more:hover {
+    color: #ffffff;
+}
+
+/* Asegurar que .category-posts-list esté en la lista de contenido principal para el flex con sidebar */
+.blog-posts,
+.destinations-list,
+.single-post,
+.tips-list,
+.region-selection-list,
+.category-posts-list,
+.search-results-list,
+/* AÑADIR .search-results-list */
+.contact-section,
+.gallery-section {
+    flex: 3;
+    min-width: 300px;
+}
+
+.form-error small {
+    color: #D32F2F;
+    /* Rojo oscuro */
+    font-size: 0.85em;
+    display: block;
+    margin-top: 4px;
+}
+
+.form-response {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.form-response.success {
+    background-color: #E8F5E9;
+    /* Verde pálido */
+    color: #2E7D32;
+    /* Verde oscuro */
+    border: 1px solid #A5D6A7;
+}
+
+.form-response.error {
+    background-color: #FFEBEE;
+    /* Rojo pálido */
+    color: #C62828;
+    /* Rojo oscuro */
+    border: 1px solid #EF9A9A;
+}
+
+.blog-subtitle {
+    display: none;
+     color: #631a9b;
+}
+
+@media (max-width: 824px) {
+    .blog-subtitle {
+        display: block;
+        font-weight: 100px;
+        font-size: 1.2rem;
+        margin-top: 10px;
+        text-align: center;
+        position: absolute;
+        top: 50px;
+        width: 400px;
+        right: 150px;
+        top: 50px
+    }
+
+    #logo-text {
+        display: none;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 740px) {
+    .blog-main-title-text {
+        font-family: 'Pacifico', cursive;
+        /* TIPOGRAFÍA LLAMATIVA */
+        font-size: 2.1rem;
+        /* Tamaño grande */
+        font-weight: normal;
+        /* Pacifico ya es "bold" visualmente */
+        line-height: 1.2;
+        padding: 5px 0;
+        /* Pequeño padding vertical */
+        width: 350px;
+        /* text-shadow: 1px 1px 3px rgba(0,0,0,0.3); Opcional */
+        right: 140px;
+        top: 15px;
+    }
+
+    .blog-subtitle {
+        display: block;
+        font-size: 1.0rem;
+        margin-top: 10px;
+        text-align: center;
+        position: absolute;
+        top: 50px;
+        width: 400px;
+        right: 125px;
+        top: 50px
+    }
+
+
+
+    /* Mueve el SVG a la izquierda cuando el ancho es <= 740px */
+    #logo {
+        position: absolute;
+        left: -35px;
+        /* Ajusta el valor según lo que necesites */
+        top: 10px;
+        /* Ajusta el valor según lo que necesites */
+        transition: left 0.3s ease;
+        height: 100px;
+    }
+
+    app-header {
+        height: 150px;
+    }
+
+    .search-bar-container input[type="search"] {
+        position: relative;
+        /* Cambia a relativo para que ocupe el espacio correcto */
+        left: -450px;
+        /* Sin desplazamiento lateral */
+        top: -20px;
+    }
+
+    .search-bar-container .search-close-btn {
+        position: absolute;
+        right: 110px;
+        top: 30px;
+    }
+
+    .search-bar-container .search-submit-btn {
+        position: absolute;
+        right: 160px;
+        top: 30px
+    }
+}
+
+@media (max-width: 620px) {
+    .blog-main-title-text {
+        font-family: 'Pacifico', cursive;
+        /* TIPOGRAFÍA LLAMATIVA */
+        font-size: 2.1rem;
+        /* Tamaño grande */
+        font-weight: normal;
+        /* Pacifico ya es "bold" visualmente */
+        line-height: 1.2;
+        padding: 5px 0;
+        /* Pequeño padding vertical */
+        width: 200px;
+        /* text-shadow: 1px 1px 3px rgba(0,0,0,0.3); Opcional */
+        right: 170px;
+        top: 0px;
+    }
+
+    .blog-subtitle {
+        display: block;
+        font-size: 1.0rem;
+        margin-top: 10px;
+        text-align: center;
+        position: absolute;
+        top: 80px;
+        width: 400px;
+        right: 80px;
+    }
+
+    .search-bar-container input[type="search"] {
+        position: relative;
+        /* Cambia a relativo para que ocupe el espacio correcto */
+        left: -350px;
+        /* Sin desplazamiento lateral */
+        top: -15px;
+    }
+
+    .search-bar-container .search-close-btn {
+        position: absolute;
+        right: 45px;
+        top: 35px;
+    }
+
+    .search-bar-container .search-submit-btn {
+        position: absolute;
+        right: 95px;
+        top: 35px
+    }
+}
+
+@media (max-width: 530px) {
+    #logo {
+        position: absolute;
+        left: -55px;
+        /* Ajusta el valor según lo que necesites */
+        top: 0px;
+        /* Ajusta el valor según lo que necesites */
+        transition: left 0.3s ease;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-main-title-text {
+        font-family: 'Pacifico', cursive;
+        /* TIPOGRAFÍA LLAMATIVA */
+        font-size: 1.8rem;
+        /* Tamaño grande */
+        font-weight: normal;
+        /* Pacifico ya es "bold" visualmente */
+        line-height: 1.2;
+        padding: 5px 0;
+        /* Pequeño padding vertical */
+        width: 300px;
+        /* text-shadow: 1px 1px 3px rgba(0,0,0,0.3); Opcional */
+        right: 90px;
+        top: 60px;
+    }
+
+    .blog-subtitle {
+        display: block;
+        font-size: 0.8rem;
+        margin-top: 10px;
+        text-align: center;
+        position: absolute;
+        top: 90px;
+        width: 400px;
+        right: 40px;
+    }
+
+    #logo {
+        position: absolute;
+        right: 100px;
+        left: 0;
+        /* Ajusta el valor según lo que necesites */
+        top: -10px;
+        /* Ajusta el valor según lo que necesites */
+        transition: left 0.3s ease;
+        height: 70px;
+    }
+
+    .search-bar-container input[type="search"] {
+        position: relative;
+        /* Cambia a relativo para que ocupe el espacio correcto */
+        left: -350px;
+        /* Sin desplazamiento lateral */
+        top: 15px;
+    }
+
+    .search-bar-container .search-close-btn {
+        position: absolute;
+        right: 45px;
+        top: 65px;
+    }
+
+    .search-bar-container .search-submit-btn {
+        position: absolute;
+        right: 95px;
+        top: 65px
+    }
+}
+
+@media (max-width: 400px) {
+    .blog-main-title-text {
+        font-family: 'Pacifico', cursive;
+        /* TIPOGRAFÍA LLAMATIVA */
+        font-size: 1.6rem;
+        /* Tamaño grande */
+        font-weight: normal;
+        /* Pacifico ya es "bold" visualmente */
+        line-height: 1.2;
+        padding: 5px 0;
+        /* Pequeño padding vertical */
+        width: 250px;
+        /* text-shadow: 1px 1px 3px rgba(0,0,0,0.3); Opcional */
+        right: 0px;
+        top: 0px;
+    }
+
+    .blog-subtitle {
+        display: block;
+        font-size: 0.7rem;
+        margin-top: 10px;
+        text-align: center;
+        position: absolute;
+        top: 25px;
+        width: 400px;
+        right: 25px;
+        width: 200px;
+    }
+
+    .header-controls {
+        display: flex;
+        align-items: center;
+        gap: px;
+        z-index: 108;
+        position: absolute;
+        right: -10px;
+        top: 50px;
+        /* Espacio entre nav y controles, si no están agrupados */
+    }
+
+    .search-bar-container input[type="search"] {
+        position: relative;
+        /* Cambia a relativo para que ocupe el espacio correcto */
+        left: -290px;
+        /* Sin desplazamiento lateral */
+        top: 2px;
+        padding: 3px 18px;
+    }
+
+    .search-bar-container .search-close-btn {
+        position: absolute;
+        right: -10px;
+        top: 52px;
+    }
+
+    .search-bar-container .search-submit-btn {
+        position: absolute;
+        right: 40px;
+        top: 52px
+    }
+
+    #logo {
+        position: absolute;
+        left: -60px;
+        /* Ajusta el valor según lo que necesites */
+        top: -10px;
+        /* Ajusta el valor según lo que necesites */
+        transition: left 0.3s ease;
+        height: 70px;
+    }
+
+    .search-toggle-btn svg {
+        width: 22px;
+        height: 20px;
+    }
+
+    #hamburger-button span {
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 1px;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        left: 50%;
+        margin-left: -14px;
+    }
+
+    app-header{
+        height: 120px;
+    }
+
+}
+
+#company{
+    position: relative;
+    top: 5px;
+    right: -20px
+}

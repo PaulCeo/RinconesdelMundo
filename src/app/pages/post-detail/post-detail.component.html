@@ -1,0 +1,46 @@
+<!-- Añadimos la clase container y content-area aquí para el layout con sidebar -->
+<div class="container content-area">
+
+  <!-- Estado de Carga -->
+  <div *ngIf="isLoading" class="loading-indicator main-content-area"> <!-- Clase para darle flex basis -->
+    Cargando artículo...
+  </div>
+
+  <!-- Post No Encontrado -->
+  <div *ngIf="postNotFound && !isLoading" class="not-found-message main-content-area">
+    <h2>Artículo no encontrado</h2>
+    <p>Lo sentimos, el artículo que buscas no existe o ha sido movido.</p>
+    <a routerLink="/" class="btn btn-primary">Volver al Inicio</a>
+  </div>
+
+  <!-- Contenido del Post -->
+  <article class="single-post main-content-area" *ngIf="post && !isLoading && !postNotFound">
+
+    <h1>{{ post.title }}</h1>
+
+    <p class="article-categories" *ngIf="post && (post.mainCategory || post.regionCategory)">
+    Categorías:
+    <ng-container *ngIf="post.mainCategory">
+        <a [routerLink]="['/categorias', post.mainCategory.type, post.mainCategory.slug]">{{ post.mainCategory.name }}</a>
+    </ng-container>
+    <ng-container *ngIf="post.mainCategory && post.regionCategory">, </ng-container>
+    <ng-container *ngIf="post.regionCategory">
+        <a [routerLink]="['/categorias', post.regionCategory.type, post.regionCategory.slug]">{{ post.regionCategory.name }}</a>
+    </ng-container>
+</p>
+
+    <img [src]="post.featuredImage" [alt]="post.title" class="featured-image">
+
+    <div [innerHTML]="post.body">
+      <!-- Contenido HTML del post -->
+    </div>
+
+    <!-- Enlace Volver Arriba -->
+    <p class="back-to-top-link"><a href="#" (click)="$event.preventDefault(); scrollToTop()">↑ Volver arriba</a></p>
+
+  </article>
+
+  <!-- Sidebar (Ahora como componente) -->
+  <app-sidebar *ngIf="post && !isLoading && !postNotFound"></app-sidebar>
+
+</div>

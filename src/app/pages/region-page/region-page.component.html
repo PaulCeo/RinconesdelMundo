@@ -1,0 +1,27 @@
+<!-- Contenido de src/app/pages/region-page/region-page.component.html -->
+<div class="container"> <!-- Solo .container, sin .content-area -->
+
+  <section class="destinations-list"> <!-- Esta sección ahora ocupa todo el ancho del container -->
+    <div *ngIf="isLoading" class="loading-indicator">Cargando destinos...</div>
+
+    <div *ngIf="regionNotFound && !isLoading" class="not-found-message">
+      <h2>Región no encontrada o sin destinos</h2>
+      <p>Lo sentimos, no pudimos encontrar información para la región solicitada.</p>
+      <a routerLink="/destinos" class="btn btn-primary">Volver a Regiones</a>
+    </div>
+
+    <div *ngIf="currentRegionName && destinationsInRegion.length > 0 && !isLoading">
+      <h2>Destinos en {{ currentRegionName }}</h2>
+      <div class="destination-grid">
+        <app-destination-card *ngFor="let destination of destinationsInRegion" [destinationData]="destination">
+        </app-destination-card>
+      </div>
+    </div>
+     <p class="back-to-top-link" *ngIf="currentRegionName && destinationsInRegion.length > 0 && !isLoading">
+      <a href="#page-top" (click)="$event.preventDefault(); scrollToTop()">↑ Volver arriba</a>
+    </p>
+  </section>
+
+  <!-- SIDEBAR ELIMINADA DE AQUÍ -->
+
+</div>

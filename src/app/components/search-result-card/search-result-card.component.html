@@ -1,0 +1,22 @@
+<!-- Contenido de src/app/components/search-result-card/search-result-card.component.html -->
+<article class="search-result-card" *ngIf="result"
+         (click)="onCardClick()"
+         [class.clickable-tip]="result.type === 'Consejo'">
+
+    <div class="result-type-badge" [ngClass]="{'post-badge': result.type === 'Post', 'tip-badge': result.type === 'Consejo'}">
+        {{ result.type }}
+    </div>
+
+    <h4>
+        <a *ngIf="result.type === 'Post'" [routerLink]="result.link">{{ result.title }}</a>
+        <span *ngIf="result.type === 'Consejo'">{{ result.title }}</span>
+    </h4>
+
+    <p class="context-snippet" [innerHTML]="highlightQuery(result.contextSnippet, result.originalQuery)"></p>
+
+    <a *ngIf="result.type === 'Post'" [routerLink]="result.link" class="read-more">Leer Post →</a>
+    <!-- MODIFICADO: Ahora es un botón que también puede disparar el modal -->
+    <a *ngIf="result.type === 'Consejo'" href="javascript:void(0);" (click)="onCardClick()" class="read-more-tip">
+        Ver Consejo →
+    </a>
+</article>
