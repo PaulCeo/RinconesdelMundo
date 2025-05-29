@@ -5,7 +5,6 @@ import { Title, Meta } from '@angular/platform-browser'; // Importar Title y Met
 import { Subscription } from 'rxjs'; // Para limpiar suscripción
 import { DestinationCardComponent } from '../../components/destination-card/destination-card.component';
 import { PostService, Post } from '../../services/post.service';
-import { SidebarComponent } from '../../components/layout/sidebar/sidebar.component';
 import { ViewportScroller } from '@angular/common';
 
 interface DestinationSummary {
@@ -15,7 +14,7 @@ interface DestinationSummary {
 @Component({
   selector: 'app-region-page',
   standalone: true,
-  imports: [CommonModule, RouterLink, SidebarComponent, DestinationCardComponent],
+  imports: [CommonModule, RouterLink, DestinationCardComponent],
   templateUrl: './region-page.component.html',
   styleUrls: ['./region-page.component.css']
 })
