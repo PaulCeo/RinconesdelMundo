@@ -643,8 +643,8 @@ export class TipsComponent implements OnInit {
     this.metaService.updateTag({ name: 'description', content: metaDesc });
     this.metaService.updateTag({ property: 'og:title', content: pageTitle });
     this.metaService.updateTag({ property: 'og:description', content: metaDesc });
-    this.metaService.updateTag({ property: 'og:url', content: `https://tu-dominio.com/consejos` });
-    this.metaService.updateTag({ property: 'og:image', content: `https://tu-dominio.com/assets/images/og-image-consejos.jpg` }); // Imagen general
+    this.metaService.updateTag({ property: 'og:url', content: `https://rinconesdelmundo.net/consejos` });
+    this.metaService.updateTag({ property: 'og:image', content: `https://rinconesdelmundo.net/images/assets/og-image-consejos.jpg` }); // Imagen general
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
 

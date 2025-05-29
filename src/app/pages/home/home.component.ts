@@ -43,8 +43,8 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     // Opcional: Open Graph Tags para redes sociales
     this.metaService.updateTag({ property: 'og:title', content: 'Un Rincon del Mundo - Explora el Mundo, Un Viaje a la Vez' });
     this.metaService.updateTag({ property: 'og:description', content: 'Inspiración y guías para tus aventuras por el mundo.' });
-    this.metaService.updateTag({ property: 'og:image', content: 'https://tu-dominio.com/assets/images/og-image-home.jpg' }); // URL absoluta a una imagen representativa
-    this.metaService.updateTag({ property: 'og:url', content: 'https://tu-dominio.com/' }); // URL canónica de la home
+    this.metaService.updateTag({ property: 'og:image', content: 'https://rinconesdelmundo.net/images/assets/og-image-home.jpg' }); // URL absoluta a una imagen representativa
+    this.metaService.updateTag({ property: 'og:url', content: 'https://rinconesdelmundo/' }); // URL canónica de la home
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
 

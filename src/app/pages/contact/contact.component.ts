@@ -35,8 +35,8 @@ export class ContactComponent implements OnInit { // Implementar OnInit
     this.metaService.updateTag({ name: 'description', content: metaDesc });
     this.metaService.updateTag({ property: 'og:title', content: pageTitle });
     this.metaService.updateTag({ property: 'og:description', content: metaDesc });
-    this.metaService.updateTag({ property: 'og:url', content: `https://tu-dominio.com/contacto` });
-    this.metaService.updateTag({ property: 'og:image', content: `https://tu-dominio.com/assets/images/og-image-contacto.jpg` }); // Imagen general
+    this.metaService.updateTag({ property: 'og:url', content: `https://rinconesdelmundo.net/contacto` });
+    this.metaService.updateTag({ property: 'og:image', content: `https://rinconesdelmundo.net/images/assets/og-image-contacto.jpg` }); // Imagen general
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
   }
 

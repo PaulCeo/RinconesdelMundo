@@ -72,9 +72,9 @@ export class CategoryPageComponent implements OnInit, OnDestroy {
           this.metaService.updateTag({ name: 'description', content: metaDesc });
           this.metaService.updateTag({ property: 'og:title', content: pageTitle });
           this.metaService.updateTag({ property: 'og:description', content: metaDesc });
-          this.metaService.updateTag({ property: 'og:url', content: `https://tu-dominio.com/categorias/${categoryType}/${categorySlug}` });
+          this.metaService.updateTag({ property: 'og:url', content: `https://rinconesdelmundo.net/categorias/${categoryType}/${categorySlug}` });
           // Para og:image, podrías tener una imagen genérica para categorías o intentar tomar la del primer post
-          const ogImage = fetchedPosts[0].featuredImage ? `https://tu-dominio.com${fetchedPosts[0].featuredImage}` : `https://tu-dominio.com/assets/images/og-image-default.jpg`;
+          const ogImage = fetchedPosts[0].featuredImage ? `https://rinconesdelmundo.net${fetchedPosts[0].featuredImage}` : `https://rinconesdelmundo.net/images/assets/og-image-default.jpg`;
           this.metaService.updateTag({ property: 'og:image', content: ogImage });
           this.metaService.updateTag({ property: 'og:type', content: 'website' }); // O 'article.section'
           // --------------------------

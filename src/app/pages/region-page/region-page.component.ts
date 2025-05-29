@@ -64,8 +64,8 @@ export class RegionPageComponent implements OnInit, OnDestroy { // Implementar O
           this.metaService.updateTag({ name: 'description', content: metaDesc });
           this.metaService.updateTag({ property: 'og:title', content: pageTitle });
           this.metaService.updateTag({ property: 'og:description', content: metaDesc });
-          this.metaService.updateTag({ property: 'og:url', content: `https://tu-dominio.com/destinos/${regionParamSlug}` });
-          this.metaService.updateTag({ property: 'og:image', content: `https://tu-dominio.com/assets/images/regions/${regionParamSlug}-og.jpg` }); // Imagen específica para la región
+          this.metaService.updateTag({ property: 'og:url', content: `https://rinconesdelmundo.net/destinos/${regionParamSlug}` });
+          this.metaService.updateTag({ property: 'og:image', content: `https://rinconesdelmundo.net/images/regions/${regionParamSlug}-og.jpg` }); // Imagen específica para la región
           // --------------------------
 
           this.destinationsInRegion = postsOfRegion.map(post => ({
