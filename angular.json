@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "mi-blog-angular:build:production"
+              "buildTarget": "RinconesDelMundo:production"
             },
             "development": {
-              "buildTarget": "mi-blog-angular:build:development"
+              "buildTarget": "RinconesDelMundo:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "mi-blog-angular:build"
+            "buildTarget": "RinconesDelMundo:build"
           }
         },
         "test": {
@@ -98,7 +98,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/mi-blog-angular/server",
+            "outputPath": "dist/RinconesDelMundo/server",
             "main": "src/server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -120,12 +120,12 @@
           "builder": "@angular-devkit/build-angular:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "mi-blog-angular:build:development",
-              "serverTarget": "mi-blog-angular:server:development"
+              "browserTarget": "RinconesDelMundo:build:development",
+              "serverTarget": "RinconesDelMundo:server:development"
             },
             "production": {
-              "browserTarget": "mi-blog-angular:build:production",
-              "serverTarget": "mi-blog-angular:server:production"
+              "browserTarget": "RinconesDelMundo:build:production",
+              "serverTarget": "RinconesDelMundo:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -139,12 +139,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "mi-blog-angular:build:production",
-              "serverTarget": "mi-blog-angular:server:production"
+              "browserTarget": "RinconesDelMundo:build:production",
+              "serverTarget": "RinconesDelMundo:server:production"
             },
             "development": {
-              "browserTarget": "mi-blog-angular:build:development",
-              "serverTarget": "mi-blog-angular:server:development"
+              "browserTarget": "RinconesDelMundo:build:development",
+              "serverTarget": "RinconesDelMundo:server:development"
             }
           },
           "defaultConfiguration": "production"
