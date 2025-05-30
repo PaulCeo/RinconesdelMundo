@@ -25,15 +25,15 @@ export class PostService {
       title: 'Japón: Fusión Fascinante de Tradición Milenaria y Modernidad Vibrante',
       mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' },
       regionCategory: { name: 'Asia', slug: 'asia', type: 'region' },
-      featuredImage: '/images/post-japon1.jpg',
-      cardImageUrl: '/images/post-japon.jpg',
+      featuredImage: 'images/post-japon1.jpg',
+      cardImageUrl: 'images/post-japon.jpg',
       body: `<h2>Un Archipiélago de Contrastes</h2>
             <p>Japón, el país del Sol Naciente, es un archipiélago que ofrece una experiencia de viaje única y profundamente cautivadora. Es una tierra donde templos sintoístas y budistas milenarios conviven con rascacielos futuristas y tecnología de vanguardia; donde la serenidad de los jardines zen contrasta con el bullicio ordenado de ciudades como Tokio; y donde las tradiciones ancestrales como la ceremonia del té, el arte del ikebana (arreglo floral) o el teatro kabuki siguen vivas en pleno siglo XXI.</p>
             <p>Desde la belleza efímera de los cerezos en flor (sakura) en primavera hasta los vibrantes colores del otoño (momiji), pasando por la eficiencia asombrosa de su sistema de transporte, la exquisita presentación de su gastronomía y la amabilidad y respeto innato de su gente (omotenashi), Japón es un destino que fascina, educa y enriquece el espíritu del viajero.</p>
 
             <h2>Templos Serenos y Neones Deslumbrantes</h2>
             <p>El atractivo de Japón reside en su increíble dualidad, perfectamente representada por sus dos ciudades más famosas. Por un lado, la antigua capital imperial, <strong>Kioto</strong>, te sumerge en la historia y la tradición con sus innumerables templos (el dorado Kinkaku-ji, el místico Fushimi Inari-taisha con sus miles de torii rojos, el sereno Ryoan-ji con su jardín de rocas), santuarios sintoístas, palacios, villas imperiales, cuidados jardines zen y el tradicional barrio de geishas de Gion, donde con suerte aún puedes ver alguna maiko o geiko caminando elegantemente. Por otro lado, <strong>Tokio</strong>, la vasta y dinámica capital actual, la metrópolis más grande del mundo, te deslumbra con sus cruces de peatones multitudinarios y caóticamente organizados (Shibuya Crossing), sus barrios de moda y tribus urbanas (Harajuku, Takeshita Street), su tecnología punta y tiendas de electrónica (Akihabara) y sus noches iluminadas por infinitas luces de neón (Shinjuku, Ginza).</p>
-            <img src="/images/post-japon2.jpg" alt="El famoso y multitudinario cruce de peatones de Shibuya en Tokio iluminado por la noche" class="inline-image">
+            <img src="images/post-japon2.jpg" alt="El famoso y multitudinario cruce de peatones de Shibuya en Tokio iluminado por la noche" class="inline-image">
 
             <h2>Experiencias Únicas e Inolvidables</h2>
             <p>Japón ofrece un abanico inmenso de actividades que van más allá de lo convencional:</p>
@@ -50,7 +50,7 @@ export class PostService {
 
             <h2>Del Sushi al Ramen: Un Universo Gastronómico Refinado</h2>
             <p>La cocina japonesa (Washoku), declarada Patrimonio Cultural Inmaterial por la UNESCO, es mucho más que sushi y ramen. Es increíblemente diversa, regional, estacional, saludable y se basa en la calidad de los ingredientes frescos y una presentación artística (moritsuke).</p>
-            <img src="/images/post-japon3.jpg" alt="Variedad de piezas de sushi nigiri y maki servidas elegantemente en una bandeja de madera" class="inline-image">
+            <img src="images/post-japon3.jpg" alt="Variedad de piezas de sushi nigiri y maki servidas elegantemente en una bandeja de madera" class="inline-image">
             <ul>
                 <li><strong>Sushi y Sashimi:</strong> Pescado y marisco crudo fresco de altísima calidad. El sashimi es el pescado solo, mientras que el sushi combina el pescado (u otros ingredientes como tortilla o verduras) con arroz avinagrado (shari). Prueba diferentes tipos de nigiri (bola de arroz con topping), maki (rollos) o temaki (conos). Visita el mercado de pescado de Tsukiji (exterior) o Toyosu (interior) en Tokio para la experiencia más fresca.</li>
                 <li><strong>Ramen:</strong> Adictiva y reconfortante sopa de fideos de trigo servida en un caldo muy sabroso y complejo (a base de cerdo -tonkotsu-, pollo, marisco o vegetales -shoyu, miso, shio-), con diferentes toppings como chashu (panceta de cerdo), ajitama (huevo marinado), alga nori, bambú (menma), etc. Cada región y local tiene su especialidad.</li>
@@ -113,8 +113,8 @@ export class PostService {
       title: 'Marruecos: Un Viaje Sensorial entre Zocos, Desiertos y Tradición',
       mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' },
       regionCategory: { name: 'Africa', slug: 'africa', type: 'region' }, // Sin tilde
-      featuredImage: '/images/post-marruecos1.jpg',
-      cardImageUrl: '/images/post-marruecos.jpg',
+      featuredImage: 'images/post-marruecos1.jpg',
+      cardImageUrl: 'images/post-marruecos.jpg',
       body: `
             <h2>Descubre la Magia de Marruecos</h2>
             <p>Marruecos es un país que despierta los sentidos. Ubicado en el norte de África, es una encrucijada de culturas árabe, bereber y europea, ofreciendo una diversidad asombrosa que va desde las cumbres nevadas del Atlas hasta las dunas doradas del Sahara y las costas bañadas por el Atlántico y el Mediterráneo. Es un destino que promete aventura, exotismo y una hospitalidad cálida y genuina.</p>
@@ -123,7 +123,7 @@ export class PostService {
             <h2>El Corazón Vibrante: Las Medinas y Zocos</h2>
             <p>Posiblemente, el atractivo más emblemático de Marruecos son sus <strong>medinas (ciudades antiguas amuralladas)</strong> y los <strong>zocos (mercados tradicionales)</strong> que albergan en su interior. Perderse por las estrechas callejuelas de la Medina de Fez el-Bali (Patrimonio de la Humanidad) o regatear en la famosa plaza Djemaa el-Fna de Marrakech es una experiencia esencial.</p>
             <p>Aquí encontrarás de todo: especias aromáticas, alfombras tejidas a mano, artículos de cuero, lámparas de intrincado diseño, babuchas de colores, cerámica pintada, chilabas y mucho más. El ambiente es un torbellino de sonidos (desde el llamado a la oración hasta el martilleo de los artesanos), olores (especias, cuero, perfumes, comida callejera) y colores que te transporta a otro tiempo.</p>
-             <img src="/images/post-marruecos2.jpg" alt="Dunas de arena dorada en el desierto del Sahara al amanecer" class="inline-image">
+             <img src="images/post-marruecos2.jpg" alt="Dunas de arena dorada en el desierto del Sahara al amanecer" class="inline-image">
 
 
             <h2>Actividades Imperdibles en Marruecos</h2>
@@ -140,7 +140,7 @@ export class PostService {
 
             <h2>Sabores de Marruecos: Un Festín para el Paladar</h2>
             <p>La gastronomía marroquí es una de las más ricas y variadas del mundo, fruto de la mezcla de influencias bereberes, árabes, andalusíes y mediterráneas. Se caracteriza por el uso magistral de especias como el comino, el cilantro, el azafrán, la cúrcuma, el jengibre y la canela, que crean platos llenos de aroma y sabor.</p>
-            <img src="/images/post-marruecos3.jpg" alt="Tajine tradicional servido en su característica vasija de barro" class="inline-image">
+            <img src="images/post-marruecos3.jpg" alt="Tajine tradicional servido en su característica vasija de barro" class="inline-image">
             <ul>
                 <li><strong>Tajín (Tagine):</strong> Quizás el plato más icónico. Es un guiso cocinado lentamente a fuego bajo en una vasija de barro cónica con tapa del mismo nombre. Los hay de cordero con ciruelas pasas y almendras, de pollo al limón con aceitunas, de kefta (albóndigas) con huevo, de verduras, de pescado... ¡infinitas variedades!</li>
                 <li><strong>Cuscús (Couscous):</strong> Sémola de trigo cocida al vapor, tradicionalmente servida los viernes (día sagrado musulmán) con un guiso de siete verduras y carne (pollo, cordero o ternera).</li>
@@ -206,14 +206,14 @@ export class PostService {
       title: 'Alpes Suizos: Majestad Alpina entre Cumbres y Lagos',
       mainCategory: { name: 'Montaña', slug: 'montana', type: 'atractivo' },
       regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
-      featuredImage: '/images/post-alpes1.jpg',
-      cardImageUrl: '/images/post-alpes.jpg',
+      featuredImage: 'images/post-alpes1.jpg',
+      cardImageUrl: 'images/post-alpes.jpg',
       body: `<p>Los Alpes Suizos son sinónimo de paisajes sobrecogedores. Esta cordillera, que atraviesa gran parte de Suiza, ofrece una combinación espectacular de picos nevados que superan los 4.000 metros, glaciares milenarios, valles de un verde intenso salpicados de lagos de aguas cristalinas y encantadores pueblos alpinos con casas de madera y balcones floridos.</p>
             <p>Es un destino ideal tanto para los amantes de la aventura y los deportes de montaña como para quienes buscan tranquilidad, aire puro y vistas que quitan el aliento. La infraestructura turística es excelente, con trenes panorámicos y teleféricos que facilitan el acceso a lugares remotos.</p>
 
             <h2>El Poder Magnético del Cervino (Matterhorn) y Jungfrau</h2>
             <p>Si bien hay innumerables picos majestuosos, el <strong>Cervino (Matterhorn)</strong>, con su icónica forma piramidal, es quizás la montaña más famosa y fotografiada de Suiza, dominando el horizonte desde Zermatt. Por otro lado, la región de <strong>Jungfrau</strong>, declarada Patrimonio de la Humanidad por la UNESCO, alberga cumbres como el Eiger, Mönch y Jungfrau, accesibles mediante el espectacular tren cremallera Jungfraubahn hasta el "Top of Europe", la estación de tren más alta de Europa.</p>
-            <img src="/images/post-alpes2.jpg" alt="El icónico pico del Cervino (Matterhorn) cerca de Zermatt" class="inline-image">
+            <img src="images/post-alpes2.jpg" alt="El icónico pico del Cervino (Matterhorn) cerca de Zermatt" class="inline-image">
 
             <h2>Actividades para Todos los Gustos</h2>
             <p>Los Alpes Suizos son un parque de atracciones natural:</p>
@@ -228,7 +228,7 @@ export class PostService {
 
             <h2>Sabores Alpinos: Queso, Chocolate y Más</h2>
             <p>La gastronomía suiza alpina es reconfortante y deliciosa, ideal para reponer energías después de un día en la montaña. Se basa en ingredientes locales y recetas tradicionales.</p>
-            <img src="/images/post-alpes3.jpg" alt="Olla de fondue de queso suizo con trozos de pan" class="inline-image">
+            <img src="images/post-alpes3.jpg" alt="Olla de fondue de queso suizo con trozos de pan" class="inline-image">
             <ul>
                 <li><strong>Fondue de Queso:</strong> El plato suizo por excelencia. Queso fundido (generalmente Gruyère y Vacherin Fribourgeois) en una olla comunitaria (caquelon) donde se mojan trozos de pan con un tenedor largo. ¡Cuidado no se te caiga el pan!</li>
                 <li><strong>Raclette:</strong> Otro clásico del queso. Se derrite medio queso grande (queso Raclette du Valais) y se raspa ("racler") sobre patatas cocidas, acompañadas de pepinillos y cebollitas en vinagre.</li>
@@ -269,8 +269,8 @@ export class PostService {
       title: 'Sol Eterno, Playas de Ensueño y Ritmo Tropical',
       mainCategory: { name: 'Playa', slug: 'playa', type: 'atractivo' },
       regionCategory: { name: 'America Central', slug: 'america-central', type: 'region' }, // SIN TILDE
-      featuredImage: '/images/post-caribe1.jpg',
-      cardImageUrl: '/images/post-caribe.jpg',
+      featuredImage: 'images/post-caribe1.jpg',
+      cardImageUrl: 'images/post-caribe.jpg',
       body: `            <h2>El Paraíso Tropical por Excelencia</h2>
             <p>El Caribe es una vasta región compuesta por miles de islas, islotes y costas bañadas por el mar Caribe, en América Central y del Sur. Es mundialmente famoso por sus playas de postal: kilómetros de arena blanca y fina, aguas cálidas de un intenso color turquesa y hileras de cocoteros meciéndose con la brisa marina. Es el destino perfecto para desconectar, relajarse bajo el sol y disfrutar de un ambiente alegre y despreocupado.</p>
             <p>Cada isla o país caribeño tiene su propia identidad, cultura y paisajes, desde las lujosas resorts de las Antillas Menores hasta la riqueza histórica de Cuba, la naturaleza exuberante de Costa Rica (en su costa Caribe), la herencia maya de la Riviera Maya mexicana o la diversidad cultural de Colombia y Panamá.</p>
@@ -278,7 +278,7 @@ export class PostService {
             <h2>Playas de Arena Blanca y Aguas Turquesas</h2>
             <p>Sin duda, el mayor atractivo del Caribe son sus <strong>innumerables playas paradisíacas</strong>. Es difícil elegir, pero algunas de las más famosas y espectaculares incluyen Grace Bay (Islas Turcas y Caicos), Seven Mile Beach (Gran Caimán), Varadero (Cuba), Eagle Beach (Aruba), Shoal Bay (Anguila), Playa Bávaro (República Dominicana), Crane Beach (Barbados) o las playas vírgenes de los archipiélagos de San Blas (Panamá) o Los Roques (Venezuela).</p>
             <p>Tumbarse en una hamaca bajo una palmera con un cóctel tropical, nadar en aguas cristalinas y tranquilas, o simplemente contemplar el atardecer sobre el mar pintando el cielo de naranjas y rosas son experiencias que definen el viaje al Caribe.</p>
-            <img src="/images/post-caribe2.jpg" alt="Persona haciendo snorkel en aguas cristalinas sobre un arrecife de coral con peces de colores" class="inline-image">
+            <img src="images/post-caribe2.jpg" alt="Persona haciendo snorkel en aguas cristalinas sobre un arrecife de coral con peces de colores" class="inline-image">
 
             <h2>Actividades Acuáticas y Más Allá</h2>
             <p>El mar Caribe es el protagonista indiscutible, ofreciendo un sinfín de posibilidades:</p>
@@ -293,7 +293,7 @@ export class PostService {
 
             <h2>Sabores Tropicales: Frescura y Fusión</h2>
             <p>La cocina caribeña es una fusión vibrante de influencias africanas, europeas (española, francesa, británica, holandesa) e indígenas, utilizando ingredientes frescos y locales como pescados, mariscos, frutas tropicales, tubérculos (yuca, ñame) y especias.</p>
-            <img src="/images/post-caribe3.jpg" alt="Plato de pescado fresco a la parrilla con arroz con coco, plátano frito y ensalada tropical" class="inline-image">
+            <img src="images/post-caribe3.jpg" alt="Plato de pescado fresco a la parrilla con arroz con coco, plátano frito y ensalada tropical" class="inline-image">
             <ul>
                 <li><strong>Pescado y Marisco Fresco:</strong> Protagonistas absolutos. Prueba el pescado a la parrilla (mero, pargo, dorado), ceviches (pescado marinado en lima), langosta caribeña (spiny lobster), camarones al ajillo o al coco, o el famoso "conch" (caracol marino) en ensaladas, buñuelos (fritters) o sopas.</li>
                 <li><strong>Frutas Tropicales:</strong> Mangos, papayas, piñas, cocos, guayabas, maracuyá (fruta de la pasión), guanábana... Disfrútalas frescas, en zumos naturales (batidos), helados o en postres como el flan de coco o el tembleque puertorriqueño.</li>
@@ -339,15 +339,15 @@ export class PostService {
       title: 'París: Romance, Arte y Luz en la Capital Francesa',
       mainCategory: { name: 'Ciudad', slug: 'ciudad', type: 'atractivo' },
       regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
-      featuredImage: '/images/post-paris1.jpg',
-      cardImageUrl: '/images/post-paris.jpg',
+      featuredImage: 'images/post-paris1.jpg',
+      cardImageUrl: 'images/post-paris.jpg',
       body: `            <h2>La Ciudad de la Luz Eterna</h2>
             <p>París, la capital de Francia, es una de las ciudades más visitadas y soñadas del mundo. Conocida como la "Ciudad de la Luz" (Ville Lumière) y la "Ciudad del Amor", París cautiva con su elegante arquitectura haussmaniana, sus bulevares arbolados, sus monumentos mundialmente famosos, sus museos repletos de obras maestras, sus encantadores cafés con terrazas y su atmósfera inconfundiblemente romántica y sofisticada. Es un epicentro cultural, artístico, gastronómico y de la moda que nunca deja de sorprender.</p>
             <p>Pasear sin rumbo por las orillas del Sena, perderse por los barrios bohemios de Montmartre o Le Marais, disfrutar de un picnic con queso y vino en los Jardines de Luxemburgo, admirar las gárgolas y vidrieras de Notre Dame (incluso durante su admirable reconstrucción) o simplemente sentarse en un café a observar a la gente pasar son solo algunas pinceladas de la experiencia parisina.</p>
 
             <h2>Iconos Inconfundibles: Torre Eiffel y el Louvre</h2>
             <p>La <strong>Torre Eiffel</strong> es el símbolo indiscutible de París y de Francia. Diseñada por Gustave Eiffel para la Exposición Universal de 1889, esta estructura de hierro forjado de 330 metros de altura ofrece vistas panorámicas espectaculares de la ciudad desde sus diferentes niveles. Subir (en ascensor o por escaleras para los más valientes) es una experiencia casi obligatoria, y verla iluminarse y parpadear cada hora en punto por la noche es un momento mágico e inolvidable. Igualmente imprescindible es el <strong>Museo del Louvre</strong>, uno de los museos de arte más grandes, importantes y visitados del mundo, ubicado en un antiguo palacio real. Hogar de tesoros universales como la Mona Lisa de Leonardo da Vinci, la Venus de Milo y la Victoria alada de Samotracia, requiere dedicarle tiempo suficiente (¡varios días si eres un apasionado del arte!) para explorar sus vastas colecciones que abarcan desde antigüedades hasta arte europeo del siglo XIX.</p>
-            <img src="/images/post-paris2.jpg" alt="La pirámide de cristal del Museo del Louvre con el edificio histórico detrás" class="inline-image">
+            <img src="images/post-paris2.jpg" alt="La pirámide de cristal del Museo del Louvre con el edificio histórico detrás" class="inline-image">
 
             <h2>Un Sinfín de Actividades y Experiencias</h2>
             <p>París ofrece una cantidad abrumadora de cosas que ver y hacer, adaptándose a todos los intereses:</p>
@@ -363,7 +363,7 @@ export class PostService {
 
             <h2>Delicias Parisinas: Boulangeries, Bistrós y Patisserie</h2>
             <p>La gastronomía parisina es un pilar fundamental de la cultura francesa y una experiencia en sí misma. Desde la sencillez de una baguette recién hecha hasta la sofisticación de la alta cocina con estrellas Michelin.</p>
-            <img src="/images/post-paris3.jpg" alt="Selección de coloridos y delicados pasteles franceses (patisserie)" class="inline-image">
+            <img src="images/post-paris3.jpg" alt="Selección de coloridos y delicados pasteles franceses (patisserie)" class="inline-image">
             <ul>
                 <li><strong>Boulangerie (Panadería):</strong> Imprescindible empezar el día con un auténtico croissant de mantequilla, un pain au chocolat, una baguette tradition (pide la "tradition" para asegurar calidad artesanal) o un pain aux raisins.</li>
                 <li><strong>Patisserie (Pastelería):</strong> Un paraíso dulce irresistible. Prueba los famosos macarons (de Ladurée, Pierre Hermé o pastelerías locales), éclairs (rellenos de crema), mille-feuille (milhojas), tartas Tatin (manzana caramelizada), crême brûlée (crema quemada) o una simple pero deliciosa tarta de limón merengada.</li>
@@ -426,8 +426,8 @@ export class PostService {
       title: 'Perú: Del Corazón del Imperio Inca a la Exuberancia Amazónica',
       mainCategory: { name: 'Historia', slug: 'historia', type: 'atractivo' },
       regionCategory: { name: 'America del Sur', slug: 'america-del-sur', type: 'region' }, // SIN TILDE
-      featuredImage: '/images/post-peru1.jpg',
-      cardImageUrl: '/images/post-peru.jpg',
+      featuredImage: 'images/post-peru1.jpg',
+      cardImageUrl: 'images/post-peru.jpg',
       body: `            <h2>Un País de Diversidad Deslumbrante</h2>
             <p>Perú es un país sudamericano de una riqueza histórica, cultural y natural extraordinaria. Cuna de antiguas civilizaciones como la Inca, ofrece un viaje fascinante a través del tiempo, desde enigmáticas ruinas arqueológicas hasta vibrantes ciudades coloniales. Pero Perú es mucho más que historia: sus paisajes abarcan la árida costa del Pacífico, las imponentes cumbres de la Cordillera de los Andes y la vasta y biodiversa selva amazónica.</p>
             <p>Es un destino que satisface a todo tipo de viajeros: los apasionados por la historia y la arqueología, los amantes del trekking y la aventura, los interesados en culturas vivas y coloridas, y los gourmets deseosos de probar una de las gastronomías más reconocidas y variadas del mundo.</p>
@@ -435,7 +435,7 @@ export class PostService {
             <h2>Machu Picchu: La Joya Inca Perdida en los Andes</h2>
             <p>El atractivo principal y más icónico de Perú es, sin lugar a dudas, <strong>Machu Picchu</strong>. Esta ciudadela inca del siglo XV, ubicada en lo alto de una montaña a 2.430 metros sobre el nivel del mar, en medio de un paisaje espectacular de picos verdes y el río Urubamba serpenteando abajo, es una de las Nuevas Siete Maravillas del Mundo Moderno y Patrimonio de la Humanidad por la UNESCO. Explorar sus templos, terrazas agrícolas y recintos residenciales, mientras se admiran las vistas y se siente la energía del lugar, es una experiencia verdaderamente inolvidable.</p>
             <p>Llegar a Machu Picchu puede ser una aventura en sí misma, ya sea a través del famoso Camino Inca (trekking de varios días), en tren desde Ollantaytambo o Cusco, o mediante rutas alternativas.</p>
-            <img src="/images/post-peru2.jpg" alt="Llamas pastando con las terrazas de Machu Picchu al fondo" class="inline-image">
+            <img src="images/post-peru2.jpg" alt="Llamas pastando con las terrazas de Machu Picchu al fondo" class="inline-image">
 
             <h2>Más Allá de Machu Picchu: Aventura y Cultura</h2>
             <p>Perú ofrece un sinfín de experiencias fascinantes:</p>
@@ -451,7 +451,7 @@ export class PostService {
 
             <h2>Gastronomía Peruana: Reconocida Mundialmente</h2>
             <p>La cocina peruana ha ganado fama internacional por su diversidad, fusión de influencias (indígena, española, africana, china, japonesa) y uso de ingredientes únicos. Lima es considerada una de las capitales gastronómicas del mundo.</p>
-            <img src="/images/post-peru3.jpg" alt="Plato de ceviche peruano fresco con pescado, lima, cebolla roja y ají" class="inline-image">
+            <img src="images/post-peru3.jpg" alt="Plato de ceviche peruano fresco con pescado, lima, cebolla roja y ají" class="inline-image">
             <ul>
                 <li><strong>Ceviche:</strong> El plato bandera. Pescado crudo fresco marinado en jugo de lima ("leche de tigre"), con ají (chile), cebolla roja, cilantro, acompañado de camote (batata dulce) y choclo (maíz grande).</li>
                 <li><strong>Lomo Saltado:</strong> Influencia chifa (chino-peruana). Trozos de lomo de res salteados al wok con cebolla, tomate, ají amarillo, salsa de soja, servido con patatas fritas y arroz blanco.</li>
@@ -498,12 +498,12 @@ export class PostService {
       title: 'Costa Rica: Pura Vida entre Selvas Exuberantes, Volcanes Activos y Playas Salvajes',
       mainCategory: { name: 'Naturaleza', slug: 'naturaleza', type: 'atractivo' },
       regionCategory: { name: 'America Central', slug: 'america-central', type: 'region' }, // SIN TILDE
-      featuredImage: '/images/post-costarica1.jpg',
-      cardImageUrl: '/images/post-costarica.jpg',
+      featuredImage: 'images/post-costarica1.jpg',
+      cardImageUrl: 'images/post-costarica.jpg',
       body: `<h2>Volcanes Majestuosos y Bosques Nubosos</h2>
             <p>El país forma parte del Cinturón de Fuego del Pacífico y cuenta con numerosos volcanes, varios de ellos activos. El <strong>Volcán Arenal</strong>, con su cono casi perfecto, fue durante décadas uno de los más activos del mundo y, aunque ahora está más tranquilo, sigue siendo un icono imponente rodeado de aguas termales y actividades de aventura. Otros volcanes populares son el <strong>Poás</strong> (con su enorme cráter ácido), el <strong>Irazú</strong> (el más alto) y el <strong>Rincón de la Vieja</strong> (con fumarolas y pailas de barro hirviendo).</p>
             <p>Los <strong>bosques nubosos</strong> de Monteverde y Santa Elena son otro ecosistema fascinante, caracterizados por la niebla constante, una vegetación exuberante de musgos y epífitas, y una avifauna increíble, incluyendo el esquivo Quetzal resplandeciente.</p>
-            <img src="/images/post-costarica2.jpg" alt="Puente colgante atravesando el dosel del bosque nuboso en Monteverde" class="inline-image">
+            <img src="images/post-costarica2.jpg" alt="Puente colgante atravesando el dosel del bosque nuboso en Monteverde" class="inline-image">
 
             <h2>Aventura y Vida Salvaje por Doquier</h2>
             <p>Costa Rica es un paraíso para la aventura y la observación de fauna:</p>
@@ -519,7 +519,7 @@ export class PostService {
 
             <h2>Gallo Pinto y Casado: Sabores Ticos Sencillos y Sabrosos</h2>
             <p>La cocina costarricense es sencilla, fresca y nutritiva, basada en arroz, frijoles, verduras, frutas y carnes.</p>
-            <img src="/images/post-costarica3.jpg" alt="Plato típico costarricense 'Casado' con arroz, frijoles, plátano maduro, ensalada y carne" class="inline-image">
+            <img src="images/post-costarica3.jpg" alt="Plato típico costarricense 'Casado' con arroz, frijoles, plátano maduro, ensalada y carne" class="inline-image">
             <ul>
                 <li><strong>Gallo Pinto:</strong> El desayuno nacional por excelencia. Arroz y frijoles negros (o rojos) refritos juntos, a menudo con salsa Lizano (un condimento local ligeramente dulce y especiado), acompañados de huevo, plátano maduro frito, tortillas y natilla (similar a la crema agria).</li>
                 <li><strong>Casado:</strong> El almuerzo típico y omnipresente. Un plato combinado que incluye arroz blanco, frijoles negros, ensalada, plátano maduro frito y una porción de proteína (carne de res en salsa, pollo a la plancha, pescado frito, chuleta de cerdo o a veces una opción vegetariana como torta de huevo o queso frito). Su nombre viene de que "casa" todos los elementos básicos.</li>
@@ -569,8 +569,8 @@ export class PostService {
       title: 'Un Viaje Fascinante a los Misterios Faraónicos a Orillas del Nilo',
       mainCategory: { name: 'Historia', slug: 'historia', type: 'atractivo' },
       regionCategory: { name: 'Africa', slug: 'africa', type: 'region' }, // SIN TILDE
-      featuredImage: '/images/post-egipto1.jpg',
-      cardImageUrl: '/images/post-egipto.jpg',
+      featuredImage: 'images/post-egipto1.jpg',
+      cardImageUrl: 'images/post-egipto.jpg',
       body: `            <h2>La Tierra de los Faraones y el Don del Nilo</h2>
             <p>Egipto, ubicado en el noreste de África y cruzado por el legendario río Nilo, es un destino que evoca imágenes de faraones, pirámides colosales, templos ancestrales y tesoros ocultos. Cuna de una de las civilizaciones más antiguas y fascinantes de la historia, un viaje a Egipto es una inmersión en miles de años de historia, arte monumental y misterios arqueológicos que siguen cautivando al mundo.</p>
             <p>Desde el bullicio caótico y vibrante de El Cairo hasta la serenidad de un crucero por el Nilo y la belleza submarina del Mar Rojo, Egipto ofrece una experiencia intensa y diversa, marcada por la grandiosidad de su pasado y la vitalidad de su presente.</p>
@@ -585,7 +585,7 @@ export class PostService {
                 <li><strong>Templos de Edfu y Kom Ombo:</strong> Paradas habituales en los cruceros por el Nilo. El Templo de Horus en Edfu es uno de los mejor conservados de Egipto. El Templo de Kom Ombo está dedicado a dos dioses: Sobek (dios cocodrilo) y Haroeris (Horus el Viejo).</li>
                 <li><strong>Asuán y el Templo de Philae:</strong> Asuán, más relajada que Luxor, es el punto de partida (o final) de muchos cruceros. Cerca se encuentra el hermoso Templo de Isis en la isla de Philae (también trasladado) y la Presa Alta de Asuán.</li>
             </ul>
-            <img src="/images/post-egipto2.jpg" alt="Interior del Templo de Karnak en Luxor con sus enormes columnas jeroglíficas" class="inline-image">
+            <img src="images/post-egipto2.jpg" alt="Interior del Templo de Karnak en Luxor con sus enormes columnas jeroglíficas" class="inline-image">
 
             <h2>Navegando el Nilo y Más Allá</h2>
             <p>Además de explorar ruinas, Egipto ofrece otras experiencias:</p>
@@ -599,7 +599,7 @@ export class PostService {
 
             <h2>Sabores Egipcios: Del Koshari al Ful Medames</h2>
             <p>La cocina egipcia es sabrosa, contundente y económica, con influencias de Oriente Medio y el Mediterráneo. Se basa en legumbres, verduras, arroz y pan.</p>
-            <img src="/images/post-egipto3.jpg" alt="Plato de Koshari egipcio, una mezcla de arroz, lentejas, pasta y garbanzos con salsa de tomate y cebolla frita" class="inline-image">
+            <img src="images/post-egipto3.jpg" alt="Plato de Koshari egipcio, una mezcla de arroz, lentejas, pasta y garbanzos con salsa de tomate y cebolla frita" class="inline-image">
             <ul>
                 <li><strong>Koshari:</strong> Considerado el plato nacional no oficial. Una mezcla vegetariana y energética de arroz, lentejas (negras o marrones), macarrones, fideos finos y garbanzos, cubierta con una salsa de tomate especiada (a menudo con vinagre y ajo) y coronada con cebolla frita crujiente. ¡Imprescindible probarlo!</li>
                 <li><strong>Ful Medames:</strong> Otro pilar básico, especialmente para el desayuno. Habas cocidas lentamente y machacadas, aliñadas con aceite de oliva, limón, ajo y comino, servidas con pan de pita (aish baladi).</li>
@@ -652,8 +652,8 @@ export class PostService {
       title: 'Nueva York: La Energía Inagotable de la Gran Manzana que Nunca Duerme',
       mainCategory: { name: 'Ciudad', slug: 'ciudad', type: 'atractivo' },
       regionCategory: { name: 'America del Norte', slug: 'america-del-norte', type: 'region' }, // SIN TILDE
-      featuredImage: '/images/post-nuevayork1.jpg',
-      cardImageUrl: '/images/post-nuevayork.jpg',
+      featuredImage: 'images/post-nuevayork1.jpg',
+      cardImageUrl: 'images/post-nuevayork.jpg',
       body: `            <h2>El Epicentro del Mundo Moderno</h2>
             <p>Nueva York, a menudo llamada simplemente "la ciudad" o la "Gran Manzana", es mucho más que la ciudad más poblada de Estados Unidos; es un vibrante epicentro global de finanzas, cultura, moda, arte, gastronomía y diplomacia. Situada en la costa este, esta metrópolis icónica, compuesta por cinco distritos (Manhattan, Brooklyn, Queens, Bronx y Staten Island), ejerce una fascinación universal con su energía inagotable, su diversidad cultural y su horizonte de rascacielos reconocible al instante.</p>
             <p>Desde las luces brillantes de Times Square hasta la tranquilidad de Central Park, pasando por los museos de clase mundial, los barrios con personalidad propia y la Estatua de la Libertad dando la bienvenida, Nueva York ofrece una experiencia intensa, diversa y en constante cambio que deja una marca imborrable en cada visitante.</p>
@@ -668,7 +668,7 @@ export class PostService {
                 <li><strong>Puente de Brooklyn:</strong> Cruza a pie o en bicicleta este icónico puente neogótico para disfrutar de vistas impresionantes del bajo Manhattan y tomar fotos memorables.</li>
                 <li><strong>Memorial y Museo del 11S:</strong> Un espacio solemne y conmovedor en el lugar donde se erigían las Torres Gemelas, dedicado a recordar a las víctimas de los ataques de 2001.</li>
             </ul>
-            <img src="/images/post-nuevayork2.jpg" alt="Vista del Puente de Brooklyn con el horizonte del bajo Manhattan al fondo" class="inline-image">
+            <img src="images/post-nuevayork2.jpg" alt="Vista del Puente de Brooklyn con el horizonte del bajo Manhattan al fondo" class="inline-image">
 
             <h2>Cultura, Arte y Barrios con Carácter</h2>
             <p>La oferta cultural y la diversidad de barrios son infinitas:</p>
@@ -682,7 +682,7 @@ export class PostService {
 
             <h2>Un Crisol Gastronómico: Del Hot Dog al Fine Dining</h2>
             <p>Nueva York es un paraíso para los amantes de la comida, con opciones para todos los gustos y presupuestos, reflejando su increíble diversidad cultural.</p>
-            <img src="/images/post-nuevayork3.jpg" alt="Puesto callejero vendiendo hot dogs y pretzels en una calle de Nueva York" class="inline-image">
+            <img src="images/post-nuevayork3.jpg" alt="Puesto callejero vendiendo hot dogs y pretzels en una calle de Nueva York" class="inline-image">
             <ul>
                 <li><strong>Comida Callejera (Street Food):</strong> Icónicos carritos de hot dogs y pretzels, food trucks con cocinas de todo el mundo (halal, tacos, etc.), especialmente populares a la hora del almuerzo en Midtown y el Financial District.</li>
                 <li><strong>Pizza Neoyorquina:</strong> Famosa por sus porciones grandes y finas ("slices") que se doblan para comer. Imprescindible probar una en pizzerías clásicas o por porción ("dollar slice").</li>
@@ -752,8 +752,8 @@ export class PostService {
       title: 'Roma: Un Museo al Aire Libre de Historia Eterna, Arte Sublime y Sabor Auténtico',
       mainCategory: { name: 'Historia', slug: 'historia', type: 'atractivo' }, // O 'Ciudad'
       regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
-      featuredImage: '/images/post-roma1.jpg',
-      cardImageUrl: '/images/post-roma.jpg',
+      featuredImage: 'images/post-roma1.jpg',
+      cardImageUrl: 'images/post-roma.jpg',
       body: `           <h2>La Ciudad Eterna: Caput Mundi</h2>
             <p>Roma, la capital de Italia, es un destino que trasciende el tiempo. Conocida como la "Ciudad Eterna", fue el centro de uno de los imperios más vastos de la historia y la cuna de la civilización occidental. Caminar por Roma es como pasear por un gigantesco museo al aire libre, donde ruinas milenarias del Imperio Romano conviven con palacios renacentistas, iglesias barrocas espectaculares y fuentes monumentales, todo ello impregnado de un ambiente vibrante y apasionado.</p>
             <p>Desde la grandiosidad del Coliseo hasta la espiritualidad de la Ciudad del Vaticano, pasando por el encanto bohemio del Trastevere y la excelencia de su gastronomía, Roma ofrece una experiencia rica, intensa y profundamente memorable que invita a volver una y otra vez.</p>
@@ -769,7 +769,7 @@ export class PostService {
                 <li><strong>La Piazza Navona:</strong> Una elegante plaza barroca que ocupa el lugar de un antiguo estadio romano, presidida por la Fuente de los Cuatro Ríos de Bernini.</li>
                 <li><strong>La Plaza de España (Piazza di Spagna):</strong> Famosa por su monumental escalinata que sube hasta la iglesia de Trinità dei Monti.</li>
             </ul>
-            <img src="/images/post-roma2.jpg" alt="Vista interior de la cúpula del Panteón de Agripa con el óculo central" class="inline-image">
+            <img src="images/post-roma2.jpg" alt="Vista interior de la cúpula del Panteón de Agripa con el óculo central" class="inline-image">
 
             <h2>Paseos, Plazas y Experiencias Romanas</h2>
             <p>Disfruta del ambiente único de la ciudad:</p>
@@ -784,7 +784,7 @@ export class PostService {
 
             <h2>La Deliciosa Cocina Romana: Pasta, Pizza y Más</h2>
             <p>La gastronomía romana es sabrosa, generosa y basada en ingredientes sencillos pero de calidad. Se centra en la pasta, las verduras de temporada y el "quinto quarto" (casquería, herencia de la cocina popular).</p>
-            <img src="/images/post-roma3.jpg" alt="Plato de pasta a la carbonara, clásico de la cocina romana" class="inline-image">
+            <img src="images/post-roma3.jpg" alt="Plato de pasta a la carbonara, clásico de la cocina romana" class="inline-image">
             <ul>
                 <li><strong>Pasta alla Carbonara:</strong> El plato romano por excelencia. Pasta (tradicionalmente spaghetti o rigatoni) con guanciale (papada de cerdo curada), yema de huevo, queso Pecorino Romano y pimienta negra. ¡Sin nata!</li>
                 <li><strong>Pasta all'Amatriciana:</strong> Otra salsa clásica para pasta (bucatini o spaghetti) con guanciale, tomate, queso Pecorino Romano y guindilla.</li>
@@ -849,8 +849,8 @@ export class PostService {
       title: 'Islas Griegas: Encanto Mediterráneo entre Cúpulas Azules, Playas Idílicas y Mitos Ancestrales',
       mainCategory: { name: 'Playa', slug: 'playa', type: 'atractivo' }, // O 'Isla'
       regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
-      featuredImage: '/images/post-grecia1.jpg',
-      cardImageUrl: '/images/post-grecia.jpg',
+      featuredImage: 'images/post-grecia1.jpg',
+      cardImageUrl: 'images/post-grecia.jpg',
       body: `            <h2>Un Mosaico de Islas Bañadas por el Sol</h2>
             <p>Las Islas Griegas, dispersas por los mares Egeo y Jónico, son uno de los destinos más soñados y diversos de Europa. Con miles de islas e islotes, cada archipiélago ofrece una personalidad única, pero comparten elementos comunes: una luz mediterránea deslumbrante, aguas de un azul intenso y cristalino, pueblos encantadores de casas encaladas, una historia milenaria palpable en ruinas antiguas y una gastronomía fresca y deliciosa.</p>
             <p>Desde la sofisticación cosmopolita de Mykonos y la belleza volcánica de Santorini en las Cícladas, hasta la exuberante vegetación de las Islas Jónicas, la vasta historia de Creta o las playas tranquilas del Dodecaneso, hay una isla griega para cada tipo de viajero, ya sea que busques relax, fiesta, cultura, aventura o paisajes espectaculares.</p>
@@ -862,7 +862,7 @@ export class PostService {
                 <li><strong>Mykonos:</strong> Famosa por su vibrante vida nocturna, playas animadas (Paradise, Super Paradise), ambiente cosmopolita y glamuroso, y su encantadora capital (Chora) con sus molinos de viento icónicos y el barrio de la Pequeña Venecia.</li>
                 <li><strong>Otras Cícladas:</strong> Para una experiencia más tranquila y auténtica, considera Naxos (playas excelentes, interior montañoso, ruinas), Paros (pueblos bonitos como Naoussa, playas), Milos (paisajes volcánicos únicos, playas espectaculares como Sarakiniko) o Folegandros (belleza salvaje y vistas impresionantes).</li>
             </ul>
-            <img src="/images/post-grecia2.jpg" alt="Molinos de viento en la colina de Mykonos Chora al atardecer" class="inline-image">
+            <img src="images/post-grecia2.jpg" alt="Molinos de viento en la colina de Mykonos Chora al atardecer" class="inline-image">
 
             <h2>Diversidad Griega: Otros Archipiélagos</h2>
             <p>Más allá de las Cícladas, la diversidad es enorme:</p>
@@ -876,7 +876,7 @@ export class PostService {
 
             <h2>Sabores Mediterráneos: Aceite de Oliva, Feta y Ouzo</h2>
             <p>La cocina griega es la quintaesencia de la dieta mediterránea: saludable, fresca y llena de sabor, basada en aceite de oliva virgen extra, verduras frescas, legumbres, pescado, queso feta y hierbas aromáticas como el orégano y la menta.</p>
-            <img src="/images/post-grecia3.jpg" alt="Ensalada griega tradicional (Horiatiki) con tomate, pepino, pimiento, cebolla, aceitunas Kalamata y queso feta" class="inline-image">
+            <img src="images/post-grecia3.jpg" alt="Ensalada griega tradicional (Horiatiki) con tomate, pepino, pimiento, cebolla, aceitunas Kalamata y queso feta" class="inline-image">
             <ul>
                 <li><strong>Horiatiki Salata (Ensalada Griega):</strong> La ensalada clásica con tomate, pepino, pimiento verde, cebolla roja, aceitunas Kalamata y un buen trozo de queso feta, aliñada simplemente con aceite de oliva y orégano.</li>
                 <li><strong>Moussaka:</strong> Un plato horneado en capas de berenjena, carne picada (generalmente cordero o ternera) con tomate y especias, cubierto con una bechamel gratinada. Contundente y delicioso.</li>
@@ -939,8 +939,8 @@ export class PostService {
       title: 'Tailandia: El País de las Sonrisas, Templos Dorados y Playas Paradisíacas',
       mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' }, // O 'Playa'
       regionCategory: { name: 'Asia', slug: 'asia', type: 'region' },
-      featuredImage: '/images/post-tailandia1.jpg',
-      cardImageUrl: '/images/post-tailandia.jpg',
+      featuredImage: 'images/post-tailandia1.jpg',
+      cardImageUrl: 'images/post-tailandia.jpg',
       body: `            <h2>Un Reino de Contrastes Fascinantes</h2>
             <p>Tailandia, conocido como el "País de las Sonrisas" por la amabilidad de su gente, es uno de los destinos más populares y fascinantes del Sudeste Asiático. Ofrece una increíble mezcla de bulliciosas ciudades modernas, ruinas de antiguas capitales, templos budistas dorados y ornamentados, paisajes montañosos en el norte con tribus étnicas, y espectaculares playas e islas tropicales de aguas turquesas en el sur.</p>
             <p>Es un país que atrae a todo tipo de viajeros gracias a su rica cultura, su deliciosa y variada gastronomía, sus precios asequibles (aunque han subido), su buena infraestructura turística y la enorme diversidad de experiencias que ofrece, desde el trekking por la selva hasta el buceo en arrecifes de coral o la meditación en un templo.</p>
@@ -956,7 +956,7 @@ export class PostService {
                     </ul>
                 </li>
             </ul>
-            <img src="/images/post-tailandia2.jpg" alt="Barcas tradicionales 'longtail' en una playa tailandesa con formaciones kársticas" class="inline-image">
+            <img src="images/post-tailandia2.jpg" alt="Barcas tradicionales 'longtail' en una playa tailandesa con formaciones kársticas" class="inline-image">
 
             <h2>Experiencias Tailandesas Imperdibles</h2>
             <p>Más allá de templos y playas:</p>
@@ -971,7 +971,7 @@ export class PostService {
 
             <h2>Explosión de Sabores: La Cocina Thai</h2>
             <p>La gastronomía tailandesa es una de las más populares y apreciadas del mundo, conocida por su equilibrio entre sabores dulce, salado, ácido y picante, y el uso de hierbas frescas como la hierba limón, galanga, hojas de lima kaffir, cilantro y albahaca tailandesa.</p>
-            <img src="/images/post-tailandia3.jpg" alt="Plato de Pad Thai, fideos de arroz salteados con gambas, tofu, brotes de soja y cacahuetes" class="inline-image">
+            <img src="images/post-tailandia3.jpg" alt="Plato de Pad Thai, fideos de arroz salteados con gambas, tofu, brotes de soja y cacahuetes" class="inline-image">
             <ul>
                 <li><strong>Pad Thai:</strong> Probablemente el plato tailandés más famoso internacionalmente. Fideos de arroz finos salteados al wok con huevo, tofu o gambas, brotes de soja, cebolleta china y una salsa agridulce a base de tamarindo, pescado y azúcar de palma, servido con cacahuetes picados, lima y chile en polvo aparte.</li>
                 <li><strong>Curry Tailandés (Gaeng):</strong> Una gran variedad de curries hechos con pastas de curry caseras y leche de coco. Los más comunes son el Curry Verde (Gaeng Keow Wan - picante), Curry Rojo (Gaeng Phet - picante moderado) y Curry Massaman (influencia musulmana, más suave y especiado, con patata y cacahuetes). Se sirven con arroz blanco jazmín.</li>
@@ -1041,8 +1041,8 @@ export class PostService {
       title: 'Australia: Aventura "Down Under" entre Ciudades Cosmopolitas, el Outback y la Gran Barrera de Coralr',
       mainCategory: { name: 'Naturaleza', slug: 'naturaleza', type: 'atractivo' },
       regionCategory: { name: 'Oceania', slug: 'oceania', type: 'region' }, // SIN TILDE
-      featuredImage: '/images/post-australia1.jpg',
-      cardImageUrl: '/images/post-australia.jpg',
+      featuredImage: 'images/post-australia1.jpg',
+      cardImageUrl: 'images/post-australia.jpg',
       body: `            <h2>Un Continente de Diversidad y Extremos</h2>
             <p>Australia, el sexto país más grande del mundo y un continente en sí mismo, es una tierra de contrastes espectaculares y experiencias únicas. Conocida por su estilo de vida relajado al aire libre, sus ciudades modernas y multiculturales, su fauna endémica (canguros, koalas, wombats), y sus paisajes naturales vastos y diversos, que van desde playas doradas y arrecifes de coral hasta desiertos rojizos (el Outback) y selvas tropicales.</p>
             <p>Viajar a Australia requiere tiempo debido a las enormes distancias, pero recompensa con una aventura inolvidable, ya sea explorando la vibrante vida urbana de Sídney o Melbourne, buceando en la Gran Barrera de Coral, recorriendo la Great Ocean Road, descubriendo la cultura aborigen en Uluru o adentrándose en la naturaleza salvaje de Tasmania o el Territorio del Norte.</p>
@@ -1054,7 +1054,7 @@ export class PostService {
                 <li><strong>Uluru (Ayers Rock):</strong> En el corazón del desierto rojo del Outback (el "Centro Rojo"), este gigantesco monolito de arenisca es un lugar sagrado para los aborígenes Anangu. Contemplar el cambio de color de Uluru al amanecer y al atardecer es una experiencia mágica. Cerca se encuentra también Kata Tjuta (Las Olgas), otro conjunto de formaciones rocosas impresionantes.</li>
                 <li><strong>La Gran Barrera de Coral:</strong> El sistema de arrecifes de coral más grande del mundo, visible incluso desde el espacio, frente a la costa de Queensland. Un paraíso para el buceo y el snorkel, con una biodiversidad marina increíble (aunque amenazada por el cambio climático). Se accede principalmente desde Cairns o Port Douglas.</li>
             </ul>
-            <img src="/images/post-australia2.jpg" alt="Vista aérea de la Gran Barrera de Coral con aguas turquesas y arrecifes" class="inline-image">
+            <img src="images/post-australia2.jpg" alt="Vista aérea de la Gran Barrera de Coral con aguas turquesas y arrecifes" class="inline-image">
 
             <h2>Aventura, Naturaleza y Vida Urbana</h2>
             <p>Australia ofrece un sinfín de posibilidades:</p>
@@ -1071,7 +1071,7 @@ export class PostService {
 
             <h2>Gastronomía "Aussie": Barbacoas, Marisco y Fusión</h2>
             <p>La cocina australiana moderna es una fusión de influencias británicas, mediterráneas y asiáticas, con un fuerte énfasis en ingredientes frescos, productos del mar y la cultura de la barbacoa ("barbie").</p>
-            <img src="/images/post-australia3.jpg" alt="Típica barbacoa australiana ('barbie') con salchichas, carne y verduras a la parrilla" class="inline-image">
+            <img src="images/post-australia3.jpg" alt="Típica barbacoa australiana ('barbie') con salchichas, carne y verduras a la parrilla" class="inline-image">
             <ul>
                 <li><strong>Barbacoa (Barbie):</strong> Más que una comida, es un evento social. Salchichas (snags), hamburguesas, filetes, chuletas de cordero y marisco a la parrilla, acompañados de ensaladas. Hay barbacoas públicas gratuitas en muchos parques y playas.</li>
                 <li><strong>Marisco Fresco:</strong> Dada su extensa costa, Australia ofrece excelente marisco. Prueba las ostras de Sídney (Sydney Rock Oysters), gambas (prawns), cangrejo de barro (mud crab), barramundi (pescado local popular) o el salmón de Tasmania. El "Fish and Chips" es también muy popular.</li>
@@ -1135,8 +1135,8 @@ export class PostService {
       title: 'Rocosas Canadienses: Naturaleza Salvaje y Épica entre Lagos Turquesa y Glaciares Majestuosos',
       mainCategory: { name: 'Montaña', slug: 'montana', type: 'atractivo' },
       regionCategory: { name: 'America del Norte', slug: 'america-del-norte', type: 'region' }, // SIN TILDE
-      featuredImage: '/images/post-canada1.jpg',
-      cardImageUrl: '/images/post-canada.jpg',
+      featuredImage: 'images/post-canada1.jpg',
+      cardImageUrl: 'images/post-canada.jpg',
       body: `            <h2>Un Tesoro Natural Patrimonio de la Humanidad</h2>
             <p>Las Montañas Rocosas Canadienses, ubicadas principalmente en las provincias de Alberta y Columbia Británica, son una de las cadenas montañosas más espectaculares e icónicas del mundo. Una vasta porción de esta región, que incluye los Parques Nacionales de Banff, Jasper, Kootenay y Yoho, ha sido declarada Patrimonio de la Humanidad por la UNESCO por su excepcional belleza natural, sus procesos geológicos y su importancia ecológica.</p>
             <p>Este es un destino de paisajes grandiosos: imponentes picos nevados, extensos glaciares y campos de hielo, lagos de un color turquesa inverosímil alimentados por glaciares, densos bosques de coníferas, ríos caudalosos y una abundante vida salvaje que incluye osos grizzly y negros, alces, ciervos, caribúes, cabras montesas y mucho más.</p>
@@ -1151,7 +1151,7 @@ export class PostService {
                 <li><strong>Parque Nacional Jasper:</strong> Más grande y generalmente menos concurrido que Banff. Destacan el Lago Maligne (con Spirit Island), el Cañón Maligne, el tranvía Jasper SkyTram (vistas panorámicas), el Lago Pyramid y el Lago Patricia. Es una zona excelente para avistar fauna.</li>
                  <li><strong>Lago Emerald y Takakkaw Falls (Parque Nacional Yoho):</strong> Cerca de Field (Columbia Británica), el Lago Emerald hace honor a su nombre con su color verde intenso. Las cataratas Takakkaw son unas de las más altas de Canadá.</li>
             </ul>
-            <img src="/images/post-canada2.jpg" alt="Vista del Lago Peyto desde el mirador Bow Summit en la Icefields Parkway" class="inline-image">
+            <img src="images/post-canada2.jpg" alt="Vista del Lago Peyto desde el mirador Bow Summit en la Icefields Parkway" class="inline-image">
 
             <h2>Aventuras al Aire Libre y Vida Salvaje</h2>
             <p>Las Rocosas son un paraíso para los amantes de las actividades al aire libre:</p>
@@ -1166,7 +1166,7 @@ export class PostService {
 
             <h2>Gastronomía de Montaña y Sabores Canadienses</h2>
             <p>La oferta gastronómica en las Rocosas se centra en la cocina canadiense moderna, con énfasis en ingredientes locales de Alberta (famosa por su ternera - Alberta Beef) y influencias internacionales. Encontrarás desde pubs informales hasta restaurantes de alta cocina en los hoteles de lujo.</p>
-            <img src="/images/post-canada3.jpg" alt="Plato con un filete de ternera de Alberta (Alberta Beef) a la parrilla" class="inline-image">
+            <img src="images/post-canada3.jpg" alt="Plato con un filete de ternera de Alberta (Alberta Beef) a la parrilla" class="inline-image">
             <ul>
                 <li><strong>Alberta Beef:</strong> La ternera de Alberta es reconocida por su calidad. Prueba un buen filete (steak), hamburguesa o costillas (ribs).</li>
                 <li><strong>Salmón Salvaje del Pacífico:</strong> Aunque no es local de las Rocosas, es común encontrar salmón de la cercana Columbia Británica en los menús.</li>
@@ -1214,8 +1214,8 @@ export class PostService {
       title: 'Un Viaje Intenso a través de Colores Vibrantes, Espiritualidad Profunda y Contrastes Asombrosos',
       mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' }, // O 'Espiritualidad'
       regionCategory: { name: 'Asia', slug: 'asia', type: 'region' },
-      featuredImage: '/images/post-india1.jpg',
-      cardImageUrl: '/images/post-india.jpg',
+      featuredImage: 'images/post-india1.jpg',
+      cardImageUrl: 'images/post-india.jpg',
       body: `            <h2>Incredible India: Un Subcontinente de Diversidad</h2>
             <p>India es más que un país; es un subcontinente vasto y complejo, un mosaico deslumbrante de culturas, religiones, idiomas y paisajes que desafía cualquier descripción simple. Es una tierra de contrastes extremos, donde la pobreza convive con la opulencia, el caos urbano con la serenidad espiritual, y tradiciones milenarias con una modernidad emergente. Viajar por India es una experiencia intensa, a menudo abrumadora, pero inmensamente gratificante que transforma la perspectiva de cualquier viajero.</p>
             <p>Desde las cumbres nevadas del Himalaya hasta las playas tropicales de Goa y Kerala, pasando por los desiertos de Rajastán, las llanuras del Ganges y las bulliciosas metrópolis como Delhi y Mumbai, India ofrece una diversidad geográfica y cultural sin igual, unida por una profunda espiritualidad y una historia milenaria.</p>
@@ -1231,7 +1231,7 @@ export class PostService {
                 <li><strong>Cuevas de Ajanta y Ellora (Maharashtra):</strong> Impresionantes complejos de cuevas excavadas en la roca con templos y monasterios budistas, hinduistas y jainistas, declarados Patrimonio de la Humanidad.</li>
                  <li><strong>Himalaya Indio:</strong> Explora estaciones de montaña como Shimla o Darjeeling, practica yoga y meditación en Rishikesh (a orillas del Ganges) o haz trekking en regiones como Ladakh (con su cultura budista tibetana) o Himachal Pradesh.</li>
             </ul>
-            <img src="/images/post-india2.jpg" alt="Ghats de Varanasi al amanecer con peregrinos bañándose en el río Ganges" class="inline-image">
+            <img src="images/post-india2.jpg" alt="Ghats de Varanasi al amanecer con peregrinos bañándose en el río Ganges" class="inline-image">
 
             <h2>Experiencias Culturales y Naturales Únicas</h2>
             <p>India ofrece vivencias que van más allá de los monumentos:</p>
@@ -1247,7 +1247,7 @@ export class PostService {
 
             <h2>Un Festín de Sabores: La Diversidad de la Cocina India</h2>
             <p>La cocina india es increíblemente diversa, regional y compleja, conocida por su uso magistral de especias y la prevalencia del vegetarianismo en muchas áreas. Cada región tiene sus propias especialidades.</p>
-            <img src="/images/post-india3.jpg" alt="Thali indio, una bandeja con varias pequeñas porciones de diferentes platos, arroz y pan" class="inline-image">
+            <img src="images/post-india3.jpg" alt="Thali indio, una bandeja con varias pequeñas porciones de diferentes platos, arroz y pan" class="inline-image">
             <ul>
                 <li><strong>Curries:</strong> Infinita variedad. Desde el cremoso Butter Chicken o Tikka Masala (populares internacionalmente, origen debatido) hasta curries más regionales como el Vindaloo (picante, de Goa), Korma (suave y cremoso), Rogan Josh (cordero, de Cachemira) o los curries vegetarianos del sur a base de coco y lentejas (Sambar).</li>
                 <li><strong>Thali:</strong> Una comida completa servida en una bandeja metálica con varias pequeñas porciones (katoris) de diferentes platos: dal (lentejas), सब्जी (sabji - verduras), curry, yogur (dahi), arroz, pan (roti/chapati) y a veces un dulce. Excelente forma de probar variedad.</li>
@@ -1311,8 +1311,8 @@ export class PostService {
       title: 'Nueva Zelanda (Aotearoa): Paisajes de Película, Aventura Extrema y Cultura Maorí',
       mainCategory: { name: 'Naturaleza', slug: 'naturaleza', type: 'atractivo' },
       regionCategory: { name: 'Oceania', slug: 'oceania', type: 'region' }, // SIN TILDE
-      featuredImage: '/images/post-nuevazelanda1.jpg',
-      cardImageUrl: '/images/post-nuevazelanda.jpg',
+      featuredImage: 'images/post-nuevazelanda1.jpg',
+      cardImageUrl: 'images/post-nuevazelanda.jpg',
       body: `            <h2>La Tierra de la Larga Nube Blanca</h2>
             <p>Nueva Zelanda, o Aotearoa en lengua maorí, es un país insular en el suroeste del Océano Pacífico, famoso por sus paisajes naturales increíblemente diversos y dramáticos. Desde los fiordos majestuosos y glaciares de la Isla Sur hasta las playas subtropicales, zonas geotérmicas y volcanes de la Isla Norte, Nueva Zelanda ofrece una belleza natural sobrecogedora que sirvió de escenario para las películas de "El Señor de los Anillos" y "El Hobbit".</p>
             <p>Es el destino perfecto para los amantes de la naturaleza virgen, el senderismo (aquí llamado "tramping"), los deportes de aventura (es la cuna del puenting comercial) y para aquellos interesados en la rica cultura indígena maorí. Su gente (los "Kiwis") es conocida por su amabilidad y estilo de vida relajado.</p>
@@ -1328,7 +1328,7 @@ export class PostService {
                  <li><strong>Bay of Islands (Isla Norte):</strong> Una hermosa bahía subtropical con 144 islas, ideal para navegar, nadar con delfines, pescar y visitar lugares históricos como Russell y Waitangi (donde se firmó el tratado fundacional del país).</li>
                  <li><strong>The Catlins (Isla Sur):</strong> Una costa salvaje y remota en el sur, con cascadas, bosques petrificados, acantilados y fauna marina (leones marinos, pingüinos de ojos amarillos).</li>
             </ul>
-            <img src="/images/post-nuevazelanda2.jpg" alt="Lago Tekapo con sus aguas turquesas y la Iglesia del Buen Pastor en la orilla" class="inline-image">
+            <img src="images/post-nuevazelanda2.jpg" alt="Lago Tekapo con sus aguas turquesas y la Iglesia del Buen Pastor en la orilla" class="inline-image">
 
             <h2>Adrenalina y Encuentros Culturales</h2>
             <p>Nueva Zelanda es sinónimo de aventura y ofrece ricas experiencias culturales:</p>
@@ -1343,7 +1343,7 @@ export class PostService {
 
             <h2>Sabores "Kiwi": Cordero, Mariscos y Hangi</h2>
             <p>La cocina neozelandesa se basa en productos frescos de alta calidad, con excelentes carnes (especialmente cordero), mariscos y una creciente influencia de la cocina fusión del Pacífico.</p>
-            <img src="/images/post-nuevazelanda3.jpg" alt="Plato de cordero neozelandés asado con verduras" class="inline-image">
+            <img src="images/post-nuevazelanda3.jpg" alt="Plato de cordero neozelandés asado con verduras" class="inline-image">
             <ul>
                 <li><strong>Cordero Neozelandés:</strong> Reconocido mundialmente por su ternura y sabor. Pruébalo asado, a la parrilla o en estofado.</li>
                 <li><strong>Marisco Fresco:</strong> Ostras (Bluff oysters son famosas), mejillones de labios verdes (greenshell mussels), vieiras (scallops), cangrejo de río (crayfish) y pescado fresco como el pargo (snapper) o el hoki. El "Fish and Chips" es también muy popular.</li>
@@ -1396,8 +1396,8 @@ export class PostService {
       title: 'Petra, Jordania: Descubriendo la Mágica Ciudad Perdida Tallada en Roca Rosa',
       mainCategory: { name: 'Historia', slug: 'historia', type: 'atractivo' }, // O 'Arqueologia'
       regionCategory: { name: 'Oriente Medio', slug: 'oriente-medio', type: 'region' },
-      featuredImage: '/images/post-jordania1.jpg',
-      cardImageUrl: '/images/post-jordania.jpg',
+      featuredImage: 'images/post-jordania1.jpg',
+      cardImageUrl: 'images/post-jordania.jpg',
       body: `            <h2>La Joya Oculta del Desierto Jordano</h2>
             <p>Petra, la antigua capital del reino nabateo, es uno de los tesoros arqueológicos más impresionantes y misteriosos del mundo. Ubicada en un valle remoto en el sur de Jordania, esta vasta ciudad fue literalmente excavada y esculpida en los acantilados de arenisca rosa por los nabateos, un pueblo árabe nómada que prosperó gracias al control de las rutas comerciales de incienso, mirra y especias hace más de 2.000 años.</p>
             <p>Declarada Patrimonio de la Humanidad por la UNESCO y una de las Nuevas Siete Maravillas del Mundo Moderno, Petra permaneció oculta al mundo occidental durante siglos, hasta su "redescubrimiento" en 1812. Acceder a ella a través del Siq, un estrecho y sinuoso desfiladero, para encontrarse de repente con la majestuosa fachada del Tesoro es una de las experiencias más impactantes que un viajero puede vivir.</p>
@@ -1414,7 +1414,7 @@ export class PostService {
                  <li><strong>El Alto Lugar del Sacrificio:</strong> Otra subida exigente que lleva a un altar nabateo en la cima de una montaña, con vistas espectaculares sobre el valle principal de Petra.</li>
                  <li><strong>Pequeña Petra (Siq al-Barid):</strong> Un sitio nabateo más pequeño y menos concurrido, situado a pocos kilómetros al norte de Petra principal, con su propio Siq y algunas tumbas y triclinios (comedores) interesantes.</li>
             </ul>
-            <img src="/images/post-jordania2.jpg" alt="Vista del Monasterio (Ad-Deir) en Petra, una estructura monumental excavada en la roca" class="inline-image">
+            <img src="images/post-jordania2.jpg" alt="Vista del Monasterio (Ad-Deir) en Petra, una estructura monumental excavada en la roca" class="inline-image">
 
             <h2>Explorando Petra y sus Alrededores</h2>
             <p>Petra requiere al menos un día completo para ver lo principal, pero idealmente dos o tres días para explorarla con calma y hacer algunas de las caminatas más largas.</p>
@@ -1429,7 +1429,7 @@ export class PostService {
 
             <h2>Sabores Jordanos: Mansaf y Hospitalidad Beduina</h2>
             <p>La cocina jordana es parte de la rica tradición culinaria levantina (Oriente Medio), con platos sabrosos y aromáticos basados en cordero, pollo, arroz, legumbres, verduras y yogur.</p>
-            <img src="/images/post-jordania3.jpg" alt="Plato de Mansaf, el plato nacional jordano, con cordero, arroz y salsa de yogur seco (jameed)" class="inline-image">
+            <img src="images/post-jordania3.jpg" alt="Plato de Mansaf, el plato nacional jordano, con cordero, arroz y salsa de yogur seco (jameed)" class="inline-image">
             <ul>
                 <li><strong>Mansaf:</strong> El plato nacional de Jordania, especialmente para celebraciones. Cordero cocinado en una salsa de yogur seco fermentado (jameed), servido sobre una cama de arroz y pan plano fino (shrak), a menudo adornado con piñones o almendras. Se come tradicionalmente con la mano derecha.</li>
                 <li><strong>Maqluba:</strong> "Del revés". Un plato de arroz cocinado con carne (pollo o cordero) y verduras fritas (berenjena, coliflor, patata) en una olla, que luego se invierte al servir.</li>
