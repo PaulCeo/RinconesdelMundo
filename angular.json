@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "RinconesDelMundo": {
+    "RinconesdelMundo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs", // Correcto para GitHub Pages /docs method
+            "outputPath": "docs", 
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -29,7 +29,7 @@
               "src/styles.css"
             ],
             "scripts": [],
-            "baseHref": "/" // Base href para desarrollo local (ng serve)
+            "baseHref": "/" 
           },
           "configurations": {
             "production": {
@@ -46,7 +46,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/RinconesDelMundo/" // Base href específico para el deploy en GitHub Pages
+              "baseHref": "/RinconesdelMundo/" 
             },
             "development": {
               "buildOptimizer": false,
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "RinconesDelMundo:build:production" // CORREGIDO
+              "buildTarget": "RinconesdelMundo:build:production" 
             },
             "development": {
-              "buildTarget": "RinconesDelMundo:build:development" // CORREGIDO
+              "buildTarget": "RinconesdelMundo:build:development" 
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "RinconesDelMundo:build" // CORREGIDO
+            "buildTarget": "RinconesdelMundo:build" 
           }
         },
         "test": {
@@ -99,8 +99,8 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/RinconesDelMundo/server", // Nombre de proyecto actualizado aquí también
-            "main": "src/main.server.ts", // Típicamente main.server.ts para SSR
+            "outputPath": "dist/RinconesdelMundo/server", 
+            "main": "src/main.server.ts", 
             "tsConfig": "tsconfig.server.json"
           },
           "configurations": {
@@ -121,12 +121,12 @@
           "builder": "@angular-devkit/build-angular:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "RinconesDelMundo:build:development", // CORREGIDO
-              "serverTarget": "RinconesDelMundo:server:development" // CORREGIDO
+              "browserTarget": "RinconesdelMundo:build:development", 
+              "serverTarget": "RinconesdelMundo:server:development"
             },
             "production": {
-              "browserTarget": "RinconesDelMundo:build:production", // CORREGIDO
-              "serverTarget": "RinconesDelMundo:server:production" // CORREGIDO
+              "browserTarget": "RinconesdelMundo:build:production", 
+              "serverTarget": "RinconesdelMundo:server:production" 
             }
           },
           "defaultConfiguration": "development"
@@ -140,12 +140,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "RinconesDelMundo:build:production", // CORREGIDO
-              "serverTarget": "RinconesDelMundo:server:production" // CORREGIDO
+              "browserTarget": "RinconesdelMundo:build:production", 
+              "serverTarget": "RinconesdelMundo:server:production" 
             },
             "development": {
-              "browserTarget": "RinconesDelMundo:build:development", // CORREGIDO
-              "serverTarget": "RinconesDelMundo:server:development" // CORREGIDO/
+              "browserTarget": "RinconesdelMundo:build:development", 
+              "serverTarget": "RinconesdelMundo:server:development" 
             }
           },
           "defaultConfiguration": "production"
