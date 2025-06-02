@@ -266,7 +266,7 @@ export class PostService {
     // --- Post Caribe ---
     {
       slug: 'caribe-sol-playas-ensueno-ritmo-tropical o playas-paraisiacas-caribe', // Este post se asociará a America Central
-      title: 'Sol Eterno, Playas de Ensueño y Ritmo Tropical',
+      title: 'Caribe: Sol Eterno, Playas de Ensueño y Ritmo Tropical',
       mainCategory: { name: 'Playa', slug: 'playa', type: 'atractivo' },
       regionCategory: { name: 'America Central', slug: 'america-central', type: 'region' }, // SIN TILDE
       featuredImage: 'images/post-caribe1.jpg',
@@ -566,7 +566,7 @@ export class PostService {
     // --- Post Egipto ---
     {
       slug: 'egipto-misterios-faraonicos-nilo o viaje-antiguo-egipto',
-      title: 'Un Viaje Fascinante a los Misterios Faraónicos a Orillas del Nilo',
+      title: 'Egipto: Un Viaje Fascinante a los Misterios Faraónicos a Orillas del Nilo',
       mainCategory: { name: 'Historia', slug: 'historia', type: 'atractivo' },
       regionCategory: { name: 'Africa', slug: 'africa', type: 'region' }, // SIN TILDE
       featuredImage: 'images/post-egipto1.jpg',
@@ -1211,7 +1211,7 @@ export class PostService {
     // --- Post India ---
     {
       slug: 'india-viaje-colores-espiritualidad-contrastes o descubrir-la-india',
-      title: 'Un Viaje Intenso a través de Colores Vibrantes, Espiritualidad Profunda y Contrastes Asombrosos',
+      title: 'India: Un Viaje Intenso a través de Colores Vibrantes, Espiritualidad Profunda y Contrastes Asombrosos',
       mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' }, // O 'Espiritualidad'
       regionCategory: { name: 'Asia', slug: 'asia', type: 'region' },
       featuredImage: 'images/post-india1.jpg',
@@ -1478,6 +1478,703 @@ export class PostService {
                   <li><strong>Hospitalidad:</strong> Los jordanos son conocidos por su hospitalidad. Acepta una invitación a tomar té si te la ofrecen.</li>
             </ul>` // CONTENIDO COMPLETO
     },
+
+    {
+  slug: 'jerusalen-ciudad-sagrada-encuentro-historias-fe', // o explorando-jerusalen-tres-culturas
+  title: 'Jerusalén: Donde la Historia, la Fe y las Culturas Convergen',
+  mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' },
+  regionCategory: { name: 'Oriente Medio', slug: 'oriente-medio', type: 'region' }, // O 'Medio Oriente' si tienes esa categoría
+  featuredImage: 'images/post-jerusalen1.jpg', // Sugerencia de nombre
+  cardImageUrl: 'images/post-jerusalen.jpg',    // Sugerencia de nombre
+  body: `
+        <h2>Jerusalén: Un Viaje al Corazón Espiritual del Mundo</h2>
+        <p>Jerusalén, una ciudad venerada por tres de las religiones monoteístas más grandes del mundo –judaísmo, cristianismo e islam–, es un destino que trasciende el simple viaje turístico. Es una inmersión profunda en milenios de historia, fe, conflicto y coexistencia. Ubicada en los Montes de Judea, entre el Mediterráneo y el Mar Muerto, su nombre evoca imágenes de murallas antiguas, cúpulas doradas y callejones cargados de fervor espiritual.</p>
+        <p>Explorar Jerusalén es caminar sobre capas de civilizaciones, donde cada piedra parece susurrar historias de profetas, reyes, cruzados y peregrinos. Es una experiencia intensa, conmovedora y, sin duda, inolvidable.</p>
+
+        <h2>La Ciudad Vieja: Un Laberinto de Santidad y Tradición</h2>
+        <p>El epicentro emocional y espiritual de Jerusalén es, sin duda, su <strong>Ciudad Vieja amurallada</strong>, declarada Patrimonio de la Humanidad por la UNESCO. Dividida tradicionalmente en cuatro barrios (judío, cristiano, musulmán y armenio), cada uno con su atmósfera y tesoros únicos, es un microcosmos de la diversidad de la ciudad.</p>
+        <p>Perderse por sus estrechas y bulliciosas calles es una aventura en sí misma, descubriendo mercados vibrantes, patios escondidos y algunos de los lugares más sagrados del planeta. La energía aquí es palpable, una mezcla de devoción cotidiana, el ajetreo de los comerciantes y el murmullo de innumerables idiomas de peregrinos de todo el mundo.</p>
+         <img src="images/post-jerusalen2.jpg" alt="Vista icónica del Domo de la Roca con su cúpula dorada en la Ciudad Vieja de Jerusalén" class="inline-image">
+
+        <h2>Lugares Sagrados e Hitos Imprescindibles en Jerusalén</h2>
+        <p>La densidad de sitios históricos y religiosos en Jerusalén es abrumadora. Aquí algunos de los más significativos:</p>
+        <ul>
+            <li><strong>Muro de las Lamentaciones (Kotel o Muro Occidental):</strong> El lugar más sagrado del judaísmo, último vestigio del Segundo Templo. Observar a los fieles rezar y colocar sus plegarias en las grietas del muro es una experiencia profundamente conmovedora. (Barrio Judío)</li>
+            <li><strong>Domo de la Roca y Mezquita de Al-Aqsa (Monte del Templo/Explanada de las Mezquitas):</strong> Un lugar sagrado para el islam, donde se cree que el profeta Mahoma ascendió al cielo. El Domo de la Roca, con su cúpula dorada, es uno de los símbolos más reconocibles de la ciudad. El acceso para no musulmanes puede tener restricciones horarias y de comportamiento. (Barrio Musulmán)</li>
+            <li><strong>Iglesia del Santo Sepulcro:</strong> Venerada por los cristianos como el lugar de la crucifixión, sepultura y resurrección de Jesús. Es un complejo de capillas y altares compartidos por diversas denominaciones cristianas, lleno de historia y fervor. (Barrio Cristiano)</li>
+            <li><strong>Vía Dolorosa:</strong> El camino que, según la tradición cristiana, recorrió Jesús cargando la cruz hacia el Calvario. Muchos peregrinos la recorren deteniéndose en sus 14 estaciones. (Principalmente Barrio Musulmán y Cristiano)</li>
+            <li><strong>Monte de los Olivos:</strong> Ofrece vistas panorámicas espectaculares de la Ciudad Vieja y alberga lugares bíblicos importantes como el Huerto de Getsemaní, la Iglesia de Todas las Naciones y la Capilla de la Ascensión.</li>
+            <li><strong>Ciudad de David:</strong> El núcleo original de la antigua Jerusalén, con excavaciones arqueológicas fascinantes, incluyendo el Túnel de Ezequías (un antiguo acueducto subterráneo que se puede recorrer).</li>
+            <li><strong>Museo de Israel:</strong> Alberga una vasta colección de arte y arqueología, incluyendo los Rollos del Mar Muerto (en el Santuario del Libro) y una maqueta impresionante de Jerusalén en la época del Segundo Templo.</li>
+            <li><strong>Yad Vashem:</strong> El Museo y Memorial del Holocausto de Israel, una institución conmovedora y esencial para comprender este oscuro capítulo de la historia.</li>
+            <li><strong>Mercado Mahane Yehuda (El Shuk):</strong> Un mercado vibrante y bullicioso en la Jerusalén Nueva, lleno de puestos de frutas frescas, verduras, especias, dulces, panaderías, y también bares y restaurantes de moda por la noche.</li>
+        </ul>
+
+        <h2>Sabores de Jerusalén: Una Fusión Culinaria de Oriente Medio</h2>
+        <p>La gastronomía de Jerusalén es un reflejo de su crisol de culturas, con influencias de la cocina judía (ashkenazí, sefardí, mizrahí), árabe-palestina y mediterránea en general. Es una explosión de sabores frescos, especias aromáticas y tradiciones culinarias ancestrales.</p>
+        <img src="images/post-jerusalen3.jpg" alt="Plato de falafel y hummus con pan pita y ensaladas frescas" class="inline-image">
+        <ul>
+            <li><strong>Hummus, Falafel y Pita:</strong> Elementos básicos y deliciosos. El hummus cremoso, a menudo servido con aceite de oliva y garbanzos enteros, y las bolas de falafel crujientes son omnipresentes. El pan pita fresco es el acompañamiento perfecto.</li>
+            <li><strong>Shawarma:</strong> Finas láminas de carne (cordero, pollo o pavo) cocinadas en un asador vertical, servidas en pan pita o laffa con ensaladas y salsas.</li>
+            <li><strong>Sabich:</strong> Un popular sándwich de origen judío iraquí, que consiste en pan pita relleno de berenjena frita, huevo duro, ensalada israelí, tahini y amba (un condimento de mango encurtido).</li>
+            <li><strong>Shakshuka:</strong> Huevos escalfados en una sabrosa salsa de tomate especiada con pimientos, cebolla y comino. Se suele comer para el desayuno o el almuerzo.</li>
+            <li><strong>Knafeh:</strong> Un postre árabe popular hecho con fideos de sémola finos o masa de kadaif, queso dulce (generalmente Nabulsi), empapado en almíbar y a menudo espolvoreado con pistachos. Se sirve caliente.</li>
+            <li><strong>Ensalada Israelí:</strong> Tomates, pepinos y pimientos finamente picados, a menudo con cebolla y perejil, aliñados con aceite de oliva y zumo de limón.</li>
+            <li><strong>Burekas:</strong> Hojaldres rellenos de queso, espinacas, patata o champiñones, de origen balcánico y muy populares.</li>
+            <li><strong>Zumos Frescos:</strong> Especialmente de granada y naranja, disponibles en muchos puestos callejeros.</li>
+        </ul>
+        <p>Explorar los diferentes barrios de la Ciudad Vieja o el mercado Mahane Yehuda es la mejor manera de descubrir estos sabores, desde pequeños puestos hasta restaurantes con más tradición.</p>
+
+        <h2>Cómo Llegar y Moverse por Jerusalén</h2>
+        <p>El principal aeropuerto internacional que sirve a Jerusalén es el <strong>Aeropuerto Ben Gurion (TLV)</strong>, ubicado cerca de Tel Aviv.</p>
+        <h3>Desde el Aeropuerto Ben Gurion (TLV) a Jerusalén</h3>
+        <ul>
+            <li><strong>Tren:</strong> La forma más rápida y eficiente. Hay una línea de tren directa y moderna que conecta el aeropuerto con la estación Yitzhak Navon en Jerusalén en unos 25-30 minutos. Es muy recomendable.</li>
+            <li><strong>Sherut (Taxi Compartido):</strong> Furgonetas compartidas (de compañías como Nesher) que te llevan directamente a tu hotel o dirección en Jerusalén. Son una buena opción si viajas solo o con mucho equipaje y quieres servicio puerta a puerta. Se llenan y luego parten.</li>
+            <li><strong>Autobús:</strong> Hay autobuses públicos (Egged, línea 485) que conectan el aeropuerto con la Estación Central de Autobuses de Jerusalén, pero pueden ser más lentos que el tren.</li>
+            <li><strong>Taxi Privado:</strong> La opción más cara, pero directa y cómoda.</li>
+        </ul>
+
+        <h3>Transporte Interno en Jerusalén</h3>
+        <ul>
+            <li><strong>A Pie:</strong> La Ciudad Vieja se explora fundamentalmente a pie debido a sus calles estrechas. Gran parte de la Jerusalén Nueva también es caminable.</li>
+            <li><strong>Tranvía (Jerusalem Light Rail):</strong> Una línea moderna y eficiente que atraviesa partes importantes de la Jerusalén Nueva, conectando la Estación Central de Autobuses, el mercado Mahane Yehuda, la Calle Jaffa, y acercándose a la Puerta de Damasco de la Ciudad Vieja. Se necesita una tarjeta Rav-Kav recargable.</li>
+            <li><strong>Autobuses Públicos (Egged):</strong> Una extensa red que cubre toda la ciudad. También se usa la tarjeta Rav-Kav.</li>
+            <li><strong>Taxis:</strong> Disponibles, pero asegúrate de que usen el taxímetro o acuerda un precio antes.</li>
+        </ul>
+        <p>Moverse entre Jerusalén y otras ciudades de Israel (como Tel Aviv, Haifa, Mar Muerto) es fácil con trenes y autobuses interurbanos desde la Estación Central.</p>
+
+        <h2>Consejos Prácticos para tu Visita a Jerusalén</h2>
+        <ul>
+            <li><strong>Seguridad y Sensibilidad:</strong> Jerusalén es una ciudad con una situación política compleja. Mantente informado sobre la situación actual antes y durante tu viaje. Sé respetuoso con las diferentes culturas y religiones. Evita temas políticos controvertidos. En general, las zonas turísticas son seguras, pero como en cualquier gran ciudad, ten precaución con tus pertenencias.</li>
+            <li><strong>Vestimenta Respetuosa:</strong> Imprescindible al visitar lugares sagrados (Muro de las Lamentaciones, iglesias, mezquitas). Hombres deben cubrirse la cabeza en lugares judíos (se ofrecen kipás de papel gratuitas) y a veces hombros y rodillas. Mujeres deben cubrirse hombros, rodillas y, en algunos sitios musulmanes, también la cabeza (lleva un pañuelo). Es buena idea vestir con modestia en general por la ciudad.</li>
+            <li><strong>Horarios y Shabat:</strong> El Shabat (sábado judío) comienza el viernes por la tarde y termina el sábado por la noche. Durante este tiempo, muchos negocios judíos (incluyendo transporte público y algunos restaurantes) cierran o tienen servicios muy limitados. Planifica con antelación. Los sitios cristianos y musulmanes suelen operar con normalidad, pero verifica horarios.</li>
+            <li><strong>Moneda:</strong> El Nuevo Shéquel Israelí (ILS). Hay cajeros automáticos y casas de cambio. Las tarjetas de crédito son ampliamente aceptadas.</li>
+            <li><strong>Idioma:</strong> Hebreo y árabe son los idiomas oficiales. El inglés es muy hablado en zonas turísticas.</li>
+            <li><strong>Agua:</strong> El agua del grifo es generalmente potable, pero muchos turistas prefieren agua embotellada. Mantente hidratado, especialmente en verano.</li>
+            <li><strong>Controles de Seguridad:</strong> Espera controles de seguridad al entrar a muchos sitios turísticos, especialmente los religiosos y museos importantes. Ten paciencia.</li>
+        </ul>
+    `
+},
+
+{
+  slug: 'argentina-tango-glaciares-pasion-extremos',
+  title: 'Argentina: Tango, Glaciares y una Pasión que Vibra entre Extremos',
+  mainCategory: { name: 'Naturaleza', slug: 'naturaleza', type: 'atractivo' }, // O 'Cultura'
+  regionCategory: { name: 'America del Sur', slug: 'america-del-sur', type: 'region' },
+  featuredImage: 'images/post-argentina1.jpg',
+  cardImageUrl: 'images/post-argentina.jpg',
+  body: `
+        <h2>Descubre la Inmensidad y el Alma de Argentina</h2>
+        <p>Argentina, el octavo país más grande del mundo, se extiende desde los trópicos hasta los confines subantárticos, ofreciendo una asombrosa variedad de paisajes y experiencias. Es una tierra de contrastes apasionantes: la elegancia europea de Buenos Aires, la majestuosidad indómita de la Patagonia con sus glaciares y montañas, las áridas y coloridas quebradas del Noroeste, las fértiles llanuras de la Pampa y las imponentes Cataratas del Iguazú.</p>
+        <p>Conocida por el tango, el fútbol, sus excelentes vinos y su carne de fama mundial, Argentina es también un crisol de culturas con una historia rica y una identidad fuerte, forjada por inmigrantes de todo el mundo y sus raíces criollas.</p>
+
+        <h2>El Espíritu Argentino: Ciudades Cosmopolitas y Tradiciones Arraigadas</h2>
+        <p><strong>Buenos Aires</strong>, la capital, es una metrópolis vibrante y sofisticada, a menudo comparada con París por su arquitectura, sus cafés históricos y su intensa vida cultural. Barrios como Palermo, Recoleta (con su famoso cementerio) y San Telmo (con sus ferias de antigüedades y espectáculos de tango) son imprescindibles. <strong>Córdoba</strong>, en el centro del país, es una ciudad universitaria con un importante legado jesuítico. <strong>Mendoza</strong>, al pie de los Andes, es el corazón de la región vitivinícola más importante de Sudamérica.</p>
+        <p>El tango, más que una danza, es una expresión profunda del alma porteña. El fútbol es una religión nacional, y la figura del gaucho, el jinete de las pampas, sigue siendo un símbolo de la identidad argentina.</p>
+         <img src="images/post-argentina2.jpg" alt="Pareja bailando tango en las calles de San Telmo, Buenos Aires" class="inline-image">
+
+        <h2>Aventuras y Maravillas que Argentina te Ofrece</h2>
+        <p>La diversidad geográfica de Argentina se traduce en un sinfín de posibilidades:</p>
+        <ul>
+            <li><strong>Explorar la Patagonia Austral:</strong> Visita El Calafate para maravillarte con el Glaciar Perito Moreno y otros gigantes de hielo en el Parque Nacional Los Glaciares. En El Chaltén, capital del trekking, desafía senderos hacia el Fitz Roy y el Cerro Torre. Ushuaia, "la ciudad del fin del mundo", es la puerta de entrada a la Antártida.</li>
+            <li><strong>Cataratas del Iguazú:</strong> Comparte con Brasil una de las maravillas naturales más impresionantes del planeta, con cientos de saltos de agua en medio de la selva subtropical.</li>
+            <li><strong>Recorrer el Noroeste Argentino (NOA):</strong> Descubre los paisajes coloridos de la Quebrada de Humahuaca (Patrimonio de la Humanidad) en Jujuy, los Valles Calchaquíes en Salta y Tucumán, con sus pueblos coloniales, formaciones rocosas y cultura andina viva.</li>
+            <li><strong>Ruta de los Siete Lagos y Bariloche:</strong> En la Patagonia Norte, un espectacular recorrido escénico entre San Martín de los Andes y Villa La Angostura, rodeado de lagos cristalinos y montañas. Bariloche es famosa por sus paisajes alpinos, chocolates y actividades de aventura.</li>
+            <li><strong>Avistamiento de Fauna en Península Valdés:</strong> Patrimonio de la Humanidad, un santuario para ballenas francas australes (de junio a diciembre), pingüinos de Magallanes, lobos y elefantes marinos.</li>
+            <li><strong>Degustar Vinos en Mendoza:</strong> Recorre bodegas, participa en catas y disfruta de la gastronomía local en la principal región productora de Malbec del mundo.</li>
+            <li><strong>Experimentar la Vida Gaucha:</strong> Visita una estancia en la Pampa para disfrutar de un asado tradicional, cabalgatas y demostraciones de destrezas criollas.</li>
+        </ul>
+
+        <h2>Sabores de Argentina: Asado, Vino y Dulce de Leche</h2>
+        <p>La gastronomía argentina es reconocida mundialmente por la calidad de su carne y sus vinos, pero ofrece mucho más, con fuertes influencias italianas y españolas.</p>
+        <img src="images/post-argentina3.jpg" alt="Parrillada argentina con diversos cortes de carne asada" class="inline-image">
+        <ul>
+            <li><strong>Asado:</strong> La parrillada argentina es una institución. Diferentes cortes de carne de res (tira de asado, vacío, bife de chorizo, lomo), achuras (chorizo, morcilla, chinchulines, mollejas) cocinados lentamente a las brasas. Se acompaña con salsa chimichurri y ensaladas.</li>
+            <li><strong>Empanadas:</strong> Pasteles horneados o fritos rellenos de carne, pollo, humita (maíz), queso y cebolla, jamón y queso, etc. Cada provincia tiene su variante.</li>
+            <li><strong>Milanesas:</strong> Finas lonchas de carne (ternera o pollo) empanadas y fritas u horneadas. La "milanesa a la napolitana" lleva salsa de tomate, jamón y queso mozzarella por encima.</li>
+            <li><strong>Locro:</strong> Un guiso espeso y sustancioso, tradicionalmente consumido en fechas patrias, hecho con maíz blanco, porotos (frijoles), zapallo (calabaza), chorizo colorado, panceta y otros ingredientes.</li>
+            <li><strong>Pastas:</strong> Debido a la gran inmigración italiana, las pastas (ravioles, ñoquis, tallarines, lasañas) son muy populares y de excelente calidad.</li>
+            <li><strong>Pizza:</strong> También de herencia italiana, la pizza argentina tiene su propio estilo, a menudo con masa más gruesa y abundante queso.</li>
+            <li><strong>Dulce de Leche:</strong> Un manjar dulce hecho a base de leche y azúcar cocidos lentamente. Se usa en alfajores, facturas (pastelería), helados y como postre por sí solo.</li>
+            <li><strong>Alfajores:</strong> Dos galletas unidas por dulce de leche, a menudo bañadas en chocolate o cubiertas con azúcar glas.</li>
+            <li><strong>Vino Malbec:</strong> La cepa insignia de Argentina, especialmente de Mendoza, produce vinos tintos robustos y frutados. También hay excelentes Cabernet Sauvignon, Bonarda, Torrontés (blanco aromático del NOA), entre otros.</li>
+            <li><strong>Mate:</strong> Infusión de yerba mate, una bebida social y culturalmente muy importante, que se comparte en un recipiente (mate) con una bombilla.</li>
+        </ul>
+
+        <h2>Cómo Llegar y Moverse</h2>
+        <p>El principal aeropuerto internacional es el Aeropuerto Internacional Ministro Pistarini (EZE) en Ezeiza, cerca de Buenos Aires. El Aeroparque Jorge Newbery (AEP), dentro de la ciudad de Buenos Aires, maneja vuelos domésticos y algunos regionales.</p>
+        <h3>Desde el Aeropuerto de Ezeiza (EZE) al Centro de Buenos Aires</h3>
+        <ul>
+            <li><strong>Taxi Oficial / Remís:</strong> Empresas como Taxi Ezeiza o Tienda León ofrecen servicios con tarifas fijas. Es la opción más segura y cómoda. Se contratan en sus stands dentro del aeropuerto.</li>
+            <li><strong>Autobús Ejecutivo (Tienda León):</strong> Conecta Ezeiza con su terminal en Puerto Madero y también con Aeroparque. Cómodo y más económico que un taxi.</li>
+            <li><strong>Autobús Público (Línea 8):</strong> La opción más barata, pero también la más lenta y menos cómoda con equipaje. Tarda mucho en llegar al centro (Plaza de Mayo). Necesitas la tarjeta SUBE.</li>
+            <li><strong>Plataformas de Transporte (Uber/Cabify):</strong> Funcionan, pero los puntos de recogida pueden ser específicos y a veces hay tensiones con los taxis oficiales.</li>
+        </ul>
+
+        <h3>Transporte Interno en Argentina</h3>
+        <p>Dada su vasta extensión, moverse por Argentina requiere planificación:</p>
+        <ul>
+            <li><strong>Vuelos Internos:</strong> La forma más eficiente de cubrir largas distancias (ej. Buenos Aires a Ushuaia o Iguazú). Aerolíneas Argentinas y LATAM son las principales, con opciones low-cost como Flybondi y JetSMART.</li>
+            <li><strong>Autobuses de Larga Distancia (Micros u Ómnibus):</strong> Una red muy desarrollada y de buena calidad, con diferentes categorías de servicio (cama, semi-cama, ejecutivo). Conectan prácticamente todo el país y son una buena opción para apreciar el paisaje.</li>
+            <li><strong>Alquiler de Coche:</strong> Ideal para explorar regiones como la Patagonia, el Noroeste o la Ruta 40 a tu propio ritmo. Las distancias son grandes y el estado de algunas rutas secundarias puede variar.</li>
+            <li><strong>Trenes:</strong> La red ferroviaria es limitada para pasajeros en comparación con su época dorada, pero existen algunos servicios turísticos y de larga distancia interesantes, aunque no tan extensos como los autobuses.</li>
+            <li><strong>Transporte Público Urbano:</strong> En Buenos Aires, el Subte (metro), colectivos (autobuses urbanos) y trenes suburbanos son eficientes. Se usa la tarjeta SUBE. Otras ciudades grandes también tienen sistemas de autobuses.</li>
+        </ul>
+
+        <h2>Consejos Prácticos para tu Viaje a Argentina</h2>
+        <ul>
+            <li><strong>Idioma:</strong> Español (Castellano), con un acento y modismos particulares (voseo, "che"). El inglés se habla en zonas turísticas, pero no de forma generalizada.</li>
+            <li><strong>Moneda:</strong> Peso Argentino (ARS). La situación económica puede ser volátil, con inflación y diferentes tipos de cambio. Infórmate bien antes de viajar sobre la mejor forma de manejar el dinero. Hay cajeros automáticos, pero pueden tener límites de extracción.</li>
+            <li><strong>Enchufes:</strong> Tipo I (australiano, tres patas planas) y a veces tipo C (europeo, dos patas redondas). Voltaje 220V. Lleva un adaptador universal.</li>
+            <li><strong>Seguridad:</strong> Toma precauciones en grandes ciudades, especialmente en Buenos Aires, contra hurtos y robos. Evita zonas poco iluminadas o desaconsejadas por la noche.</li>
+            <li><strong>Propinas:</strong> Es costumbre dejar un 10% en restaurantes si el servicio fue bueno. No suele estar incluido.</li>
+            <li><strong>Mejor Época para Viajar:</strong> Depende de la región. Patagonia: verano austral (diciembre-marzo). Iguazú: todo el año, pero menos lluvias en invierno (junio-agosto). Buenos Aires: primavera (septiembre-noviembre) y otoño (marzo-mayo). Noroeste: temporada seca (abril-noviembre).</li>
+            <li><strong>Reservas:</strong> Para vuelos internos, autobuses de larga distancia y alojamiento en Patagonia o Iguazú en temporada alta, es muy recomendable reservar con antelación.</li>
+        </ul>
+    `
+},
+
+{
+  slug: 'espana-diversidad-historia-fiesta-gastronomia-sol',
+  title: 'España: Un Mosaico de Culturas, Fiestas Apasionadas y Gastronomía bajo el Sol',
+  mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' },
+  regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
+  featuredImage: 'images/post-espana1.jpg',
+  cardImageUrl: 'images/post-espana.jpg',
+  body: `
+        <h2>Descubre la Riqueza y la Alegría de Vivir de España</h2>
+        <p>España, ubicada en la Península Ibérica, es un país de una diversidad asombrosa, con una historia milenaria que ha dejado una huella imborrable en su arquitectura, arte, lengua y tradiciones. Desde las soleadas playas del Mediterráneo y el Atlántico hasta las majestuosas cumbres de los Pirineos y Sierra Nevada, pasando por verdes valles, áridas mesetas y ciudades vibrantes con un patrimonio monumental incomparable, España lo tiene todo.</p>
+        <p>Conocida por el flamenco, las tapas, sus fiestas populares, el fútbol y un estilo de vida relajado y social, España es un crisol de culturas (romana, visigoda, árabe, judía, cristiana) que se refleja en cada rincón, ofreciendo una experiencia de viaje rica, variada y siempre estimulante.</p>
+
+        <h2>El Alma Española: Monumentos, Arte y Tradiciones Vibrantes</h2>
+        <p>Cada región de España tiene su propia identidad y tesoros. <strong>Madrid</strong>, la capital, es una ciudad elegante y animada, famosa por sus museos de talla mundial (Prado, Reina Sofía, Thyssen-Bornemisza), su vibrante vida nocturna y sus plazas históricas como la Plaza Mayor. <strong>Barcelona</strong>, en Cataluña, cautiva con la arquitectura modernista de Gaudí (Sagrada Familia, Parque Güell), su ambiente cosmopolita y el Barrio Gótico. <strong>Andalucía</strong>, en el sur, es la cuna del flamenco y alberga joyas como Sevilla (con su Alcázar y Giralda), Granada (con la Alhambra) y Córdoba (con su Mezquita-Catedral).</p>
+        <p>El Camino de Santiago atrae a peregrinos de todo el mundo. Las fiestas populares, como las Fallas de Valencia, la Feria de Abril de Sevilla o los Sanfermines de Pamplona, son explosiones de color, música y tradición. El arte español, desde Goya y Velázquez hasta Picasso y Dalí, es universalmente aclamado.</p>
+         <img src="images/post-espana2.jpg" alt="La Sagrada Familia de Gaudí en Barcelona, España" class="inline-image">
+
+        <h2>Experiencias Inolvidables que te Esperan en España</h2>
+        <p>La oferta turística y cultural de España es prácticamente inagotable:</p>
+        <ul>
+            <li><strong>Explorar Obras Maestras Arquitectónicas:</strong> La Alhambra de Granada, la Sagrada Familia de Barcelona, la Mezquita-Catedral de Córdoba, la Catedral de Santiago de Compostela, el Acueducto de Segovia, las murallas de Ávila.</li>
+            <li><strong>Sumergirse en el Arte:</strong> Visita el Triángulo del Arte en Madrid (Museo del Prado, Reina Sofía, Thyssen), el Museo Picasso en Barcelona o Málaga, el Museo Guggenheim en Bilbao.</li>
+            <li><strong>Disfrutar de sus Costas y Playas:</strong> Desde la Costa Brava y la Costa Dorada en Cataluña, pasando por la Costa Blanca (Valencia), la Costa del Sol (Andalucía), hasta las Islas Baleares (Mallorca, Ibiza, Menorca) y las Islas Canarias (Tenerife, Gran Canaria, Lanzarote).</li>
+            <li><strong>Recorrer el Camino de Santiago:</strong> Una experiencia de peregrinación única a través de paisajes rurales y ciudades históricas del norte de España.</li>
+            <li><strong>Vivir el Flamenco:</strong> Asiste a un espectáculo de flamenco auténtico en un tablao de Sevilla, Granada o Madrid.</li>
+            <li><strong>Ir de Tapas:</strong> Una tradición social y gastronómica fundamental. Recorre bares probando pequeñas porciones de comida acompañadas de una bebida. Ciudades como Granada, San Sebastián o Logroño son famosas por sus tapas.</li>
+            <li><strong>Descubrir los Pueblos Blancos de Andalucía:</strong> Encantadores pueblos encalados aferrados a las colinas, como Arcos de la Frontera, Ronda o Vejer de la Frontera.</li>
+            <li><strong>Esquiar en Sierra Nevada o los Pirineos:</strong> Para los amantes de los deportes de invierno.</li>
+        </ul>
+
+        <h2>Sabores de España: Una Diversidad Gastronómica Regional</h2>
+        <p>La gastronomía española es una de las más ricas y variadas del mundo, basada en la dieta mediterránea y con fuertes identidades regionales. El aceite de oliva, el jamón ibérico, los mariscos frescos y los vinos son protagonistas.</p>
+        <img src="images/post-espana3.jpg" alt="Paella valenciana tradicional servida en su paellera" class="inline-image">
+        <ul>
+            <li><strong>Paella:</strong> Plato icónico de Valencia, a base de arroz cocinado con azafrán, conejo, pollo, judías verdes y garrofó (un tipo de alubia). Hay muchas variantes, como la de marisco.</li>
+            <li><strong>Tapas:</strong> Pequeñas porciones de comida que se sirven con la bebida. Pueden ser desde unas simples aceitunas o patatas bravas hasta elaboraciones más sofisticadas.</li>
+            <li><strong>Jamón Ibérico:</strong> Curado de cerdos de raza ibérica, especialmente el de bellota, es un manjar reconocido mundialmente.</li>
+            <li><strong>Tortilla Española (o de Patatas):</strong> Una tortilla gruesa hecha con huevos, patatas y a menudo cebolla.</li>
+            <li><strong>Gazpacho y Salmorejo:</strong> Sopas frías andaluzas a base de tomate, pan, aceite de oliva, ajo y otros vegetales, ideales para el verano.</li>
+            <li><strong>Pulpo a la Gallega (Polbo á Feira):</strong> Pulpo cocido, cortado en rodajas y servido sobre patatas cocidas, aderezado con pimentón, sal gruesa y aceite de oliva.</li>
+            <li><strong>Cocido Madrileño:</strong> Un guiso contundente de garbanzos con diversas carnes (ternera, pollo, chorizo, morcilla, tocino) y verduras.</li>
+            <li><strong>Quesos:</strong> Gran variedad, como el Manchego, Cabrales, Idiazábal, Mahón, etc.</li>
+            <li><strong>Vinos:</strong> España es un gran productor de vino, con denominaciones de origen famosas como Rioja, Ribera del Duero, Priorat, Rías Baixas (Albariño), Jerez (Sherry).</li>
+            <li><strong>Churros con Chocolate:</strong> Populares para el desayuno o la merienda, especialmente en invierno.</li>
+        </ul>
+
+        <h2>Cómo Llegar y Moverse</h2>
+        <p>Los principales aeropuertos internacionales son el Aeropuerto Adolfo Suárez Madrid-Barajas (MAD) y el Aeropuerto Josep Tarradellas Barcelona-El Prat (BCN). También hay aeropuertos importantes en Málaga (AGP), Palma de Mallorca (PMI), Alicante (ALC), Sevilla (SVQ), Valencia (VLC), Bilbao (BIO), etc.</p>
+        <h3>Desde el Aeropuerto al Centro de la Ciudad (Ejemplos Madrid y Barcelona)</h3>
+        <ul>
+            <li><strong>Aeropuerto de Madrid-Barajas (MAD):</strong>
+                <ul>
+                    <li><strong>Metro:</strong> La Línea 8 (rosa) conecta todas las terminales con la estación Nuevos Ministerios en el centro en unos 15-20 minutos. Desde allí se puede hacer transbordo a otras líneas.</li>
+                    <li><strong>Tren de Cercanías (Renfe):</strong> La Línea C-1 y C-10 conectan la Terminal T4 con estaciones céntricas como Atocha, Chamartín y Nuevos Ministerios.</li>
+                    <li><strong>Autobús Exprés Aeropuerto:</strong> Funciona 24 horas, conectando el aeropuerto con Atocha (durante el día) y Cibeles (por la noche).</li>
+                    <li><strong>Taxi / VTC (Uber, Cabify, Bolt):</strong> Disponibles, con tarifas fijas para el centro o taxímetro.</li>
+                </ul>
+            </li>
+            <li><strong>Aeropuerto de Barcelona-El Prat (BCN):</strong>
+                <ul>
+                    <li><strong>Aerobús:</strong> Autobuses directos y frecuentes que conectan ambas terminales (T1 y T2) con puntos céntricos como Plaza Cataluña y Plaza España.</li>
+                    <li><strong>Metro:</strong> La Línea L9 Sud conecta ambas terminales con la red de metro de la ciudad (requiere transbordo para llegar al centro).</li>
+                    <li><strong>Tren de Cercanías (Rodalies Renfe):</strong> La línea R2 Nord conecta la Terminal T2 con estaciones céntricas como Sants Estació y Passeig de Gràcia. Hay un autobús lanzadera gratuito entre T1 y T2.</li>
+                    <li><strong>Taxi / VTC:</strong> Ampliamente disponibles.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Transporte Interno en España</h3>
+        <p>España cuenta con una excelente red de transporte:</p>
+        <ul>
+            <li><strong>Tren de Alta Velocidad (AVE) y Larga Distancia (Renfe):</strong> Conecta las principales ciudades de forma rápida y cómoda. Es recomendable comprar billetes con antelación para obtener mejores precios.</li>
+            <li><strong>Autobuses Interurbanos:</strong> Una red muy extensa que llega a casi todos los pueblos y ciudades, operada por diversas compañías (ALSA, Avanza, etc.). Son una opción más económica.</li>
+            <li><strong>Vuelos Internos:</strong> Útiles para conectar la península con las islas (Baleares y Canarias) o para cubrir grandes distancias rápidamente (Iberia, Vueling, Air Europa, Ryanair).</li>
+            <li><strong>Alquiler de Coche:</strong> Excelente para explorar regiones a tu ritmo, especialmente zonas rurales o costeras. Las carreteras son generalmente muy buenas.</li>
+            <li><strong>Transporte Público Urbano:</strong> Las grandes ciudades como Madrid, Barcelona, Valencia, Sevilla, Bilbao, etc., tienen eficientes sistemas de metro, tranvía y autobuses urbanos.</li>
+            <li><strong>Ferries:</strong> Conectan la península con las Islas Baleares, las Islas Canarias (entre sí y con la península), y también con el norte de África y otros países europeos.</li>
+        </ul>
+
+        <h2>Consejos Prácticos para tu Viaje a España</h2>
+        <ul>
+            <li><strong>Idioma:</strong> Español (Castellano) es el idioma oficial en todo el país. En algunas comunidades autónomas también son cooficiales el catalán (Cataluña, Baleares, Valencia), el gallego (Galicia) y el euskera (País Vasco, Navarra). El inglés es común en zonas turísticas.</li>
+            <li><strong>Moneda:</strong> Euro (€). Amplia disponibilidad de cajeros automáticos y se aceptan tarjetas de crédito/débito en la mayoría de los sitios.</li>
+            <li><strong>Horarios de Comida:</strong> Los españoles suelen comer más tarde que en otros países europeos. El almuerzo es entre las 14:00-16:00 y la cena a partir de las 21:00-22:00. Muchos restaurantes cierran entre el almuerzo y la cena.</li>
+            <li><strong>Siesta:</strong> Aunque menos común en grandes ciudades y zonas turísticas, algunas tiendas pequeñas pueden cerrar a mediodía (aproximadamente de 14:00 a 17:00), especialmente en verano y en pueblos más pequeños.</li>
+            <li><strong>Propinas:</strong> No son obligatorias como en otros países, pero se agradece redondear la cuenta o dejar un 5-10% en restaurantes si el servicio fue bueno. No es común dejar propina por un simple café o bebida.</li>
+            <li><strong>Seguridad:</strong> España es un país seguro, pero como en cualquier lugar turístico, ten cuidado con los carteristas en zonas concurridas de grandes ciudades (especialmente Madrid y Barcelona).</li>
+            <li><strong>Reservas:</strong> En temporada alta, es recomendable reservar alojamiento, billetes de tren AVE y entradas a atracciones muy populares (como la Alhambra o la Sagrada Familia) con mucha antelación.</li>
+            <li><strong>Agua del Grifo:</strong> Es potable en toda España.</li>
+        </ul>
+    `
+},
+
+{
+  slug: 'inglaterra-historia-realeza-campina-vibrante-modernidad',
+  title: 'Inglaterra: Un Viaje entre Historia Real, Campiña Encantadora y Vibrante Modernidad',
+  mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' },
+  regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
+  featuredImage: 'images/post-inglaterra1.jpg',
+  cardImageUrl: 'images/post-inglaterra.jpg',
+  body: `
+        <h2>Descubre el Legado y la Dinámica de Inglaterra</h2>
+        <p>Inglaterra, la nación más grande y poblada del Reino Unido, es una tierra de historia milenaria, tradiciones arraigadas, paisajes diversos y una influencia cultural que ha moldeado el mundo moderno. Desde la cosmopolita y siempre cambiante Londres hasta la serena belleza de la campiña de los Cotswolds, pasando por ciudades universitarias legendarias y costas dramáticas, Inglaterra ofrece una rica paleta de experiencias.</p>
+        <p>Cuna de Shakespeare, los Beatles, la monarquía británica y el idioma inglés, este país combina a la perfección su imponente patrimonio con una vanguardia innovadora en arte, música y diseño, atrayendo a millones de visitantes cada año.</p>
+
+        <h2>El Corazón Inglés: Ciudades Icónicas y Paisajes Pintorescos</h2>
+        <p><strong>Londres</strong>, la capital, es un universo en sí misma: el Palacio de Buckingham, el Big Ben y las Casas del Parlamento, la Torre de Londres, el British Museum, la National Gallery, teatros del West End, mercados vibrantes como Camden o Borough Market, y una multiculturalidad fascinante. Ciudades como <strong>Oxford</strong> y <strong>Cambridge</strong> son sinónimo de excelencia académica y belleza arquitectónica. <strong>Bath</strong>, con sus termas romanas y arquitectura georgiana, es Patrimonio de la Humanidad. El norte industrial, con ciudades como <strong>Manchester</strong> y <strong>Liverpool</strong>, ofrece una rica historia musical y una energía renovada.</p>
+        <p>La campiña inglesa es idílica: los ondulantes montes de los <strong>Cotswolds</strong> con sus pueblos de piedra color miel, el <strong>Distrito de los Lagos</strong> que inspiró a poetas, las costas de <strong>Cornualles</strong> con sus acantilados y pueblos pesqueros, o el misticismo de <strong>Stonehenge</strong> y <strong>Glastonbury</strong>.</p>
+         <img src="images/post-inglaterra2.jpg" alt="stone edge" class="inline-image">
+
+        <h2>Joyas Británicas: Un Recorrido por lo Esencial de Inglaterra</h2>
+        <p>Inglaterra ofrece un abanico de actividades para todos los intereses:</p>
+        <ul>
+            <li><strong>Explorar los Tesoros de Londres:</strong> Dedica varios días a sus museos (muchos gratuitos), palacios, parques reales, musicales, mercados y barrios con carácter.</li>
+            <li><strong>Visitar Oxford y Cambridge:</strong> Pasea por los históricos "colleges" universitarios, admira su arquitectura gótica y disfruta de un "punting" (paseo en barca de fondo plano) por los ríos Cam u Isis.</li>
+            <li><strong>Descubrir Stonehenge y Avebury:</strong> Contempla los misteriosos círculos de piedras prehistóricos.</li>
+            <li><strong>Recorrer los Cotswolds:</strong> Alquila un coche y piérdete por pueblos encantadores como Bibury, Bourton-on-the-Water o Castle Combe.</li>
+            <li><strong>Senderismo en el Distrito de los Lagos (Lake District):</strong> Disfruta de paisajes espectaculares, lagos cristalinos y rutas de senderismo para todos los niveles.</li>
+            <li><strong>Sumergirse en la Historia en Bath:</strong> Visita las Termas Romanas, la Abadía de Bath y el Royal Crescent.</li>
+            <li><strong>Seguir los Pasos de los Beatles en Liverpool:</strong> Visita The Cavern Club, el museo The Beatles Story y otros lugares emblemáticos.</li>
+            <li><strong>Descubrir la Costa Jurásica:</strong> En el sur, un tramo de costa Patrimonio de la Humanidad con impresionantes acantilados y fósiles.</li>
+            <li><strong>Visitar Castillos Históricos:</strong> El Castillo de Windsor (residencia real), el Castillo de Warwick, el Castillo de Dover, entre muchos otros.</li>
+        </ul>
+
+        <h2>Sabores de Inglaterra: Tradición y Renovación Culinaria</h2>
+        <p>La cocina inglesa ha experimentado una gran transformación en las últimas décadas, yendo más allá de sus platos tradicionales (a menudo injustamente denostados) para abrazar una escena gastronómica diversa y de alta calidad, con influencias de todo el mundo gracias a su multiculturalidad.</p>
+        <img src="images/post-inglaterra3.jpg" alt="Tradicional Sunday Roast inglés con carne asada, Yorkshire pudding y verduras" class="inline-image">
+        <ul>
+            <li><strong>Full English Breakfast:</strong> Un desayuno contundente con huevos (fritos, revueltos o escalfados), bacon, salchichas, judías cocidas (baked beans), champiñones, tomate asado y tostadas. A menudo incluye black pudding (morcilla).</li>
+            <li><strong>Fish and Chips:</strong> Pescado blanco (generalmente bacalao o eglefino) rebozado y frito, servido con patatas fritas gruesas, a menudo con sal y vinagre de malta, y puré de guisantes (mushy peas).</li>
+            <li><strong>Sunday Roast:</strong> Asado de carne (ternera, cordero, pollo o cerdo) servido tradicionalmente los domingos, acompañado de patatas asadas, verduras, salsa gravy y Yorkshire pudding (una especie de hojaldre horneado).</li>
+            <li><strong>Shepherd's Pie / Cottage Pie:</strong> Un pastel de carne picada (cordero en el Shepherd's, ternera en el Cottage) cubierta con puré de patatas y gratinada.</li>
+            <li><strong>Bangers and Mash:</strong> Salchichas (bangers) servidas con puré de patatas (mash) y a menudo salsa de cebolla.</li>
+            <li><strong>Afternoon Tea (Té de la Tarde):</strong> Una tradición elegante que incluye una selección de sándwiches pequeños (pepino, salmón ahumado, huevo), scones con clotted cream (nata espesa) y mermelada, y una variedad de pasteles y tartas, todo acompañado de té.</li>
+            <li><strong>Curry:</strong> Gracias a la gran influencia del subcontinente indio, el curry es uno de los platos más populares en Inglaterra, con el Chicken Tikka Masala a menudo considerado un plato "nacional británico".</li>
+            <li><strong>Sticky Toffee Pudding:</strong> Un postre húmedo y esponjoso de bizcocho con dátiles, cubierto con una salsa de toffee caliente.</li>
+            <li><strong>Cerveza Ale y Sidra:</strong> Inglaterra tiene una gran tradición cervecera, con una enorme variedad de ales (bitter, pale ale, stout) servidas en pubs. La sidra también es muy popular.</li>
+        </ul>
+
+        <h2>Cómo Llegar y Moverse</h2>
+        <p>Londres cuenta con varios aeropuertos internacionales importantes: Heathrow (LHR), Gatwick (LGW), Stansted (STN), Luton (LTN) y London City (LCY). Otros aeropuertos relevantes en Inglaterra incluyen Manchester (MAN) y Birmingham (BHX).</p>
+        <h3>Desde los Aeropuertos de Londres al Centro</h3>
+        <ul>
+            <li><strong>Aeropuerto de Heathrow (LHR):</strong>
+                <ul>
+                    <li><strong>Heathrow Express:</strong> Tren rápido y directo a la estación de Paddington (15-20 minutos). Es la opción más rápida pero más cara.</li>
+                    <li><strong>Elizabeth Line:</strong> Nueva línea de tren que conecta Heathrow con Paddington, el centro de Londres y el este. Más paradas que el Express pero más económico.</li>
+                    <li><strong>Metro (Piccadilly Line):</strong> La opción más barata, conecta todas las terminales con el centro de Londres, pero es la más lenta (unos 45-60 minutos).</li>
+                    <li><strong>Autobuses (National Express):</strong> Conectan con la estación de autobuses Victoria Coach Station y otros puntos.</li>
+                    <li><strong>Taxi / Minicab / VTC:</strong> Disponibles, pero más caros.</li>
+                </ul>
+            </li>
+            <li><strong>Aeropuerto de Gatwick (LGW):</strong>
+                <ul>
+                    <li><strong>Gatwick Express:</strong> Tren directo a la estación Victoria (unos 30 minutos).</li>
+                    <li><strong>Trenes Southern y Thameslink:</strong> Conectan con estaciones como Victoria, London Bridge, St Pancras. Más económicos que el Express.</li>
+                    <li><strong>Autobuses (National Express, easyBus):</strong> Opciones más baratas a varios puntos de Londres.</li>
+                </ul>
+            </li>
+             <li><strong>Aeropuerto de Stansted (STN):</strong>
+                <ul>
+                    <li><strong>Stansted Express:</strong> Tren a la estación de Liverpool Street (unos 50 minutos).</li>
+                    <li><strong>Autobuses (National Express, Airport Bus Express):</strong> Conectan con varias zonas de Londres.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Transporte Interno en Inglaterra (y Reino Unido)</h3>
+        <p>Inglaterra tiene una excelente red de transporte:</p>
+        <ul>
+            <li><strong>Trenes (National Rail):</strong> La forma más común y eficiente de viajar entre ciudades y regiones. Existen diversas compañías operadoras. Comprar billetes con antelación ("Advance tickets") suele ser mucho más barato. Considera pases como el BritRail Pass si planeas muchos viajes en tren.</li>
+            <li><strong>Autobuses de Larga Distancia (Coaches):</strong> Compañías como National Express y Megabus ofrecen una alternativa más económica a los trenes, llegando a una amplia red de destinos.</li>
+            <li><strong>Alquiler de Coche:</strong> Útil para explorar la campiña y zonas rurales donde el transporte público es menos frecuente. Recuerda que se conduce por la izquierda.</li>
+            <li><strong>Vuelos Internos:</strong> Conectan las principales ciudades, pero para muchas rutas dentro de Inglaterra el tren es competitivo en tiempo y más cómodo.</li>
+            <li><strong>Transporte Público Urbano:</strong> Londres tiene un sistema extenso (Tube/metro, autobuses rojos de dos pisos, DLR, tranvías, Overground) que se paga con la tarjeta Oyster o tarjetas contactless. Otras ciudades también tienen buenos sistemas de autobuses y, en algunos casos, tranvías o metro ligero.</li>
+        </ul>
+
+        <h2>Consejos Prácticos para tu Viaje a Inglaterra</h2>
+        <ul>
+            <li><strong>Idioma:</strong> Inglés.</li>
+            <li><strong>Moneda:</strong> Libra Esterlina (GBP, £). Se aceptan tarjetas de crédito/débito ampliamente. Hay cajeros automáticos (ATMs o "cash machines") por todas partes.</li>
+            <li><strong>Enchufes:</strong> Tipo G (tres clavijas rectangulares). Voltaje 230V. Necesitarás un adaptador.</li>
+            <li><strong>Clima:</strong> Variable e impredecible. Prepárate para la lluvia en cualquier época del año. Las temperaturas son moderadas, con veranos suaves e inviernos frescos. Vístete por capas.</li>
+            <li><strong>Conducción por la Izquierda:</strong> Si alquilas un coche, recuerda que el volante está a la derecha y se conduce por el carril izquierdo.</li>
+            <li><strong>Propinas:</strong> En restaurantes, si el servicio es bueno y no está incluido un "service charge" (cargo por servicio, usualmente 12.5%) en la cuenta, es costumbre dejar un 10-15%. No es obligatorio dar propina en pubs si solo pides bebidas en la barra.</li>
+            <li><strong>Reservas:</strong> Para atracciones populares (London Eye, Torre de Londres, estudios de Harry Potter), musicales del West End y algunos restaurantes, es muy recomendable reservar con antelación, especialmente en temporada alta.</li>
+            <li><strong>Transporte en Londres:</strong> Obtén una tarjeta Oyster o usa tu tarjeta bancaria contactless para moverte fácilmente en el transporte público. Evita viajar en metro en hora punta si puedes.</li>
+            <li><strong>Pubs:</strong> Visitar un pub tradicional es una experiencia inglesa esencial. Muchos sirven buena comida ("pub grub").</li>
+        </ul>
+    `
+},
+
+{
+  slug: 'rusia-grandeza-imperial-arte-vastos-paisajes',
+  title: 'Rusia: Grandeza Imperial, Arte Deslumbrante y la Inmensidad de sus Paisajes',
+  mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' },
+  regionCategory: { name: 'Europa', slug: 'europa', type: 'region' }, // O 'Asia' para la parte oriental
+  featuredImage: 'images/post-rusia1.jpg',
+  cardImageUrl: 'images/post-rusia.jpg',
+  body: `
+        <h2>Descubre la Fascinante y Extensa Rusia</h2>
+        <p>Rusia, el país más grande del mundo, se extiende a lo largo de dos continentes, Europa y Asia, ofreciendo una diversidad de paisajes, culturas y experiencias que desafía la imaginación. Desde la opulencia imperial de San Petersburgo y el poder histórico de Moscú hasta la naturaleza salvaje de Siberia y el Lago Baikal, Rusia es una tierra de contrastes, historia profunda y una riqueza artística y literaria incomparable.</p>
+        <p>Con sus cúpulas bulbosas de colores, palacios suntuosos, el famoso ballet Bolshoi y una literatura que ha conmovido al mundo (Tolstói, Dostoievski, Pushkin), Rusia es un destino que evoca grandeza, misterio y una belleza a menudo sobrecogedora. (Nota: La situación actual puede afectar la viabilidad y seguridad del viaje).</p>
+
+        <h2>El Alma Rusa: Capitales Imperiales y Tradiciones Milenarias</h2>
+        <p><strong>Moscú</strong>, la capital, es el corazón político, económico y cultural de Rusia. La Plaza Roja, con el Kremlin, la Catedral de San Basilio y el Mausoleo de Lenin, es un conjunto arquitectónico icónico. Sus estaciones de metro son auténticos palacios subterráneos. <strong>San Petersburgo</strong>, la "Venecia del Norte" fundada por Pedro el Grande, deslumbra con sus canales, palacios imperiales como el Hermitage (uno de los museos más grandes del mundo) y el Palacio de Invierno, y sus "Noches Blancas" de verano.</p>
+        <p>El Anillo de Oro, un conjunto de antiguas ciudades medievales al noreste de Moscú (como Súzdal y Vladímir), ofrece una visión de la Rusia más tradicional y ortodoxa. La artesanía rusa, como las matrioshkas (muñecas rusas) y las lacas de Palekh, es mundialmente reconocida.</p>
+         <img src="images/post-rusia2.jpg" alt="Catedral de San Basilio en la Plaza Roja de Moscú, Rusia" class="inline-image">
+
+        <h2>Explorando la Inmensidad Rusa: Destinos Clave</h2>
+        <p>Dada su extensión, explorar Rusia puede llevar toda una vida, pero algunos puntos destacados incluyen:</p>
+        <ul>
+            <li><strong>Recorrer Moscú:</strong> Visita el Kremlin y sus catedrales, la Plaza Roja, la Catedral de San Basilio, el Teatro Bolshoi, la Galería Tretiakov (arte ruso) y disfruta de un paseo en barco por el río Moscova.</li>
+            <li><strong>Maravillarse en San Petersburgo:</strong> Explora el Museo del Hermitage, el Palacio de Peterhof (el "Versalles Ruso"), la Iglesia del Salvador sobre la Sangre Derramada, la Fortaleza de San Pedro y San Pablo, y pasea por la Avenida Nevsky Prospekt.</li>
+            <li><strong>Viajar en el Tren Transiberiano (o Transmongoliano/Transmanchuriano):</strong> Una de las rutas ferroviarias más legendarias del mundo, cruzando vastos paisajes desde Moscú hasta Vladivostok en el Pacífico, o hacia Mongolia y China.</li>
+            <li><strong>Descubrir el Anillo de Oro:</strong> Visita ciudades históricas como Súzdal, Sergiyev Posad (con su importante monasterio), Vladímir y Yaroslavl, con sus iglesias y kremlins antiguos.</li>
+            <li><strong>Contemplar el Lago Baikal en Siberia:</strong> El lago de agua dulce más grande y profundo del mundo, una maravilla natural con paisajes espectaculares, especialmente en invierno cuando se congela.</li>
+            <li><strong>Explorar Kazán (Tartaristán):</strong> Una ciudad vibrante donde la cultura rusa y tártara se fusionan, con un impresionante Kremlin que incluye una mezquita y una catedral ortodoxa.</li>
+            <li><strong>Visitar Sochi en el Mar Negro:</strong> Un popular destino de vacaciones de verano y sede de los Juegos Olímpicos de Invierno de 2014.</li>
+        </ul>
+
+        <h2>Sabores de Rusia: Cocina Tradicional y Reconfortante</h2>
+        <p>La cocina rusa es sustanciosa y reconfortante, adaptada a su clima a menudo frío, con un uso destacado de productos de la tierra, pescado, carnes y lácteos fermentados.</p>
+        <img src="images/post-rusia3.jpg" alt="Plato de Pelmeni rusos (dumplings de carne) servidos con smetana (crema agria)" class="inline-image">
+        <ul>
+            <li><strong>Borscht:</strong> Una sopa de remolacha vibrante y sabrosa, que puede llevar carne, patatas, repollo y otras verduras. Se sirve a menudo con smetana (crema agria).</li>
+            <li><strong>Pelmeni y Vareniki:</strong> Tipos de dumplings. Los pelmeni suelen estar rellenos de carne picada (cerdo, ternera, cordero) y se sirven hervidos con mantequilla, vinagre o smetana. Los vareniki son más grandes y pueden tener rellenos dulces (frutas del bosque, requesón) o salados (patata, repollo).</li>
+            <li><strong>Shashlik:</strong> Brochetas de carne marinada (generalmente cordero, cerdo o pollo) asadas a la parrilla, similares al kebab. Muy popular en el Cáucaso y Asia Central, pero también en toda Rusia.</li>
+            <li><strong>Blinis:</strong> Pequeñas tortitas o crepes finas, que se pueden servir con rellenos dulces (mermelada, miel, leche condensada, requesón) o salados (caviar, salmón ahumado, carne picada, champiñones). Especialmente populares durante la Máslenitsa (carnaval).</li>
+            <li><strong>Ensalada Olivier (Ensalada Rusa):</strong> Una ensalada popular hecha con patatas cocidas, zanahorias, guisantes, huevo duro, pepinillos encurtidos, pollo o carne cocida, todo mezclado con mayonesa.</li>
+            <li><strong>Stroganoff de Ternera:</strong> Tiras de ternera salteadas con champiñones y cebolla en una salsa cremosa de smetana.</li>
+            <li><strong>Pirozhki:</strong> Pequeños bollos horneados o fritos rellenos de carne, repollo, patata, huevo y cebolla verde, o frutas.</li>
+            <li><strong>Kvas:</strong> Una bebida fermentada tradicional hecha de pan de centeno, ligeramente alcohólica (o sin alcohol) y refrescante.</li>
+            <li><strong>Vodka:</strong> La bebida alcohólica nacional por excelencia, consumida tradicionalmente fría y a menudo acompañada de zakuski (aperitivos).</li>
+            <li><strong>Té (Chai):</strong> Muy popular, a menudo servido en un samovar y acompañado de dulces o mermelada (varenye).</li>
+        </ul>
+
+        <h2>Cómo Llegar y Moverse</h2>
+        <p>Los principales aeropuertos internacionales de Rusia se encuentran en Moscú (Sheremetyevo - SVO, Domodedovo - DME, Vnukovo - VKO) y San Petersburgo (Pulkovo - LED).</p>
+        <h3>Desde los Aeropuertos de Moscú al Centro</h3>
+        <ul>
+            <li><strong>Aeroexpress:</strong> Trenes directos y rápidos que conectan los tres aeropuertos principales (SVO, DME, VKO) con estaciones de tren céntricas de Moscú que tienen conexión con el metro. Es la opción más recomendada.</li>
+            <li><strong>Autobuses / Marshrutkas (Minibuses):</strong> Opciones más económicas que conectan los aeropuertos con estaciones de metro periféricas. Pueden ser más lentos debido al tráfico.</li>
+            <li><strong>Taxi / Plataformas (Yandex.Taxi):</strong> Disponibles, pero es crucial usar aplicaciones oficiales o servicios de taxi con licencia para evitar precios excesivos. Acuerda el precio o asegúrate de que el taxímetro funcione.</li>
+        </ul>
+
+        <h3>Transporte Interno en Rusia</h3>
+        <p>Dada la inmensidad del país:</p>
+        <ul>
+            <li><strong>Trenes (RZhD - Ferrocarriles Rusos):</strong> La forma más popular y a menudo la más pintoresca de viajar largas distancias. Hay diferentes tipos de trenes y clases (platskart, kupé, SV/lux). El Transiberiano es la experiencia ferroviaria definitiva.</li>
+            <li><strong>Vuelos Internos:</strong> Numerosas aerolíneas (Aeroflot, S7 Airlines, Pobeda) conectan las vastas regiones del país. Esencial para distancias muy largas si el tiempo es limitado.</li>
+            <li><strong>Autobuses de Larga Distancia:</strong> Menos comunes para distancias muy largas que el tren, pero útiles para conectar ciudades donde el tren no llega o para opciones más económicas.</li>
+            <li><strong>Metro:</strong> En ciudades como Moscú, San Petersburgo, Nizhni Nóvgorod, Kazán, etc. El metro de Moscú y San Petersburgo son famosos por la belleza de sus estaciones.</li>
+            <li><strong>Transporte Fluvial:</strong> En verano, los cruceros y ferries por los ríos y canales (como entre Moscú y San Petersburgo) pueden ser una forma relajante de viajar.</li>
+        </ul>
+
+        <h2>Consejos Prácticos para tu Viaje a Rusia</h2>
+        <ul>
+            <li><strong>Visado:</strong> La mayoría de las nacionalidades necesitan un visado para entrar a Rusia. El proceso puede ser complejo y requiere una carta de invitación (visa support). Infórmate con mucha antelación en el consulado ruso de tu país. (Nota: Las políticas de visado pueden cambiar).</li>
+            <li><strong>Idioma:</strong> Ruso. Se usa el alfabeto cirílico. El inglés no está muy extendido fuera de las principales zonas turísticas y hoteles. Aprender algunas frases básicas en ruso y el alfabeto cirílico es extremadamente útil.</li>
+            <li><strong>Moneda:</strong> Rublo Ruso (RUB). Hay cajeros automáticos y se aceptan tarjetas en ciudades, pero lleva efectivo para zonas rurales o mercados.</li>
+            <li><strong>Registro:</strong> Al llegar a Rusia, los turistas deben registrar su visado y dirección de estancia con las autoridades en un plazo de unos días. Los hoteles suelen hacerlo automáticamente. Si te alojas en apartamentos o con amigos, consulta el procedimiento.</li>
+            <li><strong>Seguridad:</strong> Toma precauciones habituales contra hurtos en zonas concurridas. Sé consciente de tu entorno.</li>
+            <li><strong>Clima:</strong> Muy variado. Inviernos extremadamente fríos, especialmente en Siberia. Veranos pueden ser cálidos en muchas regiones. Vístete adecuadamente según la época y la región.</li>
+            <li><strong>Alfabeto Cirílico:</strong> Familiarizarte con las letras básicas te ayudará enormemente a leer señales, nombres de estaciones de metro, etc.</li>
+            <li><strong>Fotografía:</strong> Generalmente permitido, pero ten cuidado al fotografiar instalaciones militares o gubernamentales. Pide permiso a las personas.</li>
+            <li><strong>Viajar con Responsabilidad:</strong> Dada la situación geopolítica actual, es crucial informarse exhaustivamente sobre las advertencias de viaje de tu gobierno, restricciones, y la viabilidad y seguridad de viajar a Rusia.</li>
+        </ul>
+    `
+},
+
+{
+  slug: 'china-imperio-milenario-modernidad-vertiginosa-paisajes-epicos',
+  title: 'China: Entre la Grandeza de un Imperio Milenario y una Modernidad Vertiginosa',
+  mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' },
+  regionCategory: { name: 'Asia', slug: 'asia', type: 'region' },
+  featuredImage: 'images/post-china1.jpg',
+  cardImageUrl: 'images/post-china.jpg',
+  body: `
+        <h2>Descubre la Fascinante y Multifacética China</h2>
+        <p>China, una de las civilizaciones más antiguas del mundo y una potencia global emergente, es un país de dimensiones y contrastes épicos. Desde la Gran Muralla serpenteando por montañas hasta los rascacielos futuristas de Shanghái, pasando por los Guerreros de Terracota de Xi'an, los paisajes kársticos de Guilin y la serenidad de sus templos ancestrales, China ofrece un viaje a través del tiempo y la escala.</p>
+        <p>Con una historia que abarca más de 5,000 años, una cultura profundamente arraigada, una gastronomía increíblemente diversa y una transformación económica asombrosa, China es un destino que desafía las expectativas, estimula la curiosidad y deja una impresión duradera.</p>
+
+        <h2>El Corazón de China: Patrimonio Imperial y Megaciudades del Siglo XXI</h2>
+        <p><strong>Pekín (Beijing)</strong>, la capital, es el epicentro histórico y político, hogar de la Ciudad Prohibida (el palacio imperial), la Plaza de Tiananmén, el Templo del Cielo y secciones impresionantes de la Gran Muralla. <strong>Shanghái</strong>, en cambio, es el rostro de la China moderna y cosmopolita, con su icónico skyline del Bund y Pudong, y una energía vibrante. <strong>Xi'an</strong>, antigua capital imperial, alberga el asombroso ejército de Guerreros de Terracota. <strong>Hong Kong</strong>, con su estatus especial, ofrece una mezcla única de Oriente y Occidente, rascacielos y naturaleza.</p>
+        <p>La filosofía (confucianismo, taoísmo), el arte (caligrafía, pintura tradicional), la medicina tradicional y las artes marciales son pilares de la cultura china. El idioma mandarín, con sus tonos y caracteres, es un elemento unificador.</p>
+         <img src="images/post-china2.jpg" alt="La Gran Muralla China serpenteando a través de las montañas" class="inline-image">
+
+        <h2>Aventuras y Maravillas por Descubrir en el Gigante Asiático</h2>
+        <p>La vastedad de China ofrece innumerables experiencias:</p>
+        <ul>
+            <li><strong>Recorrer la Gran Muralla China:</strong> Visita secciones restauradas como Badaling o Mutianyu (cerca de Pekín), o tramos más salvajes y menos concurridos.</li>
+            <li><strong>Explorar la Ciudad Prohibida en Pekín:</strong> El antiguo palacio imperial de las dinastías Ming y Qing, un vasto complejo de patios y pabellones.</li>
+            <li><strong>Maravillarse con los Guerreros de Terracota en Xi'an:</strong> Miles de figuras de guerreros y caballos de tamaño real enterrados con el primer emperador de China.</li>
+            <li><strong>Navegar por el Río Li entre Guilin y Yangshuo:</strong> Disfruta de paisajes kársticos espectaculares con montañas de formas caprichosas y arrozales.</li>
+            <li><strong>Visitar el Palacio de Potala en Lhasa (Tíbet):</strong> Antigua residencia del Dalái Lama, un impresionante ejemplo de arquitectura tibetana (Nota: Viajar al Tíbet requiere permisos especiales).</li>
+            <li><strong>Ver osos panda gigantes en Chengdu:</strong> El Centro de Investigación y Cría del Panda Gigante de Chengdu es el mejor lugar para ver estos adorables animales.</li>
+            <li><strong>Descubrir la Modernidad de Shanghái:</strong> Pasea por el Bund, sube a la Torre Perla Oriental o la Torre de Shanghái, y explora barrios como la Concesión Francesa.</li>
+            <li><strong>Relajarse en los Jardines Clásicos de Suzhou:</strong> Cerca de Shanghái, conocidos por su exquisito diseño paisajístico.</li>
+            <li><strong>Explorar las Montañas Amarillas (Huangshan):</strong> Famosas por sus picos de granito, pinos retorcidos, aguas termales y mares de nubes.</li>
+        </ul>
+
+        <h2>Sabores de China: Un Universo Culinario Regional</h2>
+        <p>La gastronomía china es una de las más ricas, diversas y antiguas del mundo, con distintas tradiciones culinarias regionales principales (como la cantonesa, sichuanesa, de Shandong, de Jiangsu, etc.) cada una con sus propios ingredientes, técnicas y sabores característicos.</p>
+        <img src="images/post-china3.jpg" alt="Variedad de Dim Sum servidos en cestas de bambú" class="inline-image">
+        <ul>
+            <li><strong>Pato Laqueado Pekinés:</strong> Pato asado lentamente hasta que la piel esté crujiente y dorada, servido en finas lonchas con tortitas finas, cebolleta, pepino y salsa hoisin.</li>
+            <li><strong>Dim Sum (Cocina Cantonesa):</strong> Pequeñas porciones de comida, a menudo cocidas al vapor o fritas, servidas en cestas de bambú. Incluyen dumplings (jiaozi, baozi), rollitos de primavera, siu mai, har gow, etc.</li>
+            <li><strong>Kung Pao Chicken (Pollo Gong Bao - Cocina Sichuanesa):</strong> Pollo salteado con cacahuetes, verduras y chiles secos en una salsa agridulce y picante.</li>
+            <li><strong>Mapo Tofu (Cocina Sichuanesa):</strong> Tofu tierno cocinado en una salsa picante a base de doubanjiang (pasta de habas fermentadas con chile), carne picada (opcional) y pimienta de Sichuan.</li>
+            <li><strong>Hot Pot (Olla Caliente):</strong> Una experiencia culinaria social donde los comensales cocinan diversos ingredientes (carnes, mariscos, verduras, tofu, fideos) en un caldo hirviendo en el centro de la mesa.</li>
+            <li><strong>Arroz Frito (Chǎofàn):</strong> Arroz salteado con huevo, verduras, carne o mariscos y salsa de soja.</li>
+            <li><strong>Fideos (Miantiao):</strong> Innumerables variedades: salteados (chow mein), en sopa (lamian, ramen chino), fideos de arroz (mifen, hefen).</li>
+            <li><strong>Dumplings (Jiaozi):</strong> Empanadillas rellenas de carne y/o verduras, hervidas, al vapor o fritas.</li>
+            <li><strong>Té Chino:</strong> Una parte integral de la cultura, con una enorme variedad de tipos (verde, oolong, pu-erh, negro, blanco, etc.) y ceremonias de preparación.</li>
+        </ul>
+
+        <h2>Cómo Llegar y Moverse</h2>
+        <p>Los principales aeropuertos internacionales de China se encuentran en Pekín (PEK - Capital, PKX - Daxing), Shanghái (PVG - Pudong, SHA - Hongqiao), Guangzhou (CAN), Chengdu (CTU) y Shenzhen (SZX).</p>
+        <h3>Desde los Aeropuertos Principales al Centro (Ejemplos Pekín y Shanghái)</h3>
+        <ul>
+            <li><strong>Aeropuerto de Pekín-Capital (PEK):</strong>
+                <ul>
+                    <li><strong>Airport Express Train:</strong> Conecta las Terminales 2 y 3 con las estaciones de Sanyuanqiao y Dongzhimen en el centro, con conexión al metro. Rápido y eficiente.</li>
+                    <li><strong>Autobuses Shuttle:</strong> Varias líneas conectan el aeropuerto con diferentes puntos de la ciudad. Más económicos pero pueden verse afectados por el tráfico.</li>
+                    <li><strong>Taxi:</strong> Disponibles, asegúrate de usar la parada oficial y que usen el taxímetro. Ten la dirección de tu hotel escrita en chino.</li>
+                </ul>
+            </li>
+            <li><strong>Aeropuerto de Shanghái-Pudong (PVG):</strong>
+                <ul>
+                    <li><strong>Tren Maglev:</strong> El tren de levitación magnética más rápido del mundo, conecta el aeropuerto con la estación de Longyang Road (conexión con metro) en unos 8 minutos.</li>
+                    <li><strong>Metro:</strong> La Línea 2 conecta directamente el aeropuerto con el centro de la ciudad (Plaza del Pueblo, Nanjing Road). Más lento pero más económico que el Maglev.</li>
+                    <li><strong>Autobuses Shuttle y Taxis:</strong> También disponibles.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Transporte Interno en China</h3>
+        <p>China cuenta con una infraestructura de transporte moderna y extensa:</p>
+        <ul>
+            <li><strong>Trenes de Alta Velocidad (CRH - China Railway High-speed):</strong> Una red increíblemente desarrollada y eficiente que conecta casi todas las principales ciudades. Cómodos, rápidos y puntuales. Esencial reservar con antelación, especialmente en festivos.</li>
+            <li><strong>Trenes Convencionales:</strong> También cubren una vasta red, con diferentes clases (cama dura, cama blanda, asiento duro, asiento blando). Más económicos pero más lentos.</li>
+            <li><strong>Vuelos Internos:</strong> Dada la extensión del país, los vuelos son comunes para cubrir grandes distancias. Numerosas aerolíneas operan rutas domésticas.</li>
+            <li><strong>Autobuses de Larga Distancia:</strong> Conectan ciudades y áreas rurales donde el tren no llega. La calidad varía.</li>
+            <li><strong>Metro y Transporte Público Urbano:</strong> Las grandes ciudades tienen sistemas de metro modernos y extensos, además de autobuses. Se suelen usar tarjetas recargables o pagos móviles.</li>
+            <li><strong>Taxis y Plataformas de Transporte (Didi Chuxing):</strong> Ampliamente disponibles en ciudades. Didi es la principal aplicación.</li>
+        </ul>
+
+        <h2>Consejos Prácticos para tu Viaje a China</h2>
+        <ul>
+            <li><strong>Visado:</strong> La mayoría de las nacionalidades necesitan un visado para entrar a China continental. Solicítalo con bastante antelación en la embajada o consulado chino de tu país. Hay políticas de tránsito sin visado para ciertas ciudades y duraciones. Hong Kong y Macao tienen regímenes de visado separados.</li>
+            <li><strong>Idioma:</strong> Mandarín (Putonghua) es el idioma oficial. El inglés se habla en hoteles y atracciones turísticas importantes, pero es limitado en otros lugares. Aprender algunas frases básicas en mandarín y llevar una aplicación de traducción (con función offline) es muy recomendable. Ten las direcciones escritas en caracteres chinos.</li>
+            <li><strong>Moneda:</strong> Yuan Chino (CNY), también llamado Renminbi (RMB). Los pagos móviles (WeChat Pay, Alipay) son omnipresentes en China, incluso para pequeñas transacciones. Para los turistas puede ser complicado configurarlos. Las tarjetas de crédito internacionales se aceptan en hoteles grandes y algunos comercios, pero no de forma universal. Lleva efectivo y hay cajeros automáticos.</li>
+            <li><strong>VPN (Red Privada Virtual):</strong> Muchos sitios web y aplicaciones occidentales (Google, Facebook, Instagram, WhatsApp, Twitter, YouTube, etc.) están bloqueados en China. Si necesitas acceder a ellos, necesitarás una VPN que funcione en China. Instálala y pruébala *antes* de llegar.</li>
+            <li><strong>Internet y Tarjeta SIM:</strong> Puedes comprar una tarjeta SIM local para datos o usar Wi-Fi (a menudo requiere registro con número de teléfono chino).</li>
+            <li><strong>Cultura y Etiqueta:</strong> Sé respetuoso con las costumbres locales. El regateo es común en mercados. Las propinas no son una práctica extendida, excepto quizás para guías turísticos y en algunos hoteles de alta gama.</li>
+            <li><strong>Contaminación del Aire:</strong> En algunas grandes ciudades puede ser un problema. Considera llevar mascarillas si eres sensible y revisa los índices de calidad del aire.</li>
+            <li><strong>Agua del Grifo:</strong> No es recomendable beberla. Compra agua embotellada.</li>
+            <li><strong>Baños Públicos:</strong> Pueden variar mucho en calidad. Lleva tu propio papel higiénico y desinfectante de manos. Los baños de estilo "cuclillas" son comunes.</li>
+            <li><strong>Reservas:</strong> Para trenes de alta velocidad, vuelos internos y hoteles en temporada alta o durante festivos chinos (Año Nuevo Chino, Semana Dorada de Octubre), es crucial reservar con mucha antelación.</li>
+        </ul>
+    `
+},
+
+{
+  slug: 'austria-elegancia-imperial-alpes-musica-encanto-europeo',
+  title: 'Austria: Elegancia Imperial, Cumbres Alpinas y el Encanto Musical de Europa Central',
+  mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' },
+  regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
+  featuredImage: 'images/post-austria1.jpg',
+  cardImageUrl: 'images/post-austria.jpg',
+  body: `
+        <h2>Descubre la Belleza y el Legado de Austria</h2>
+        <p>Austria, enclavada en el corazón de Europa, es un país que evoca imágenes de palacios imperiales, música clásica, paisajes alpinos de ensueño y pueblos encantadores. Cuna de emperadores, compositores legendarios como Mozart y Strauss, y una rica tradición artística, Austria combina a la perfección su opulento pasado con una modernidad vibrante y una calidad de vida envidiable.</p>
+        <p>Desde la majestuosidad de Viena y Salzburgo hasta la belleza natural del Tirol y la región de los lagos de Salzkammergut, Austria ofrece una experiencia de viaje elegante, culta y visualmente deslumbrante.</p>
+
+        <h2>El Corazón Austriaco: Esplendor Imperial y Paisajes de Postal</h2>
+        <p><strong>Viena (Wien)</strong>, la capital, es una de las ciudades más elegantes de Europa, con un legado imperial palpable en sus palacios (Hofburg, Schönbrunn, Belvedere), la Ópera Estatal, sus museos de talla mundial y sus tradicionales cafés vieneses. <strong>Salzburgo</strong>, ciudad natal de Mozart, es una joya barroca a los pies de los Alpes, con su imponente fortaleza de Hohensalzburg y el encanto de su casco antiguo. <strong>Innsbruck</strong>, en el corazón del Tirol, está rodeada de montañas espectaculares y es famosa por su Tejadillo de Oro.</p>
+        <p>La música clásica es intrínseca a la identidad austriaca. Asistir a un concierto en Viena o Salzburgo es una experiencia inolvidable. La arquitectura barroca y los paisajes alpinos con lagos cristalinos y pueblos pintorescos como Hallstatt completan la imagen idílica del país.</p>
+         <img src="images/post-austria2.jpg" alt="Palacio de Schönbrunn en Viena con sus jardines barrocos" class="inline-image">
+
+        <h2>Tesoros Austriacos por Explorar: De Palacios a Montañas</h2>
+        <p>Austria te invita a sumergirte en su rica oferta cultural y natural:</p>
+        <ul>
+            <li><strong>Explorar Viena Imperial:</strong> Visita el Palacio Hofburg (apartamentos imperiales, Museo Sisí, Platería de la Corte), el Palacio Schönbrunn (antigua residencia de verano de los Habsburgo) y el Palacio Belvedere (con "El Beso" de Klimt). Asiste a una representación en la Ópera Estatal de Viena o a un concierto de música clásica.</li>
+            <li><strong>Seguir los Pasos de Mozart en Salzburgo:</strong> Visita su casa natal y su residencia, pasea por la Getreidegasse, sube a la Fortaleza Hohensalzburg y disfruta de las vistas.</li>
+            <li><strong>Recorrer la Región de los Lagos de Salzkammergut:</strong> Descubre pueblos de ensueño como Hallstatt (Patrimonio de la Humanidad, a orillas de un lago alpino), St. Wolfgang (con el famoso hotel "Caballito Blanco") y St. Gilgen.</li>
+            <li><strong>Aventura en los Alpes Tiroleses:</strong> Disfruta del senderismo, el esquí (en invierno en estaciones como St. Anton, Kitzbühel o Ischgl), y los paisajes impresionantes de Innsbruck y sus alrededores.</li>
+            <li><strong>Navegar por el Danubio:</strong> Realiza un crucero por el valle de Wachau (Patrimonio de la Humanidad), famoso por sus viñedos, abadías (como Melk) y castillos medievales.</li>
+            <li><strong>Visitar Graz:</strong> La segunda ciudad más grande de Austria, con un casco antiguo renacentista bien conservado (Patrimonio de la Humanidad) y el moderno Kunsthaus Graz (museo de arte).</li>
+            <li><strong>Disfrutar de la Ruta Romántica Austriaca:</strong> Un recorrido escénico que conecta Salzburgo con Viena, pasando por paisajes pintorescos y ciudades históricas.</li>
+        </ul>
+
+        <h2>Sabores de Austria: Dulzura Imperial y Tradición Alpina</h2>
+        <p>La cocina austriaca es conocida por sus postres elaborados, sus platos contundentes y la influencia de las diversas regiones del antiguo Imperio Austrohúngaro.</p>
+        <img src="images/post-austria3.jpg" alt="Porción de Sachertorte, famosa tarta de chocolate vienesa" class="inline-image">
+        <ul>
+            <li><strong>Wiener Schnitzel:</strong> El plato austriaco más famoso. Una escalopa de ternera empanada y frita, tradicionalmente servida con una rodaja de limón y ensalada de patatas o patatas con perejil.</li>
+            <li><strong>Tafelspitz:</strong> Carne de ternera cocida lentamente en un caldo con verduras de raíz, servida con salsa de rábano picante y manzana, y a menudo con patatas salteadas.</li>
+            <li><strong>Apfelstrudel (Strudel de Manzana):</strong> Un hojaldre fino relleno de manzanas, pasas, canela y pan rallado, espolvoreado con azúcar glas. Se sirve caliente, a menudo con salsa de vainilla o helado.</li>
+            <li><strong>Sachertorte:</strong> Una icónica tarta de chocolate vienesa, densa y con una capa de mermelada de albaricoque, cubierta con un glaseado de chocolate oscuro. Se sirve tradicionalmente con nata montada sin azúcar (Schlagobers).</li>
+            <li><strong>Kaiserschmarrn:</strong> Una especie de pancake grueso y desmenuzado, caramelizado, espolvoreado con azúcar glas y a menudo servido con compota de ciruelas o manzana.</li>
+            <li><strong>Knödel:</strong> Albóndigas o bolas de masa que pueden ser saladas (de pan, patata, sémola, servidas en sopas o como guarnición) o dulces (rellenas de albaricoque - Marillenknödel, o ciruela - Zwetschkenknödel).</li>
+            <li><strong>Gulasch:</strong> Aunque de origen húngaro, es muy popular en Austria. Un estofado de carne especiado con pimentón.</li>
+            <li><strong>Brettljause:</strong> Una tabla de embutidos, quesos, patés, encurtidos y pan, típica de las tabernas de vino (Heuriger) y las regiones alpinas.</li>
+            <li><strong>Café Vienés:</strong> Austria tiene una fuerte cultura del café, con muchas especialidades como el Melange (similar al cappuccino), Einspänner (moca con nata montada) o Franziskaner. Los cafés tradicionales son instituciones.</li>
+            <li><strong>Vinos Austriacos:</strong> Destacan los blancos, especialmente de las variedades Grüner Veltliner y Riesling. También buenos tintos como el Zweigelt o Blaufränkisch.</li>
+        </ul>
+
+        <h2>Cómo Llegar y Moverse</h2>
+        <p>El principal aeropuerto internacional es el Aeropuerto de Viena-Schwechat (VIE). Otros aeropuertos importantes son los de Salzburgo (SZG), Innsbruck (INN), Graz (GRZ) y Linz (LNZ).</p>
+        <h3>Desde el Aeropuerto de Viena (VIE) al Centro de la Ciudad</h3>
+        <ul>
+            <li><strong>City Airport Train (CAT):</strong> Tren directo y sin paradas a la estación Wien Mitte/Landstrasse en 16 minutos. Es la opción más rápida pero más cara.</li>
+            <li><strong>Tren de Cercanías (S-Bahn - Línea S7):</strong> También va a Wien Mitte y otras estaciones céntricas. Más paradas y un poco más lento que el CAT (unos 25 minutos a Wien Mitte), pero considerablemente más económico y forma parte de la red de transporte público de Viena.</li>
+            <li><strong>Autobuses (Vienna Airport Lines):</strong> Varias líneas conectan el aeropuerto con diferentes puntos de Viena (Schwedenplatz, Westbahnhof, Hauptbahnhof). Cómodos y con buena frecuencia.</li>
+            <li><strong>Taxi / Plataformas de Transporte:</strong> Disponibles, pero más caros. Verifica tarifas o usa aplicaciones.</li>
+        </ul>
+
+        <h3>Transporte Interno en Austria</h3>
+        <p>Austria cuenta con una red de transporte público excelente y muy eficiente:</p>
+        <ul>
+            <li><strong>Trenes (ÖBB - Ferrocarriles Federales Austriacos):</strong> La forma más cómoda y eficiente de viajar entre ciudades y regiones. Trenes modernos, puntuales y con buenas conexiones (Railjet, InterCity, EuroCity). Recomendable comprar billetes con antelación para obtener descuentos (Sparschiene).</li>
+            <li><strong>Autobuses Postales (Postbus):</strong> Complementan la red de trenes, llegando a pueblos más pequeños y zonas rurales donde el tren no llega, especialmente en regiones montañosas.</li>
+            <li><strong>Alquiler de Coche:</strong> Ideal para explorar zonas alpinas y rurales a tu ritmo, como la región de los lagos o las rutas panorámicas alpinas. Las carreteras son excelentes.</li>
+            <li><strong>Transporte Público Urbano:</strong> Ciudades como Viena, Salzburgo, Graz e Innsbruck tienen sistemas muy eficientes de metro (U-Bahn en Viena), tranvías (Straßenbahn) y autobuses. Se suelen usar pases diarios o de varios días.</li>
+            <li><strong>Bicicleta:</strong> Austria es un país muy amigable para los ciclistas, con muchas rutas señalizadas, como la popular ruta del Danubio.</li>
+        </ul>
+
+        <h2>Consejos Prácticos para tu Viaje a Austria</h2>
+        <ul>
+            <li><strong>Idioma:</strong> Alemán (con su variante austriaca). El inglés es ampliamente hablado en zonas turísticas y por la gente joven.</li>
+            <li><strong>Moneda:</strong> Euro (€). Amplia aceptación de tarjetas de crédito/débito y disponibilidad de cajeros automáticos.</li>
+            <li><strong>Enchufes:</strong> Tipo F (Schuko, dos clavijas redondas). Voltaje 230V.</li>
+            <li><strong>Propinas:</strong> Es costumbre redondear la cuenta o dejar un 5-10% en restaurantes si el servicio fue bueno. No es obligatorio, pero se aprecia.</li>
+            <li><strong>Vignette (Peaje de Autopista):</strong> Si viajas en coche por autopistas austriacas, necesitas comprar una "Vignette" (pegatina de peaje) y colocarla en el parabrisas. Se puede comprar en gasolineras cerca de la frontera o online.</li>
+            <li><strong>Cultura del Café:</strong> Visitar un café tradicional vienés (Kaffeehaus) es una experiencia cultural. Tómate tu tiempo, lee el periódico (a menudo disponibles) y disfruta de un café y un pastel.</li>
+            <li><strong>Puntualidad:</strong> Los austriacos valoran la puntualidad. Intenta ser puntual para citas o reservas.</li>
+            <li><strong>Saludos:</strong> Un "Grüß Gott" (saludo tradicional del sur de Alemania y Austria) es común, además del "Guten Tag" (Buenos días) o "Hallo" (Hola).</li>
+            <li><strong>Música:</strong> Aprovecha la oportunidad para asistir a un concierto de música clásica, una ópera o un recital, especialmente en Viena o Salzburgo.</li>
+        </ul>
+    `
+},
+
+{
+  slug: 'vietnam-paisajes-misticos-cultura-ancestral-cocina-vibrante',
+  title: 'Vietnam: Paisajes Místicos, Cultura Ancestral y una Cocina que Despierta los Sentidos',
+  mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' }, // O 'Naturaleza'
+  regionCategory: { name: 'Asia', slug: 'asia', type: 'region' },
+  featuredImage: 'images/post-vietnam1.jpg',
+  cardImageUrl: 'images/post-vietnam.jpg',
+  body: `
+        <h2>Descubre la Belleza Cautivadora de Vietnam</h2>
+        <p>Vietnam, un país con forma de "S" en el Sudeste Asiático, es una tierra de una belleza natural sobrecogedora, una historia rica y resiliente, y una cultura vibrante que ha sabido preservar sus tradiciones ancestrales mientras abraza la modernidad. Desde los paisajes kársticos de ensueño de la Bahía de Halong hasta los bulliciosos mercados del Delta del Mekong, pasando por ciudades imperiales, arrozales esmeralda y playas idílicas, Vietnam ofrece un viaje lleno de contrastes y descubrimientos.</p>
+        <p>Conocido por su exquisita gastronomía, la amabilidad de su gente y una historia marcada por la lucha y la reunificación, Vietnam es un destino que fascina, inspira y deja una profunda impresión en quienes lo visitan.</p>
+
+        <h2>El Alma Vietnamita: Tradición, Historia y Dinamismo</h2>
+        <p><strong>Hanoi</strong>, la capital milenaria, conserva un encanto colonial francés en su Barrio Antiguo, con sus calles estrechas, el Lago Hoan Kiem y el Mausoleo de Ho Chi Minh. <strong>Ciudad Ho Chi Minh (antigua Saigón)</strong>, en el sur, es el motor económico del país, una metrópolis bulliciosa y moderna, pero con vestigios de su pasado como el Palacio de la Reunificación y la Oficina Central de Correos. <strong>Hoi An</strong>, un antiguo puerto comercial, es una joya perfectamente conservada, Patrimonio de la Humanidad, famosa por sus sastrerías y farolillos de colores. <strong>Hue</strong>, la antigua capital imperial, alberga la Ciudadela y las tumbas de los emperadores Nguyen.</p>
+        <p>El respeto por los antepasados, las tradiciones budistas y confucianas, y las festividades como el Tet (Año Nuevo Lunar) son fundamentales en la cultura vietnamita. Las marionetas de agua son una forma de arte tradicional única.</p>
+         <img src="images/post-vietnam2.jpg" alt="Juncos tradicionales navegando entre las formaciones kársticas de la Bahía de Halong" class="inline-image">
+
+        <h2>Maravillas Vietnamitas: Un Recorrido por sus Tesoros Naturales y Culturales</h2>
+        <p>Vietnam te espera con una increíble variedad de experiencias:</p>
+        <ul>
+            <li><strong>Navegar por la Bahía de Halong (o Bahía de Lan Ha/Bai Tu Long):</strong> Patrimonio de la Humanidad, un paisaje místico de miles de islas e islotes de piedra caliza que emergen de aguas color esmeralda. Realiza un crucero de una o varias noches.</li>
+            <li><strong>Explorar el Casco Antiguo de Hoi An:</strong> Pasea por sus calles peatonales, admira la arquitectura de sus casas de comerciantes, el Puente Japonés Cubierto y encarga ropa a medida en una de sus muchas sastrerías. Disfruta de sus farolillos por la noche.</li>
+            <li><strong>Descubrir el Delta del Mekong:</strong> La "despensa de arroz" de Vietnam. Realiza un paseo en barco por sus canales, visita mercados flotantes (como Cai Rang), huertos frutales y pueblos ribereños.</li>
+            <li><strong>Visitar la Ciudad Imperial de Hue:</strong> Explora la Ciudadela amurallada, las elaboradas tumbas de los emperadores Nguyen y navega por el Río del Perfume.</li>
+            <li><strong>Conocer la Historia en Hanoi:</strong> Visita el Mausoleo de Ho Chi Minh, el Templo de la Literatura (primera universidad de Vietnam), el Museo de Etnología y disfruta de un espectáculo de marionetas de agua.</li>
+            <li><strong>Senderismo en Sapa y el Norte Montañoso:</strong> Descubre paisajes de arrozales en terrazas espectaculares, conoce a las minorías étnicas locales (Hmong, Dao) y disfruta del aire fresco de montaña.</li>
+            <li><strong>Relajarse en Playas:</strong> Nha Trang, Mui Ne (famosa por sus dunas de arena y kitesurf), Phu Quoc o las Islas Con Dao ofrecen playas hermosas para descansar.</li>
+            <li><strong>Explorar los Túneles de Cu Chi:</strong> Cerca de Ciudad Ho Chi Minh, una extensa red de túneles subterráneos utilizados durante la Guerra de Vietnam.</li>
+        </ul>
+
+        <h2>Sabores de Vietnam: Frescura, Hierbas y Equilibrio</h2>
+        <p>La cocina vietnamita es reconocida mundialmente por su frescura, el uso abundante de hierbas aromáticas, su equilibrio de sabores (dulce, ácido, salado, picante, amargo) y sus texturas variadas. Es considerada una de las cocinas más saludables del mundo.</p>
+        <img src="images/post-vietnam3.jpg" alt="Cuenco de Pho, sopa de fideos vietnamita tradicional" class="inline-image">
+        <ul>
+            <li><strong>Pho:</strong> La sopa de fideos más famosa de Vietnam. Un caldo aromático de ternera (pho bo) o pollo (pho ga) cocido lentamente con especias, servido con fideos de arroz, finas lonchas de carne y una guarnición de hierbas frescas (menta, cilantro, albahaca tailandesa), brotes de soja, lima y chile.</li>
+            <li><strong>Banh Mi:</strong> Una baguette de influencia francesa rellena de una variedad de ingredientes como paté, cerdo asado o a la parrilla, embutidos vietnamitas, verduras encurtidas (zanahoria, daikon), cilantro y mayonesa o salsa picante.</li>
+            <li><strong>Goi Cuon (Rollitos Frescos de Verano):</strong> Papel de arroz transparente relleno de gambas o cerdo, fideos de arroz (vermicelli), lechuga y hierbas frescas. Se sirven fríos con una salsa para mojar (a menudo de cacahuete o nuoc cham).</li>
+            <li><strong>Cha Gio / Nem Ran (Rollitos de Primavera Fritos):</strong> Papel de arroz o una masa fina rellena de carne picada (cerdo), gambas, fideos de cristal, champiñones oreja de madera y verduras, fritos hasta quedar crujientes.</li>
+            <li><strong>Bun Cha:</strong> Un plato típico de Hanoi. Cerdo a la parrilla (en forma de hamburguesitas y panceta) servido en un cuenco de salsa de pescado agridulce (nuoc cham) con fideos de arroz (bun) y hierbas frescas.</li>
+            <li><strong>Cao Lau:</strong> Una especialidad de Hoi An. Fideos gruesos y amarillentos (hechos con agua de un pozo local específico), servidos con lonchas de cerdo asado (char siu), hierbas frescas, brotes de soja y crujientes de masa frita.</li>
+            <li><strong>Com Tam (Arroz Roto):</strong> Arroz de granos rotos servido con costillas de cerdo a la parrilla, piel de cerdo desmenuzada, pastel de huevo al vapor (cha trung hap) y un huevo frito, acompañado de verduras encurtidas y nuoc cham.</li>
+            <li><strong>Ca Phe (Café Vietnamita):</strong> Café fuerte y oscuro, a menudo preparado con un filtro de goteo individual (phin), que se puede tomar solo (ca phe den), con leche condensada (ca phe sua da - con hielo, o ca phe sua nong - caliente) o incluso con yema de huevo (ca phe trung - café con huevo).</li>
+        </ul>
+
+        <h2>Cómo Llegar y Moverse</h2>
+        <p>Los principales aeropuertos internacionales de Vietnam son el Aeropuerto Internacional de Noi Bai (HAN) en Hanoi y el Aeropuerto Internacional de Tan Son Nhat (SGN) en Ciudad Ho Chi Minh. El Aeropuerto Internacional de Da Nang (DAD) también recibe muchos vuelos internacionales y es un buen punto de entrada para el centro del país.</p>
+        <h3>Desde los Aeropuertos Principales al Centro de la Ciudad</h3>
+        <ul>
+            <li><strong>Aeropuerto de Hanoi (HAN):</strong>
+                <ul>
+                    <li><strong>Autobús Express 86:</strong> Una opción popular y económica que conecta el aeropuerto con el centro de Hanoi (Lago Hoan Kiem y Estación de Tren de Hanoi).</li>
+                    <li><strong>Minibuses del Aeropuerto:</strong> Operados por Vietnam Airlines y otras compañías, ofrecen traslados a hoteles en el centro.</li>
+                    <li><strong>Taxi / Plataformas (Grab):</strong> Disponibles. Usa taxis con taxímetro (Mai Linh o Taxi Group son recomendables) o la aplicación Grab. Acuerda el precio si no hay taxímetro.</li>
+                </ul>
+            </li>
+            <li><strong>Aeropuerto de Ciudad Ho Chi Minh (SGN):</strong>
+                <ul>
+                    <li><strong>Autobús Público (Línea 109 o 49):</strong> Conectan el aeropuerto con el Distrito 1 (centro). La línea 49 es un shuttle más directo a hoteles.</li>
+                    <li><strong>Taxi / Plataformas (Grab):</strong> Ampliamente disponibles. Busca las paradas oficiales de taxis o usa Grab.</li>
+                </ul>
+            </li>
+             <li><strong>Aeropuerto de Da Nang (DAD):</strong>
+                <ul>
+                    <li><strong>Taxi / Grab:</strong> La forma más común de llegar a Da Nang o Hoi An.</li>
+                    <li><strong>Autobuses Locales:</strong> Pueden ser una opción si vas a Da Nang ciudad, pero menos directos a Hoi An.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Transporte Interno en Vietnam</h3>
+        <p>Vietnam es un país alargado, por lo que el transporte interno es clave:</p>
+        <ul>
+            <li><strong>Vuelos Internos:</strong> La forma más rápida de cubrir las grandes distancias entre norte, centro y sur (Vietnam Airlines, VietJet Air, Bamboo Airways, Pacific Airlines).</li>
+            <li><strong>Trenes (Reunification Express):</strong> La línea principal de tren recorre la costa desde Hanoi hasta Ciudad Ho Chi Minh. Ofrece una experiencia más escénica pero es considerablemente más lenta que volar. Hay diferentes clases (cama blanda, cama dura, asiento).</li>
+            <li><strong>Autobuses Nocturnos (Sleeper Buses):</strong> Muy populares entre mochileros y para viajes largos. Tienen literas reclinables. La calidad y comodidad varían entre compañías.</li>
+            <li><strong>Autobuses de Larga Distancia (Open Tour Buses):</strong> Permiten comprar un billete con múltiples paradas entre dos ciudades principales, ofreciendo flexibilidad.</li>
+            <li><strong>Alquiler de Motocicleta:</strong> Popular para explorar ciertas regiones (como el Ha Giang Loop en el norte), pero requiere experiencia y precaución. Asegúrate de tener el permiso de conducir internacional adecuado y seguro.</li>
+            <li><strong>Taxis y Grab:</strong> Comunes en ciudades para trayectos cortos.</li>
+        </ul>
+
+        <h2>Consejos Prácticos para tu Viaje a Vietnam</h2>
+        <ul>
+            <li><strong>Visado:</strong> La mayoría de las nacionalidades necesitan un visado para Vietnam. Se puede solicitar online (e-Visa para muchos países) o a través de una embajada/consulado vietnamita. Verifica los requisitos específicos para tu pasaporte.</li>
+            <li><strong>Idioma:</strong> Vietnamita. El inglés se habla cada vez más en zonas turísticas, hoteles y por gente joven, pero no es universal. Aprender algunas frases básicas y tener una aplicación de traducción es útil.</li>
+            <li><strong>Moneda:</strong> Dong Vietnamita (VND). Es una moneda con muchos ceros, así que familiarízate con los billetes. Hay cajeros automáticos y se pueden cambiar divisas fuertes (USD, EUR). Las tarjetas se aceptan en hoteles y restaurantes más grandes.</li>
+            <li><strong>Regateo:</strong> Esperado en mercados y con vendedores ambulantes (no en tiendas con precios fijos). Hazlo con una sonrisa y respeto.</li>
+            <li><strong>Cruzar la Calle:</strong> El tráfico, especialmente de motocicletas, en ciudades como Hanoi y Ciudad Ho Chi Minh puede ser caótico. Cruza con confianza, a un ritmo constante y haz contacto visual. Las motos suelen esquivarte.</li>
+            <li><strong>Estafas Comunes:</strong> Como en muchos destinos turísticos, ten cuidado con estafas menores (taxímetros trucados, precios inflados). Infórmate y usa el sentido común.</li>
+            <li><strong>Salud:</strong> Bebe agua embotellada. Ten cuidado con el hielo si no estás seguro de su origen. Usa repelente de mosquitos. Consulta sobre vacunas recomendadas.</li>
+            <li><strong>Ropa:</strong> Ligera y transpirable para el clima tropical. Lleva algo para cubrirte hombros y rodillas si visitas templos o pagodas. Un impermeable ligero es útil durante la temporada de lluvias.</li>
+            <li><strong>Internet y SIM Card:</strong> Es fácil y barato comprar una tarjeta SIM local con datos al llegar. El Wi-Fi está ampliamente disponible en hoteles, cafés y restaurantes.</li>
+        </ul>
+    `
+}
+
+
     
     // ... Añadir más posts aquí si es necesario
   ];
