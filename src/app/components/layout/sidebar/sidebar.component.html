@@ -19,11 +19,14 @@
      <p *ngIf="categoriesRegion.length === 0">No hay categorías de región.</p>
 </div>
 
+<!-- ... (secciones de categorías) ... -->
 <div class="widget">
     <h4>Posts Recientes</h4>
-     <ul>
-         <li *ngFor="let post of recentPosts">
-             <a [routerLink]="post.link">{{ post.title }}</a>
-         </li>
-     </ul>
+    <ul *ngIf="recentPostsForDisplay.length > 0">
+        <li *ngFor="let post of recentPostsForDisplay">
+            <!-- Ahora usamos post.destinationName en lugar de post.title -->
+            <a [routerLink]="post.link">{{ post.destinationName }}</a>
+        </li>
+    </ul>
+    <p *ngIf="recentPostsForDisplay.length === 0">No hay posts recientes.</p>
 </div>

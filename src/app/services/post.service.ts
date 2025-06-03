@@ -14,6 +14,7 @@ export interface Post {
   featuredImage: string;
   cardImageUrl?: string;
   body: string;
+  publishDate: Date;
 }
 
 @Injectable({ providedIn: 'root' })
@@ -27,6 +28,7 @@ export class PostService {
       regionCategory: { name: 'Asia', slug: 'asia', type: 'region' },
       featuredImage: 'images/post-japon1.jpg',
       cardImageUrl: 'images/post-japon.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `<h2>Un Archipiélago de Contrastes</h2>
             <p>Japón, el país del Sol Naciente, es un archipiélago que ofrece una experiencia de viaje única y profundamente cautivadora. Es una tierra donde templos sintoístas y budistas milenarios conviven con rascacielos futuristas y tecnología de vanguardia; donde la serenidad de los jardines zen contrasta con el bullicio ordenado de ciudades como Tokio; y donde las tradiciones ancestrales como la ceremonia del té, el arte del ikebana (arreglo floral) o el teatro kabuki siguen vivas en pleno siglo XXI.</p>
             <p>Desde la belleza efímera de los cerezos en flor (sakura) en primavera hasta los vibrantes colores del otoño (momiji), pasando por la eficiencia asombrosa de su sistema de transporte, la exquisita presentación de su gastronomía y la amabilidad y respeto innato de su gente (omotenashi), Japón es un destino que fascina, educa y enriquece el espíritu del viajero.</p>
@@ -115,6 +117,7 @@ export class PostService {
       regionCategory: { name: 'Africa', slug: 'africa', type: 'region' }, // Sin tilde
       featuredImage: 'images/post-marruecos1.jpg',
       cardImageUrl: 'images/post-marruecos.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `
             <h2>Descubre la Magia de Marruecos</h2>
             <p>Marruecos es un país que despierta los sentidos. Ubicado en el norte de África, es una encrucijada de culturas árabe, bereber y europea, ofreciendo una diversidad asombrosa que va desde las cumbres nevadas del Atlas hasta las dunas doradas del Sahara y las costas bañadas por el Atlántico y el Mediterráneo. Es un destino que promete aventura, exotismo y una hospitalidad cálida y genuina.</p>
@@ -208,6 +211,7 @@ export class PostService {
       regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
       featuredImage: 'images/post-alpes1.jpg',
       cardImageUrl: 'images/post-alpes.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `<p>Los Alpes Suizos son sinónimo de paisajes sobrecogedores. Esta cordillera, que atraviesa gran parte de Suiza, ofrece una combinación espectacular de picos nevados que superan los 4.000 metros, glaciares milenarios, valles de un verde intenso salpicados de lagos de aguas cristalinas y encantadores pueblos alpinos con casas de madera y balcones floridos.</p>
             <p>Es un destino ideal tanto para los amantes de la aventura y los deportes de montaña como para quienes buscan tranquilidad, aire puro y vistas que quitan el aliento. La infraestructura turística es excelente, con trenes panorámicos y teleféricos que facilitan el acceso a lugares remotos.</p>
 
@@ -271,6 +275,7 @@ export class PostService {
       regionCategory: { name: 'America Central', slug: 'america-central', type: 'region' }, // SIN TILDE
       featuredImage: 'images/post-caribe1.jpg',
       cardImageUrl: 'images/post-caribe.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `            <h2>El Paraíso Tropical por Excelencia</h2>
             <p>El Caribe es una vasta región compuesta por miles de islas, islotes y costas bañadas por el mar Caribe, en América Central y del Sur. Es mundialmente famoso por sus playas de postal: kilómetros de arena blanca y fina, aguas cálidas de un intenso color turquesa y hileras de cocoteros meciéndose con la brisa marina. Es el destino perfecto para desconectar, relajarse bajo el sol y disfrutar de un ambiente alegre y despreocupado.</p>
             <p>Cada isla o país caribeño tiene su propia identidad, cultura y paisajes, desde las lujosas resorts de las Antillas Menores hasta la riqueza histórica de Cuba, la naturaleza exuberante de Costa Rica (en su costa Caribe), la herencia maya de la Riviera Maya mexicana o la diversidad cultural de Colombia y Panamá.</p>
@@ -341,6 +346,7 @@ export class PostService {
       regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
       featuredImage: 'images/post-paris1.jpg',
       cardImageUrl: 'images/post-paris.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `            <h2>La Ciudad de la Luz Eterna</h2>
             <p>París, la capital de Francia, es una de las ciudades más visitadas y soñadas del mundo. Conocida como la "Ciudad de la Luz" (Ville Lumière) y la "Ciudad del Amor", París cautiva con su elegante arquitectura haussmaniana, sus bulevares arbolados, sus monumentos mundialmente famosos, sus museos repletos de obras maestras, sus encantadores cafés con terrazas y su atmósfera inconfundiblemente romántica y sofisticada. Es un epicentro cultural, artístico, gastronómico y de la moda que nunca deja de sorprender.</p>
             <p>Pasear sin rumbo por las orillas del Sena, perderse por los barrios bohemios de Montmartre o Le Marais, disfrutar de un picnic con queso y vino en los Jardines de Luxemburgo, admirar las gárgolas y vidrieras de Notre Dame (incluso durante su admirable reconstrucción) o simplemente sentarse en un café a observar a la gente pasar son solo algunas pinceladas de la experiencia parisina.</p>
@@ -428,6 +434,7 @@ export class PostService {
       regionCategory: { name: 'America del Sur', slug: 'america-del-sur', type: 'region' }, // SIN TILDE
       featuredImage: 'images/post-peru1.jpg',
       cardImageUrl: 'images/post-peru.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `            <h2>Un País de Diversidad Deslumbrante</h2>
             <p>Perú es un país sudamericano de una riqueza histórica, cultural y natural extraordinaria. Cuna de antiguas civilizaciones como la Inca, ofrece un viaje fascinante a través del tiempo, desde enigmáticas ruinas arqueológicas hasta vibrantes ciudades coloniales. Pero Perú es mucho más que historia: sus paisajes abarcan la árida costa del Pacífico, las imponentes cumbres de la Cordillera de los Andes y la vasta y biodiversa selva amazónica.</p>
             <p>Es un destino que satisface a todo tipo de viajeros: los apasionados por la historia y la arqueología, los amantes del trekking y la aventura, los interesados en culturas vivas y coloridas, y los gourmets deseosos de probar una de las gastronomías más reconocidas y variadas del mundo.</p>
@@ -500,6 +507,7 @@ export class PostService {
       regionCategory: { name: 'America Central', slug: 'america-central', type: 'region' }, // SIN TILDE
       featuredImage: 'images/post-costarica1.jpg',
       cardImageUrl: 'images/post-costarica.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `<h2>Volcanes Majestuosos y Bosques Nubosos</h2>
             <p>El país forma parte del Cinturón de Fuego del Pacífico y cuenta con numerosos volcanes, varios de ellos activos. El <strong>Volcán Arenal</strong>, con su cono casi perfecto, fue durante décadas uno de los más activos del mundo y, aunque ahora está más tranquilo, sigue siendo un icono imponente rodeado de aguas termales y actividades de aventura. Otros volcanes populares son el <strong>Poás</strong> (con su enorme cráter ácido), el <strong>Irazú</strong> (el más alto) y el <strong>Rincón de la Vieja</strong> (con fumarolas y pailas de barro hirviendo).</p>
             <p>Los <strong>bosques nubosos</strong> de Monteverde y Santa Elena son otro ecosistema fascinante, caracterizados por la niebla constante, una vegetación exuberante de musgos y epífitas, y una avifauna increíble, incluyendo el esquivo Quetzal resplandeciente.</p>
@@ -571,6 +579,7 @@ export class PostService {
       regionCategory: { name: 'Africa', slug: 'africa', type: 'region' }, // SIN TILDE
       featuredImage: 'images/post-egipto1.jpg',
       cardImageUrl: 'images/post-egipto.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `            <h2>La Tierra de los Faraones y el Don del Nilo</h2>
             <p>Egipto, ubicado en el noreste de África y cruzado por el legendario río Nilo, es un destino que evoca imágenes de faraones, pirámides colosales, templos ancestrales y tesoros ocultos. Cuna de una de las civilizaciones más antiguas y fascinantes de la historia, un viaje a Egipto es una inmersión en miles de años de historia, arte monumental y misterios arqueológicos que siguen cautivando al mundo.</p>
             <p>Desde el bullicio caótico y vibrante de El Cairo hasta la serenidad de un crucero por el Nilo y la belleza submarina del Mar Rojo, Egipto ofrece una experiencia intensa y diversa, marcada por la grandiosidad de su pasado y la vitalidad de su presente.</p>
@@ -654,6 +663,7 @@ export class PostService {
       regionCategory: { name: 'America del Norte', slug: 'america-del-norte', type: 'region' }, // SIN TILDE
       featuredImage: 'images/post-nuevayork1.jpg',
       cardImageUrl: 'images/post-nuevayork.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `            <h2>El Epicentro del Mundo Moderno</h2>
             <p>Nueva York, a menudo llamada simplemente "la ciudad" o la "Gran Manzana", es mucho más que la ciudad más poblada de Estados Unidos; es un vibrante epicentro global de finanzas, cultura, moda, arte, gastronomía y diplomacia. Situada en la costa este, esta metrópolis icónica, compuesta por cinco distritos (Manhattan, Brooklyn, Queens, Bronx y Staten Island), ejerce una fascinación universal con su energía inagotable, su diversidad cultural y su horizonte de rascacielos reconocible al instante.</p>
             <p>Desde las luces brillantes de Times Square hasta la tranquilidad de Central Park, pasando por los museos de clase mundial, los barrios con personalidad propia y la Estatua de la Libertad dando la bienvenida, Nueva York ofrece una experiencia intensa, diversa y en constante cambio que deja una marca imborrable en cada visitante.</p>
@@ -754,6 +764,7 @@ export class PostService {
       regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
       featuredImage: 'images/post-roma1.jpg',
       cardImageUrl: 'images/post-roma.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `           <h2>La Ciudad Eterna: Caput Mundi</h2>
             <p>Roma, la capital de Italia, es un destino que trasciende el tiempo. Conocida como la "Ciudad Eterna", fue el centro de uno de los imperios más vastos de la historia y la cuna de la civilización occidental. Caminar por Roma es como pasear por un gigantesco museo al aire libre, donde ruinas milenarias del Imperio Romano conviven con palacios renacentistas, iglesias barrocas espectaculares y fuentes monumentales, todo ello impregnado de un ambiente vibrante y apasionado.</p>
             <p>Desde la grandiosidad del Coliseo hasta la espiritualidad de la Ciudad del Vaticano, pasando por el encanto bohemio del Trastevere y la excelencia de su gastronomía, Roma ofrece una experiencia rica, intensa y profundamente memorable que invita a volver una y otra vez.</p>
@@ -851,6 +862,7 @@ export class PostService {
       regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
       featuredImage: 'images/post-grecia1.jpg',
       cardImageUrl: 'images/post-grecia.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `            <h2>Un Mosaico de Islas Bañadas por el Sol</h2>
             <p>Las Islas Griegas, dispersas por los mares Egeo y Jónico, son uno de los destinos más soñados y diversos de Europa. Con miles de islas e islotes, cada archipiélago ofrece una personalidad única, pero comparten elementos comunes: una luz mediterránea deslumbrante, aguas de un azul intenso y cristalino, pueblos encantadores de casas encaladas, una historia milenaria palpable en ruinas antiguas y una gastronomía fresca y deliciosa.</p>
             <p>Desde la sofisticación cosmopolita de Mykonos y la belleza volcánica de Santorini en las Cícladas, hasta la exuberante vegetación de las Islas Jónicas, la vasta historia de Creta o las playas tranquilas del Dodecaneso, hay una isla griega para cada tipo de viajero, ya sea que busques relax, fiesta, cultura, aventura o paisajes espectaculares.</p>
@@ -941,6 +953,7 @@ export class PostService {
       regionCategory: { name: 'Asia', slug: 'asia', type: 'region' },
       featuredImage: 'images/post-tailandia1.jpg',
       cardImageUrl: 'images/post-tailandia.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `            <h2>Un Reino de Contrastes Fascinantes</h2>
             <p>Tailandia, conocido como el "País de las Sonrisas" por la amabilidad de su gente, es uno de los destinos más populares y fascinantes del Sudeste Asiático. Ofrece una increíble mezcla de bulliciosas ciudades modernas, ruinas de antiguas capitales, templos budistas dorados y ornamentados, paisajes montañosos en el norte con tribus étnicas, y espectaculares playas e islas tropicales de aguas turquesas en el sur.</p>
             <p>Es un país que atrae a todo tipo de viajeros gracias a su rica cultura, su deliciosa y variada gastronomía, sus precios asequibles (aunque han subido), su buena infraestructura turística y la enorme diversidad de experiencias que ofrece, desde el trekking por la selva hasta el buceo en arrecifes de coral o la meditación en un templo.</p>
@@ -1043,6 +1056,7 @@ export class PostService {
       regionCategory: { name: 'Oceania', slug: 'oceania', type: 'region' }, // SIN TILDE
       featuredImage: 'images/post-australia1.jpg',
       cardImageUrl: 'images/post-australia.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `            <h2>Un Continente de Diversidad y Extremos</h2>
             <p>Australia, el sexto país más grande del mundo y un continente en sí mismo, es una tierra de contrastes espectaculares y experiencias únicas. Conocida por su estilo de vida relajado al aire libre, sus ciudades modernas y multiculturales, su fauna endémica (canguros, koalas, wombats), y sus paisajes naturales vastos y diversos, que van desde playas doradas y arrecifes de coral hasta desiertos rojizos (el Outback) y selvas tropicales.</p>
             <p>Viajar a Australia requiere tiempo debido a las enormes distancias, pero recompensa con una aventura inolvidable, ya sea explorando la vibrante vida urbana de Sídney o Melbourne, buceando en la Gran Barrera de Coral, recorriendo la Great Ocean Road, descubriendo la cultura aborigen en Uluru o adentrándose en la naturaleza salvaje de Tasmania o el Territorio del Norte.</p>
@@ -1137,6 +1151,7 @@ export class PostService {
       regionCategory: { name: 'America del Norte', slug: 'america-del-norte', type: 'region' }, // SIN TILDE
       featuredImage: 'images/post-canada1.jpg',
       cardImageUrl: 'images/post-canada.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `            <h2>Un Tesoro Natural Patrimonio de la Humanidad</h2>
             <p>Las Montañas Rocosas Canadienses, ubicadas principalmente en las provincias de Alberta y Columbia Británica, son una de las cadenas montañosas más espectaculares e icónicas del mundo. Una vasta porción de esta región, que incluye los Parques Nacionales de Banff, Jasper, Kootenay y Yoho, ha sido declarada Patrimonio de la Humanidad por la UNESCO por su excepcional belleza natural, sus procesos geológicos y su importancia ecológica.</p>
             <p>Este es un destino de paisajes grandiosos: imponentes picos nevados, extensos glaciares y campos de hielo, lagos de un color turquesa inverosímil alimentados por glaciares, densos bosques de coníferas, ríos caudalosos y una abundante vida salvaje que incluye osos grizzly y negros, alces, ciervos, caribúes, cabras montesas y mucho más.</p>
@@ -1216,6 +1231,7 @@ export class PostService {
       regionCategory: { name: 'Asia', slug: 'asia', type: 'region' },
       featuredImage: 'images/post-india1.jpg',
       cardImageUrl: 'images/post-india.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `            <h2>Incredible India: Un Subcontinente de Diversidad</h2>
             <p>India es más que un país; es un subcontinente vasto y complejo, un mosaico deslumbrante de culturas, religiones, idiomas y paisajes que desafía cualquier descripción simple. Es una tierra de contrastes extremos, donde la pobreza convive con la opulencia, el caos urbano con la serenidad espiritual, y tradiciones milenarias con una modernidad emergente. Viajar por India es una experiencia intensa, a menudo abrumadora, pero inmensamente gratificante que transforma la perspectiva de cualquier viajero.</p>
             <p>Desde las cumbres nevadas del Himalaya hasta las playas tropicales de Goa y Kerala, pasando por los desiertos de Rajastán, las llanuras del Ganges y las bulliciosas metrópolis como Delhi y Mumbai, India ofrece una diversidad geográfica y cultural sin igual, unida por una profunda espiritualidad y una historia milenaria.</p>
@@ -1313,6 +1329,7 @@ export class PostService {
       regionCategory: { name: 'Oceania', slug: 'oceania', type: 'region' }, // SIN TILDE
       featuredImage: 'images/post-nuevazelanda1.jpg',
       cardImageUrl: 'images/post-nuevazelanda.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `            <h2>La Tierra de la Larga Nube Blanca</h2>
             <p>Nueva Zelanda, o Aotearoa en lengua maorí, es un país insular en el suroeste del Océano Pacífico, famoso por sus paisajes naturales increíblemente diversos y dramáticos. Desde los fiordos majestuosos y glaciares de la Isla Sur hasta las playas subtropicales, zonas geotérmicas y volcanes de la Isla Norte, Nueva Zelanda ofrece una belleza natural sobrecogedora que sirvió de escenario para las películas de "El Señor de los Anillos" y "El Hobbit".</p>
             <p>Es el destino perfecto para los amantes de la naturaleza virgen, el senderismo (aquí llamado "tramping"), los deportes de aventura (es la cuna del puenting comercial) y para aquellos interesados en la rica cultura indígena maorí. Su gente (los "Kiwis") es conocida por su amabilidad y estilo de vida relajado.</p>
@@ -1398,6 +1415,7 @@ export class PostService {
       regionCategory: { name: 'Oriente Medio', slug: 'oriente-medio', type: 'region' },
       featuredImage: 'images/post-jordania1.jpg',
       cardImageUrl: 'images/post-jordania.jpg',
+      publishDate: new Date('2025-05-30T10:00:00Z'),
       body: `            <h2>La Joya Oculta del Desierto Jordano</h2>
             <p>Petra, la antigua capital del reino nabateo, es uno de los tesoros arqueológicos más impresionantes y misteriosos del mundo. Ubicada en un valle remoto en el sur de Jordania, esta vasta ciudad fue literalmente excavada y esculpida en los acantilados de arenisca rosa por los nabateos, un pueblo árabe nómada que prosperó gracias al control de las rutas comerciales de incienso, mirra y especias hace más de 2.000 años.</p>
             <p>Declarada Patrimonio de la Humanidad por la UNESCO y una de las Nuevas Siete Maravillas del Mundo Moderno, Petra permaneció oculta al mundo occidental durante siglos, hasta su "redescubrimiento" en 1812. Acceder a ella a través del Siq, un estrecho y sinuoso desfiladero, para encontrarse de repente con la majestuosa fachada del Tesoro es una de las experiencias más impactantes que un viajero puede vivir.</p>
@@ -1486,6 +1504,7 @@ export class PostService {
   regionCategory: { name: 'Oriente Medio', slug: 'oriente-medio', type: 'region' }, // O 'Medio Oriente' si tienes esa categoría
   featuredImage: 'images/post-jerusalen1.jpg', // Sugerencia de nombre
   cardImageUrl: 'images/post-jerusalen.jpg',    // Sugerencia de nombre
+  publishDate: new Date('2025-06-03T10:00:00Z'),
   body: `
         <h2>Jerusalén: Un Viaje al Corazón Espiritual del Mundo</h2>
         <p>Jerusalén, una ciudad venerada por tres de las religiones monoteístas más grandes del mundo –judaísmo, cristianismo e islam–, es un destino que trasciende el simple viaje turístico. Es una inmersión profunda en milenios de historia, fe, conflicto y coexistencia. Ubicada en los Montes de Judea, entre el Mediterráneo y el Mar Muerto, su nombre evoca imágenes de murallas antiguas, cúpulas doradas y callejones cargados de fervor espiritual.</p>
@@ -1564,6 +1583,7 @@ export class PostService {
   regionCategory: { name: 'America del Sur', slug: 'america-del-sur', type: 'region' },
   featuredImage: 'images/post-argentina1.jpg',
   cardImageUrl: 'images/post-argentina.jpg',
+  publishDate: new Date('2025-06-03T10:00:00Z'),
   body: `
         <h2>Descubre la Inmensidad y el Alma de Argentina</h2>
         <p>Argentina, el octavo país más grande del mundo, se extiende desde los trópicos hasta los confines subantárticos, ofreciendo una asombrosa variedad de paisajes y experiencias. Es una tierra de contrastes apasionantes: la elegancia europea de Buenos Aires, la majestuosidad indómita de la Patagonia con sus glaciares y montañas, las áridas y coloridas quebradas del Noroeste, las fértiles llanuras de la Pampa y las imponentes Cataratas del Iguazú.</p>
@@ -1642,6 +1662,7 @@ export class PostService {
   regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
   featuredImage: 'images/post-espana1.jpg',
   cardImageUrl: 'images/post-espana.jpg',
+  publishDate: new Date('2025-06-03T10:00:00Z'),
   body: `
         <h2>Descubre la Riqueza y la Alegría de Vivir de España</h2>
         <p>España, ubicada en la Península Ibérica, es un país de una diversidad asombrosa, con una historia milenaria que ha dejado una huella imborrable en su arquitectura, arte, lengua y tradiciones. Desde las soleadas playas del Mediterráneo y el Atlántico hasta las majestuosas cumbres de los Pirineos y Sierra Nevada, pasando por verdes valles, áridas mesetas y ciudades vibrantes con un patrimonio monumental incomparable, España lo tiene todo.</p>
@@ -1735,6 +1756,7 @@ export class PostService {
   regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
   featuredImage: 'images/post-inglaterra1.jpg',
   cardImageUrl: 'images/post-inglaterra.jpg',
+  publishDate: new Date('2025-06-03T10:00:00Z'),
   body: `
         <h2>Descubre el Legado y la Dinámica de Inglaterra</h2>
         <p>Inglaterra, la nación más grande y poblada del Reino Unido, es una tierra de historia milenaria, tradiciones arraigadas, paisajes diversos y una influencia cultural que ha moldeado el mundo moderno. Desde la cosmopolita y siempre cambiante Londres hasta la serena belleza de la campiña de los Cotswolds, pasando por ciudades universitarias legendarias y costas dramáticas, Inglaterra ofrece una rica paleta de experiencias.</p>
@@ -1834,6 +1856,7 @@ export class PostService {
   regionCategory: { name: 'Europa', slug: 'europa', type: 'region' }, // O 'Asia' para la parte oriental
   featuredImage: 'images/post-rusia1.jpg',
   cardImageUrl: 'images/post-rusia.jpg',
+  publishDate: new Date('2025-06-03T10:00:00Z'),
   body: `
         <h2>Descubre la Fascinante y Extensa Rusia</h2>
         <p>Rusia, el país más grande del mundo, se extiende a lo largo de dos continentes, Europa y Asia, ofreciendo una diversidad de paisajes, culturas y experiencias que desafía la imaginación. Desde la opulencia imperial de San Petersburgo y el poder histórico de Moscú hasta la naturaleza salvaje de Siberia y el Lago Baikal, Rusia es una tierra de contrastes, historia profunda y una riqueza artística y literaria incomparable.</p>
@@ -1913,6 +1936,7 @@ export class PostService {
   regionCategory: { name: 'Asia', slug: 'asia', type: 'region' },
   featuredImage: 'images/post-china1.jpg',
   cardImageUrl: 'images/post-china.jpg',
+  publishDate: new Date('2025-06-03T10:00:00Z'),
   body: `
         <h2>Descubre la Fascinante y Multifacética China</h2>
         <p>China, una de las civilizaciones más antiguas del mundo y una potencia global emergente, es un país de dimensiones y contrastes épicos. Desde la Gran Muralla serpenteando por montañas hasta los rascacielos futuristas de Shanghái, pasando por los Guerreros de Terracota de Xi'an, los paisajes kársticos de Guilin y la serenidad de sus templos ancestrales, China ofrece un viaje a través del tiempo y la escala.</p>
@@ -2006,6 +2030,7 @@ export class PostService {
   regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
   featuredImage: 'images/post-austria1.jpg',
   cardImageUrl: 'images/post-austria.jpg',
+  publishDate: new Date('2025-06-03T10:00:00Z'),
   body: `
         <h2>Descubre la Belleza y el Legado de Austria</h2>
         <p>Austria, enclavada en el corazón de Europa, es un país que evoca imágenes de palacios imperiales, música clásica, paisajes alpinos de ensueño y pueblos encantadores. Cuna de emperadores, compositores legendarios como Mozart y Strauss, y una rica tradición artística, Austria combina a la perfección su opulento pasado con una modernidad vibrante y una calidad de vida envidiable.</p>
@@ -2086,6 +2111,7 @@ export class PostService {
   regionCategory: { name: 'Asia', slug: 'asia', type: 'region' },
   featuredImage: 'images/post-vietnam1.jpg',
   cardImageUrl: 'images/post-vietnam.jpg',
+  publishDate: new Date('2025-06-03T10:00:00Z'),
   body: `
         <h2>Descubre la Belleza Cautivadora de Vietnam</h2>
         <p>Vietnam, un país con forma de "S" en el Sudeste Asiático, es una tierra de una belleza natural sobrecogedora, una historia rica y resiliente, y una cultura vibrante que ha sabido preservar sus tradiciones ancestrales mientras abraza la modernidad. Desde los paisajes kársticos de ensueño de la Bahía de Halong hasta los bulliciosos mercados del Delta del Mekong, pasando por ciudades imperiales, arrozales esmeralda y playas idílicas, Vietnam ofrece un viaje lleno de contrastes y descubrimientos.</p>
@@ -2181,22 +2207,29 @@ export class PostService {
 
     constructor() { }
 
-  getAllPosts(): Post[] { return this.allPosts; }
+
+  getAllPosts(): Post[] {  return [...this.allPosts].sort((a, b) => b.publishDate.getTime() - a.publishDate.getTime()); }
+
 
   getPostBySlug(slug: string): Post | undefined {
-    return this.allPosts.find(post => post.slug === slug);
+    const primarySlug = slug.split(' o ')[0].trim();
+    return this.allPosts.find(post => post.slug.split(' o ')[0].trim() === primarySlug);
   }
 
   getPostsByCategory(categoryType: 'atractivo' | 'region', categorySlug: string): Post[] {
+    let filteredPosts: Post[];
     if (categoryType === 'atractivo') {
-      return this.allPosts.filter(post => post.mainCategory && post.mainCategory.slug === categorySlug);
+      filteredPosts = this.allPosts.filter(post => post.mainCategory && post.mainCategory.slug === categorySlug);
     } else if (categoryType === 'region') {
-      return this.allPosts.filter(post => post.regionCategory && post.regionCategory.slug === categorySlug);
+      filteredPosts = this.allPosts.filter(post => post.regionCategory && post.regionCategory.slug === categorySlug);
+    } else {
+      filteredPosts = []; // Si el tipo de categoría no es válido
     }
-    return [];
+    // Ordenar los resultados filtrados por fecha
+    return filteredPosts.sort((a, b) => b.publishDate.getTime() - a.publishDate.getTime());
   }
 
-  getAllCategories(): { atractivos: CategoryLink[], regiones: CategoryLink[] } {
+   getAllCategories(): { atractivos: CategoryLink[], regiones: CategoryLink[] } {
     const atractivosMap = new Map<string, string>();
     const regionesMap = new Map<string, string>();
 
@@ -2209,40 +2242,57 @@ export class PostService {
       }
     });
 
-    // Corrección tipo: Asegurar que 'atractivo' y 'region' son literales de tipo
     const atractivos: CategoryLink[] = Array.from(atractivosMap)
-      .map(([slug, name]) => ({ name, slug, type: 'atractivo' as const })) // Usar 'as const'
+      .map(([slug, name]) => ({ name, slug, type: 'atractivo' as const }))
       .sort((a, b) => a.name.localeCompare(b.name));
 
     const regiones: CategoryLink[] = Array.from(regionesMap)
-      .map(([slug, name]) => ({ name, slug, type: 'region' as const })) // Usar 'as const'
+      .map(([slug, name]) => ({ name, slug, type: 'region' as const }))
       .sort((a, b) => a.name.localeCompare(b.name));
 
     return { atractivos, regiones };
   }
 
   // --- MÉTODO DE BÚSQUEDA EN POSTS (CORREGIDO) ---
-  public searchPosts(query: string): Post[] {
-  if (!query || query.trim() === '') {
-    return [];
-  }
-  const queryWords = query.toLowerCase().trim().split(/\s+/).filter(word => word.length > 0); // Obtener palabras individuales
-  if (queryWords.length === 0) {
-    return [];
-  }
+   public searchPosts(query: string): Post[] {
+    if (!query || query.trim() === '') {
+      return [];
+    }
+    const queryWords = query.toLowerCase().trim().split(/\s+/).filter(word => word.length > 0);
+    if (queryWords.length === 0) {
+      return [];
+    }
 
-  return this.allPosts.filter(post => {
-    const titleText = post.title ? post.title.toLowerCase() : '';
-    const bodyText = post.body ? post.body.toLowerCase().replace(/<[^>]+>/g, ' ') : ''; // Quitar HTML y normalizar
-    const combinedText = titleText + ' ' + bodyText;
+    const matchedPosts = this.allPosts.filter(post => {
+      const titleText = post.title ? post.title.toLowerCase() : '';
+      const bodyText = post.body ? post.body.toLowerCase().replace(/<[^>]+>/g, ' ') : '';
+      const combinedText = titleText + ' ' + bodyText;
 
-    // Verificar que TODAS las palabras de la búsqueda estén en el texto combinado
-    return queryWords.every(word => {
-        // Usar expresión regular para buscar palabra completa
+      return queryWords.every(word => {
         const regex = new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
         return regex.test(combinedText);
+      });
     });
-  });
+
+     // Ordenar los resultados de la búsqueda por fecha
+    return matchedPosts.sort((a, b) => b.publishDate.getTime() - a.publishDate.getTime());
+  }
+
+  getRecentPosts(count: number = 4): Post[] {
+    // Aseguramos el orden aquí también por si se llama directamente
+    const sortedPosts = [...this.allPosts].sort((a, b) => b.publishDate.getTime() - a.publishDate.getTime());
+    return sortedPosts.slice(0, count);
+  }
+
+   getPostLink(post: Post): string[] {
+    // Ejemplo: asumiendo que la ruta principal de los posts es '/blog' y luego el slug.
+    // Si tu slug es compuesto como "slug-principal o slug-alternativo", toma la primera parte.
+    const primarySlug = post.slug.split(' o ')[0].trim();
+    return ['/posts', primarySlug];
+
+    // OTRO EJEMPLO: Si tu ruta incluye categorías, podría ser algo como:
+    // return ['/', post.regionCategory.slug, post.mainCategory.slug, primarySlug];
+    // ¡¡¡Revisa tu app-routing.module.ts para la estructura correcta!!!
+  }
 }
   // -------------------------------------------
-}
