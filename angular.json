@@ -46,7 +46,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/RinconesdelMundo/" 
+              "baseHref": "/" 
             },
             "development": {
               "buildOptimizer": false,

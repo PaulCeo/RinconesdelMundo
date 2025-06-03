@@ -2172,7 +2172,7 @@ export class PostService {
             <li><strong>Internet y SIM Card:</strong> Es fácil y barato comprar una tarjeta SIM local con datos al llegar. El Wi-Fi está ampliamente disponible en hoteles, cafés y restaurantes.</li>
         </ul>
     `
-},
+}
 
 
     
