@@ -2198,7 +2198,197 @@ export class PostService {
             <li><strong>Internet y SIM Card:</strong> Es fácil y barato comprar una tarjeta SIM local con datos al llegar. El Wi-Fi está ampliamente disponible en hoteles, cafés y restaurantes.</li>
         </ul>
     `
-}
+},
+
+{
+  slug: 'alemania-historia-cultura-modernidad-paisajes-diversos',
+  title: 'Alemania: Un Viaje entre Historia Profunda, Cultura Vibrante y Paisajes Diversos',
+  mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' },
+  regionCategory: { name: 'Europa', slug: 'europa', type: 'region' },
+  featuredImage: 'images/post-alemania1.jpg',
+  cardImageUrl: 'images/post-alemania.jpg',
+  publishDate: new Date('2025-06-04T10:00:00Z'), // FECHA RECIENTE
+  body: `
+        <h2>Descubre la Dinámica y Multifacética Alemania</h2>
+        <p>Alemania, situada en el corazón de Europa, es un país de una riqueza histórica y cultural inmensa, conocido por su eficiencia, su ingeniería de vanguardia y sus paisajes sorprendentemente diversos. Desde las vibrantes y cosmopolitas ciudades como Berlín y Múnich, hasta los castillos de cuento de hadas de Baviera, los románticos valles vinícolas del Rin y el Mosela, y los bosques oscuros de la Selva Negra, Alemania ofrece una experiencia de viaje completa y fascinante.</p>
+        <p>Con un pasado complejo que ha moldeado profundamente su presente, Alemania hoy es un faro de democracia, innovación y sostenibilidad, con una próspera escena artística, festivales de renombre mundial (como el Oktoberfest) y una cálida hospitalidad que a menudo sorprende a los visitantes.</p>
+
+        <h2>El Alma Alemana: De la Puerta de Brandeburgo a los Castillos Bávaros</h2>
+        <p><strong>Berlín</strong>, la capital reunificada, es una ciudad en constante reinvención, un crisol de historia del siglo XX, arte callejero, vida nocturna legendaria y una creatividad desbordante. La Puerta de Brandeburgo, los restos del Muro de Berlín (East Side Gallery), el Reichstag y la Isla de los Museos son visitas obligadas. <strong>Múnich (München)</strong>, en Baviera, es famosa por su Oktoberfest, sus cervecerías (Biergärten), el encanto de Marienplatz y su proximidad a los Alpes. <strong>Hamburgo</strong>, la segunda ciudad más grande, impresiona con su puerto, canales y la moderna Elbphilharmonie.</p>
+        <p>Los castillos de Baviera, especialmente <strong>Neuschwanstein</strong> (el castillo de cuento de hadas que inspiró a Disney) y Hohenschwangau, son imágenes icónicas. La Ruta Romántica, que serpentea por pueblos medievales como Rothenburg ob der Tauber, ofrece un viaje al pasado.</p>
+         <img src="images/post-alemania2.jpeg" alt="El Castillo de Neuschwanstein en Baviera, Alemania, en un día soleado" class="inline-image">
+
+        <h2>Alemania Inolvidable: Planes y Escapadas Esenciales</h2>
+        <p>Alemania invita a explorar su diversidad con una multitud de actividades:</p>
+        <ul>
+            <li><strong>Sumergirse en la Historia de Berlín:</strong> Recorre la East Side Gallery, visita el Checkpoint Charlie, el Memorial del Holocausto, el Museo de la Topografía del Terror y explora la Isla de los Museos (Patrimonio UNESCO).</li>
+            <li><strong>Vivir la "Gemütlichkeit" Bávara en Múnich:</strong> Disfruta de una cerveza en un Biergarten, visita el Deutsches Museum (ciencia y tecnología), explora el Palacio de Nymphenburg y haz una excursión a los castillos reales o los Alpes Bávaros.</li>
+            <li><strong>Recorrer la Ruta Romántica:</strong> Un viaje escénico por Baviera y Baden-Württemberg, visitando ciudades medievales amuralladas como Rothenburg ob der Tauber, Dinkelsbühl y Nördlingen.</li>
+            <li><strong>Explorar la Selva Negra (Schwarzwald):</strong> Famosa por sus densos bosques, relojes de cuco, pueblos con encanto (como Triberg o Gengenbach) y la tarta Selva Negra. Ideal para senderismo.</li>
+            <li><strong>Navegar por el Rin o el Mosela:</strong> Descubre castillos medievales en lo alto de colinas, viñedos empinados y pueblos pintorescos a lo largo de estos ríos. La zona del Rin Romántico (entre Bingen y Coblenza) es Patrimonio UNESCO.</li>
+            <li><strong>Visitar Ciudades Hanseáticas del Norte:</strong> Lübeck (Patrimonio UNESCO, famosa por el mazapán) o Bremen (con los músicos de Bremen) ofrecen una rica historia comercial y arquitectura de ladrillo.</li>
+            <li><strong>Descubrir la Sajonia de Dresde y Leipzig:</strong> Dresde, la "Florencia del Elba", reconstruida tras la guerra, con su Frauenkirche y el Zwinger. Leipzig, ciudad de Bach y Mendelssohn, con una vibrante escena musical.</li>
+            <li><strong>Asistir a un Mercado de Navidad (Weihnachtsmarkt):</strong> Si viajas en Adviento, una experiencia mágica con puestos de artesanía, vino caliente especiado (Glühwein) y delicias navideñas.</li>
+        </ul>
+
+        <h2>Sabores de Alemania: Salchichas, Cerveza, Pan y Pasteles</h2>
+        <p>La cocina alemana es robusta, sabrosa y muy regional. Es famosa por sus salchichas, panes, cervezas y pasteles, pero ofrece mucho más, con un creciente énfasis en ingredientes frescos y de temporada.</p>
+        <img src="images/post-alemania3.jpg" alt="Variedad de salchichas alemanas (Bratwurst, Weisswurst) con pretzels y mostaza" class="inline-image">
+        <ul>
+            <li><strong>Salchichas (Wurst):</strong> Hay cientos de variedades. Bratwurst (asada), Weisswurst (blanca, típica de Baviera, se come cocida con mostaza dulce y pretzels), Currywurst (salchicha con salsa de curry, popular en Berlín), Nürnberger Rostbratwürstchen (pequeñas, de Núremberg).</li>
+            <li><strong>Pretzel (Brezel):</strong> Lazo de pan horneado con sal gruesa, un acompañamiento clásico de la cerveza.</li>
+            <li><strong>Cerveza Alemana (Bier):</strong> Alemania es mundialmente famosa por su cerveza, elaborada según la Ley de Pureza de 1516 (Reinheitsgebot). Cada región tiene sus especialidades: Pils, Lager, Weissbier (trigo), Kölsch (Colonia), Altbier (Düsseldorf), Bock... El Oktoberfest de Múnich es el festival de la cerveza más grande del mundo.</li>
+            <li><strong>Sauerbraten:</strong> Asado de carne (generalmente ternera) marinada durante días en una mezcla de vinagre, vino y especias, luego cocida lentamente. Se sirve con Knödel (dumplings) o Spätzle y col lombarda.</li>
+            <li><strong>Schnitzel:</strong> Aunque el Wiener Schnitzel es austriaco, el Schnitzel alemán (generalmente de cerdo - Schweineschnitzel) empanado y frito es muy popular. A menudo se sirve con patatas fritas (Pommes) o ensalada de patatas (Kartoffelsalat).</li>
+            <li><strong>Spätzle:</strong> Un tipo de pasta fresca irregular, a menudo servida como guarnición o como plato principal con queso fundido y cebolla frita (Käsespätzle).</li>
+            <li><strong>Pan Alemán (Brot):</strong> Una variedad increíble de panes oscuros, integrales, de centeno, con semillas... Los alemanes son grandes consumidores de pan.</li>
+            <li><strong>Tarta Selva Negra (Schwarzwälder Kirschtorte):</strong> Deliciosa tarta de bizcocho de chocolate, nata montada, cerezas y Kirschwasser (licor de cereza).</li>
+            <li><strong>Apfelstrudel:</strong> Aunque también popular en Austria, el strudel de manzana es un postre común.</li>
+            <li><strong>Leberkäse:</strong> Literalmente "queso de hígado", aunque a menudo no lleva ni hígado ni queso (en Baviera). Es una especie de pastel de carne horneado, similar a un paté, que se sirve en rodajas gruesas, a menudo en un panecillo (Semmel) con mostaza dulce.</li>
+        </ul>
+
+        <h2>Cómo Llegar y Moverse</h2>
+        <p>Alemania tiene una excelente infraestructura de transporte. Los principales aeropuertos internacionales son Frankfurt (FRA, el más grande), Múnich (MUC), Berlín (BER), Düsseldorf (DUS) y Hamburgo (HAM).</p>
+        <h3>Desde los Aeropuertos Principales al Centro de la Ciudad</h3>
+        <ul>
+            <li><strong>Aeropuerto de Frankfurt (FRA):</strong>
+                <ul>
+                    <li><strong>Trenes Regionales (S-Bahn):</strong> Las líneas S8 y S9 conectan el aeropuerto (estación Regionalbahnhof, bajo la Terminal 1) con la estación central de Frankfurt (Hauptbahnhof) y el centro de la ciudad en unos 10-15 minutos. Muy eficiente.</li>
+                    <li><strong>Trenes de Larga Distancia (ICE, IC):</strong> La estación Fernbahnhof (para trenes de larga distancia) también está en el aeropuerto, conectando con muchas ciudades alemanas y europeas.</li>
+                    <li><strong>Autobuses y Taxis:</strong> También disponibles, pero el tren suele ser la mejor opción.</li>
+                </ul>
+            </li>
+            <li><strong>Aeropuerto de Múnich (MUC):</strong>
+                <ul>
+                    <li><strong>Trenes Regionales (S-Bahn):</strong> Las líneas S1 y S8 conectan el aeropuerto con el centro de Múnich (Marienplatz, Hauptbahnhof) en unos 40-45 minutos.</li>
+                    <li><strong>Lufthansa Express Bus:</strong> Conecta el aeropuerto con la estación central (Hauptbahnhof) y Múnich Norte.</li>
+                    <li><strong>Taxi / Plataformas:</strong> Más caros y sujetos a tráfico.</li>
+                </ul>
+            </li>
+             <li><strong>Aeropuerto de Berlín (BER):</strong>
+                <ul>
+                    <li><strong>Airport Express (FEX) y Trenes Regionales (RE7, RB14, RB22):</strong> Conectan el aeropuerto con la estación central (Hauptbahnhof) y otras estaciones importantes. El FEX es el más rápido al centro.</li>
+                    <li><strong>Trenes Regionales (S-Bahn):</strong> Las líneas S9 y S45 también conectan con la red de transporte de la ciudad.</li>
+                    <li><strong>Autobuses Express (X7, X71) y Públicos:</strong> Opciones más económicas a diferentes partes de la ciudad.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Transporte Interno en Alemania</h3>
+        <p>Moverse por Alemania es muy fácil y eficiente:</p>
+        <ul>
+            <li><strong>Trenes (Deutsche Bahn - DB):</strong> La red ferroviaria es extensa, moderna y puntual. Los trenes de alta velocidad (ICE - InterCity Express) conectan las principales ciudades. También hay trenes InterCity (IC), EuroCity (EC) y regionales (RE, RB, S-Bahn). Comprar billetes con antelación (Sparpreis) puede ahorrar mucho dinero. Considera pases como el German Rail Pass si planeas muchos viajes.</li>
+            <li><strong>Autobuses de Larga Distancia (Fernbusse):</strong> Compañías como FlixBus ofrecen una alternativa muy económica a los trenes, con una red muy amplia. Son cómodos pero más lentos.</li>
+            <li><strong>Alquiler de Coche:</strong> Ideal para explorar zonas rurales, la Ruta Romántica o la Selva Negra. Las autopistas (Autobahn) son famosas por no tener límite de velocidad en algunos tramos (¡conduce con precaución!).</li>
+            <li><strong>Vuelos Internos:</strong> Conectan las principales ciudades, pero para muchas rutas el tren ICE es competitivo en tiempo y más cómodo.</li>
+            <li><strong>Transporte Público Urbano:</strong> Todas las ciudades grandes tienen sistemas excelentes de metro (U-Bahn), trenes de cercanías (S-Bahn), tranvías (Straßenbahn) y autobuses, a menudo integrados con un solo tipo de billete o pase.</li>
+            <li><strong>Bicicleta:</strong> Alemania es un país muy amigable para los ciclistas, con muchas ciclovías urbanas y rutas de larga distancia (como la del Rin o el Danubio).</li>
+        </ul>
+
+        <h2>Consejos Prácticos para tu Viaje a Alemania</h2>
+        <ul>
+            <li><strong>Idioma:</strong> Alemán. El inglés es ampliamente hablado, especialmente por jóvenes y en el sector turístico, pero aprender frases básicas en alemán (Guten Tag - Hola/Buenos días, Danke - Gracias, Bitte - Por favor/De nada) es apreciado.</li>
+            <li><strong>Moneda:</strong> Euro (€). Las tarjetas de crédito/débito son muy aceptadas, pero es bueno llevar algo de efectivo, especialmente para mercados, algunos cafés pequeños o propinas.</li>
+            <li><strong>Puntualidad:</strong> Los alemanes valoran mucho la puntualidad. Intenta ser puntual para citas, reservas de tren, etc.</li>
+            <li><strong>"Pfand" (Depósito por Envases):</strong> Muchas botellas de plástico y vidrio, y latas, tienen un pequeño depósito (Pfand) que se recupera al devolverlas en máquinas en los supermercados.</li>
+            <li><strong>Propinas (Trinkgeld):</strong> En restaurantes, es costumbre redondear la cuenta o dejar un 5-10% si el servicio fue bueno. No es obligatorio como en EE.UU. A menudo se dice la cantidad total que se quiere pagar al camarero (incluyendo la propina) al pagar.</li>
+            <li><strong>Domingos:</strong> La mayoría de las tiendas (supermercados, ropa, etc.) cierran los domingos, excepto algunas en estaciones de tren o aeropuertos. Los restaurantes y atracciones turísticas suelen estar abiertos.</li>
+            <li><strong>Separación de Basura (Mülltrennung):</strong> Los alemanes se toman muy en serio el reciclaje. Fíjate en los diferentes contenedores para papel, plástico, vidrio, orgánico, etc.</li>
+            <li><strong>Ruhezeit (Horas de Silencio):</strong> Especialmente en edificios residenciales, hay periodos de silencio (noche, mediodía los domingos) donde se espera evitar ruidos fuertes.</li>
+        </ul>
+    `
+},
+
+{
+  slug: 'corea-sur-tradicion-milenaria-kpop-tecnologia-futurista o explorando-corea-del-sur',
+  title: 'Corea del Sur: Fusión de Tradición Milenaria, Fiebre K-Pop y Tecnología Futurista',
+  mainCategory: { name: 'Cultura', slug: 'cultura', type: 'atractivo' },
+  regionCategory: { name: 'Asia', slug: 'asia', type: 'region' },
+  featuredImage: 'images/post-corea-sur1.jpeg',
+  cardImageUrl: 'images/post-corea-sur.jpeg',
+  publishDate: new Date('2024-06-16T11:00:00Z'), // FECHA RECIENTE
+  body: `
+        <h2>Descubre el Dinamismo y la Belleza de Corea del Sur</h2>
+        <p>Corea del Sur, oficialmente la República de Corea, es un país que ha experimentado una transformación espectacular en las últimas décadas, pasando de las cenizas de la guerra a convertirse en un líder global en tecnología, entretenimiento (K-Pop, K-Dramas) y cultura popular. Pero más allá de su modernidad deslumbrante, Corea del Sur alberga una rica historia de más de 5,000 años, con palacios majestuosos, templos serenos y tradiciones ancestrales que conviven armoniosamente con el ritmo vertiginoso del siglo XXI.</p>
+        <p>Desde la vibrante y futurista Seúl hasta los paisajes montañosos salpicados de templos budistas, las aldeas folclóricas y la exquisita gastronomía, Corea del Sur ofrece un viaje fascinante lleno de contrastes, innovación y una hospitalidad única.</p>
+
+        <h2>El Alma Coreana: Entre Palacios Reales y la Ola Hallyu</h2>
+        <p><strong>Seúl</strong>, la capital, es una megaciudad que nunca duerme, donde los rascacielos de alta tecnología se alzan junto a palacios reales de la dinastía Joseon como Gyeongbokgung y Changdeokgung (con su Jardín Secreto). Barrios como Myeongdong (paraíso de las compras y cosméticos), Gangnam (símbolo de la modernidad y el lujo) e Insadong (con sus tiendas de artesanía tradicional y casas de té) muestran las múltiples facetas de la ciudad. La cultura pop coreana, o "Hallyu", con el K-Pop y los K-Dramas, ha conquistado el mundo, y muchos visitantes vienen a experimentar esta faceta moderna del país.</p>
+        <p>El respeto por los mayores, la importancia de la educación y la armonía social son valores fundamentales. El hanbok (traje tradicional) sigue siendo usado en ocasiones especiales, y la caligrafía y la cerámica son artes muy apreciadas.</p>
+         <img src="images/post-corea-sur2.jpeg" alt="Palacio Gyeongbokgung en Seúl con arquitectura tradicional coreana" class="inline-image">
+
+        <h2>Explorando Corea: Un Viaje entre lo Antiguo y lo Vanguardista</h2>
+        <p>Corea del Sur ofrece una diversidad de experiencias que va más allá de Seúl:</p>
+        <ul>
+            <li><strong>Visitar los Cinco Grandes Palacios de Seúl:</strong> Gyeongbokgung, Changdeokgung (con el Jardín Secreto Huwon), Changgyeonggung, Deoksugung y Gyeonghuigung. Alquilar un hanbok para visitarlos es una experiencia popular y a menudo otorga entrada gratuita.</li>
+            <li><strong>Explorar la Aldea Bukchon Hanok en Seúl:</strong> Un barrio residencial tradicional con cientos de casas hanok (casas coreanas tradicionales) bien conservadas. Pide silencio ya que es una zona residencial.</li>
+            <li><strong>Visitar la Zona Desmilitarizada (DMZ):</strong> La frontera fuertemente fortificada entre Corea del Sur y Corea del Norte. Una experiencia aleccionadora y única que ofrece una perspectiva sobre la Guerra de Corea y la división de la península (se requiere un tour organizado y reserva con antelación).</li>
+            <li><strong>Descubrir Gyeongju:</strong> Antigua capital del Reino de Silla, un "museo sin paredes" con tumbas reales (parques de túmulos), templos (como Bulguksa y Seokguram, ambos Patrimonio de la Humanidad) y el Estanque Anapji (Donggung y Wolji).</li>
+            <li><strong>Visitar Busan:</strong> La segunda ciudad más grande de Corea, una vibrante ciudad portuaria con playas (Haeundae, Gwangalli), el colorido pueblo cultural de Gamcheon (con sus casas en la ladera y arte callejero) y el bullicioso mercado de pescado de Jagalchi.</li>
+            <li><strong>Senderismo en Parques Nacionales:</strong> Corea es un país montañoso (70%). Parques como Seoraksan (famoso por sus colores otoñales), Bukhansan (accesible desde Seúl para una escapada natural) o Jirisan ofrecen espectaculares rutas de senderismo y paisajes.</li>
+            <li><strong>Experimentar la Vida en un Templo Budista (Templestay):</strong> Muchos templos ofrecen programas donde los visitantes pueden experimentar la vida monástica, incluyendo meditación (chamseon), ceremonias de té, comidas vegetarianas monacales (baru gongyang) y charlas con monjes.</li>
+            <li><strong>Isla de Jeju:</strong> Una isla volcánica Patrimonio de la Humanidad por la UNESCO, famosa por sus paisajes únicos (como el Pico Seongsan Ilchulbong o "Pico del Amanecer"), playas de arena negra, tubos de lava (Cueva Manjanggul), rutas de senderismo Olle y las Haenyeo (mujeres buceadoras).</li>
+        </ul>
+
+        <h2>Sabores de Corea: Picante, Fermentado y Deliciosamente Complejo</h2>
+        <p>La gastronomía coreana (Hansik) es conocida por sus sabores intensos, el uso de ingredientes fermentados como el kimchi y el gochujang (pasta de chile), y la importancia de los platos compartidos. Las comidas suelen incluir una variedad de banchan (pequeños platos de acompañamiento que se rellenan gratuitamente).</p>
+        <img src="images/post-corea-sur3.jpg" alt="Bibimbap coreano, un plato de arroz mezclado con verduras, carne y huevo" class="inline-image">
+        <ul>
+            <li><strong>Kimchi:</strong> El plato nacional por excelencia. Col fermentada (u otras verduras como rábano) sazonada con chile en polvo (gochugaru), ajo, jengibre y jeotgal (marisco fermentado). Hay cientos de variedades y se sirve con casi todas las comidas.</li>
+            <li><strong>Bibimbap:</strong> Un cuenco de arroz caliente cubierto con verduras salteadas y sazonadas (namul), carne (generalmente ternera), un huevo frito o crudo, y gochujang. Se mezcla todo vigorosamente antes de comer. La versión de Jeonju es especialmente famosa.</li>
+            <li><strong>Bulgogi:</strong> Finas lonchas de ternera (u otras carnes como cerdo - dweji bulgogi) marinadas en una salsa dulce a base de soja, ajo, jengibre, azúcar y pera asiática, y luego asadas a la parrilla, a menudo en la propia mesa.</li>
+            <li><strong>Barbacoa Coreana (Gogi-gui):</strong> Carnes como galbi (costillas marinadas) o samgyeopsal (panceta de cerdo sin marinar, muy popular) se asan en una parrilla en el centro de la mesa. Se envuelven en hojas de lechuga o perilla con ajo crudo o asado, ssamjang (pasta de soja y chile) y otros banchan.</li>
+            <li><strong>Japchae:</strong> Fideos de batata transparentes (dangmyeon) salteados con verduras (espinacas, zanahorias, cebolla, champiñones) y a menudo ternera, sazonados con salsa de soja y aceite de sésamo.</li>
+            <li><strong>Tteokbokki:</strong> Pasteles de arroz cilíndricos (tteok) cocinados en una salsa roja picante y dulce a base de gochujang, a menudo con pasteles de pescado (eomuk) y huevo duro. Una popular comida callejera.</li>
+            <li><strong>Sundubu Jjigae:</strong> Un estofado picante y reconfortante hecho con tofu extra suave (sundubu), verduras, a menudo mariscos, carne o kimchi, y un huevo que se rompe en el caldo hirviendo al servir.</li>
+            <li><strong>Hotteok:</strong> Un tipo de pancake dulce, crujiente por fuera y masticable por dentro, relleno de una mezcla de azúcar moreno, canela, miel y a veces frutos secos o semillas. Popular como comida callejera en invierno.</li>
+            <li><strong>Soju y Makgeolli:</strong> Soju es un licor destilado claro, la bebida alcohólica más popular. Makgeolli es un vino de arroz tradicional, lechoso, ligeramente espumoso y dulce.</li>
+            <li><strong>Bingsu:</strong> Un postre de hielo raspado muy popular, especialmente en verano, cubierto con diversos toppings como leche condensada, frutas frescas, pasta de frijoles rojos (pat), pequeños pasteles de arroz (injeolmi tteok) y helado.</li>
+            <li><strong>Kimbap (Gimbap):</strong> Rollos de arroz envueltos en alga seca (kim) con diversos rellenos como verduras, huevo, carne y rábano encurtido. Similar al sushi japonés pero el arroz no es avinagrado.</li>
+        </ul>
+
+        <h2>Cómo Llegar y Moverse</h2>
+        <p>El principal aeropuerto internacional es el Aeropuerto Internacional de Incheon (ICN), que sirve a Seúl y es consistentemente clasificado como uno de los mejores del mundo. El Aeropuerto Internacional de Gimpo (GMP) en Seúl maneja principalmente vuelos domésticos y algunos internacionales de corta distancia (Japón, China, Taiwán). Otros aeropuertos internacionales importantes incluyen los de Busan (Gimhae - PUS) y Jeju (CJU).</p>
+        <h3>Desde el Aeropuerto de Incheon (ICN) a Seúl</h3>
+        <ul>
+            <li><strong>AREX (Airport Railroad Express):</strong> La opción más recomendada y eficiente. Hay dos tipos:
+                <ul>
+                    <li><strong>Express Train:</strong> Directo y sin paradas a la Estación de Seúl (Seoul Station) en unos 43 minutos. Un poco más caro.</li>
+                    <li><strong>All-Stop Train:</strong> Hace paradas en varias estaciones de metro importantes de Seúl (incluyendo Hongik Univ., Gimpo Airport, Digital Media City) y tarda unos 55-65 minutos hasta la Estación de Seúl. Es más económico y se integra directamente con la red de metro.</li>
+                </ul>
+            </li>
+            <li><strong>Autobuses Limusina del Aeropuerto (Airport Limousine Buses):</strong> Numerosas rutas conectan el aeropuerto con diferentes distritos, hoteles principales y terminales de autobuses de Seúl. Son cómodos, especialmente si llevas mucho equipaje y tu destino está en su ruta, pero más caros que el AREX All-Stop y sujetos a tráfico.</li>
+            <li><strong>Taxi:</strong> Disponibles (regulares, deluxe, jumbo). Son la opción más cara. Asegúrate de que usen el taxímetro o pregunta por tarifas estimadas. Puede haber suplementos nocturnos.</li>
+        </ul>
+
+        <h3>Transporte Interno en Corea del Sur</h3>
+        <p>Corea del Sur tiene un sistema de transporte público excepcionalmente moderno, eficiente, limpio y bien integrado:</p>
+        <ul>
+            <li><strong>Trenes de Alta Velocidad (KTX, SRT):</strong> Conectan Seúl con las principales ciudades del país (Busan, Daegu, Gwangju, Mokpo, Gyeongju/Pohang) de forma muy rápida y cómoda. Es esencial reservar billetes con antelación, especialmente en fines de semana y festivos, a través de la web de Korail (KTX) o SR (SRT), o en las estaciones.</li>
+            <li><strong>Trenes Convencionales (Mugunghwa, Saemaeul/ITX-Saemaeul, Nuriro):</strong> Más lentos que el KTX pero cubren más rutas, llegan a ciudades más pequeñas y son más económicos. También operados por Korail.</li>
+            <li><strong>Autobuses Exprés e Interurbanos (Express Bus / Intercity Bus):</strong> Una red muy extensa y eficiente que llega a casi todos los rincones del país, incluso donde no llega el tren. Son una alternativa económica y cómoda (especialmente los autobuses "Excellent" o "Premium"). Hay terminales de autobuses grandes y bien organizadas en cada ciudad.</li>
+            <li><strong>Metro (Subway):</strong> Ciudades como Seúl (extensísima red), Busan, Daegu, Incheon, Gwangju y Daejeon tienen sistemas de metro excelentes, limpios, seguros y fáciles de usar (con señalización clara en coreano e inglés).</li>
+            <li><strong>Vuelos Internos:</strong> Conectan Seúl (principalmente Gimpo - GMP) con la Isla de Jeju (una de las rutas aéreas más transitadas del mundo) y otras ciudades como Busan, Yeosu, etc. Aerolíneas como Korean Air, Asiana, y low-costs como Jeju Air, Jin Air, T'way Air.</li>
+            <li><strong>Taxis:</strong> Ampliamente disponibles en ciudades. La mayoría usa taxímetro. Hay diferentes tipos (regular, deluxe -mobeom taxi, negros y más caros-, internacional -con conductores que hablan inglés-). Se pueden parar en la calle o usar apps como Kakao T.</li>
+            <li><strong>Ferries:</strong> Conectan el continente con numerosas islas, incluyendo Jeju y Ulleungdo.</li>
+        </ul>
+        <p>La tarjeta **T-money** (o Cashbee) es una tarjeta de transporte recargable muy útil y casi indispensable. Se puede usar en metro, autobuses públicos en la mayoría de las ciudades, algunos taxis, y también para pequeñas compras en tiendas de conveniencia (pyeonuijeom). Se compra y recarga en estaciones de metro y tiendas de conveniencia.</p>
+
+        <h2>Consejos Prácticos para tu Viaje a Corea del Sur</h2>
+        <ul>
+            <li><strong>Idioma:</strong> Coreano (el alfabeto es Hangeul, sorprendentemente fácil de aprender a leer en poco tiempo). El inglés se enseña en las escuelas y es más común entre los jóvenes y en zonas turísticas principales de Seúl, pero no es universal. Aprender frases básicas ("Annyeonghaseyo" - Hola, "Kamsahamnida" - Gracias) y tener una aplicación de traducción (como Papago, desarrollada en Corea) es muy útil. Muchas señales importantes están en inglés.</li>
+            <li><strong>Moneda:</strong> Won Surcoreano (KRW, ₩). Hay cajeros automáticos (ATMs) que aceptan tarjetas internacionales (busca los que tengan el logo "Global" o de tu red de tarjeta). Las tarjetas de crédito son muy ampliamente aceptadas, incluso para pequeñas cantidades, pero siempre es bueno tener algo de efectivo.</li>
+            <li><strong>Internet y Wi-Fi:</strong> Corea del Sur tiene una de las infraestructuras de internet más rápidas y desarrolladas del mundo. El Wi-Fi gratuito es muy común en transporte público (metro, KTX), estaciones, cafés, centros comerciales y muchos lugares públicos. Puedes alquilar un "Wi-Fi egg" (router portátil) o comprar una SIM local con datos fácilmente en el aeropuerto o tiendas de conveniencia.</li>
+            <li><strong>Aplicaciones de Navegación:</strong> **Google Maps tiene funcionalidades limitadas en Corea del Sur para indicaciones de ruta (especialmente peatonales y de coche)** debido a restricciones gubernamentales. Usa aplicaciones locales como **Naver Maps** o **KakaoMap**, que son mucho más precisas y completas para transporte público, caminar y encontrar lugares. Tienen interfaces en inglés.</li>
+            <li><strong>Etiqueta y Costumbres:</strong> El respeto a los mayores es fundamental. Al dar o recibir algo importante (dinero, tarjetas), a menudo se usan las dos manos o la mano derecha apoyada por la izquierda como señal de respeto. No se suele dejar propina en restaurantes o taxis (a veces se puede redondear). Es de mala educación sonarse la nariz en público ruidosamente.</li>
+            <li><strong>Seguridad:</strong> Corea del Sur es un país extremadamente seguro con índices de criminalidad muy bajos. Puedes sentirte seguro caminando incluso de noche en la mayoría de las áreas.</li>
+            <li><strong>Enchufes:</strong> Tipo F (Schuko, dos clavijas redondas, el mismo que en gran parte de Europa continental) y a veces Tipo C. Voltaje 220V.</li>
+            <li><strong>Cosméticos (K-Beauty):</strong> Corea es un líder mundial en productos de belleza y cuidado de la piel. Barrios como Myeongdong en Seúl son el paraíso para comprarlos, con muchas tiendas ofreciendo muestras gratuitas.</li>
+            <li><strong>Comida Picante:</strong> Muchos platos coreanos son picantes (debido al gochujang y gochugaru). Si no toleras bien el picante, puedes preguntar "An maep-ge hae ju-se-yo?" (¿Podría hacerlo no picante, por favor?), aunque no siempre es posible modificar la receta de todos los platos. "Baek-kimchi" es un tipo de kimchi blanco no picante.</li>
+            <li><strong>T-money Card:</strong> Consigue una nada más llegar. Te facilitará enormemente el uso del transporte público y pequeñas compras.</li>
+        </ul>
+    `
+},
 
 
     
