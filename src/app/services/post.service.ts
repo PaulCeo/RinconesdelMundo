@@ -2388,7 +2388,7 @@ export class PostService {
             <li><strong>T-money Card:</strong> Consigue una nada más llegar. Te facilitará enormemente el uso del transporte público y pequeñas compras.</li>
         </ul>
     `
-},
+}
 
 
     
